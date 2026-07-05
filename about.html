@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Peter Stamenoff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0A0A0A;--accent:#C0362C;--white:#fff;--gray-50:#F7F7F5;--gray-300:#C8C8C3;--gray-500:#888884;--gray-700:#4A4A47;--border:rgba(0,0,0,0.1);--radius:12px;--max:780px}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+    nav{max-width:var(--max);margin:0 auto;padding:2rem 2rem 0;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:8px}
+    .logo img{height:24px;width:auto;vertical-align:middle}
+    .nav-links{display:flex;gap:2rem;align-items:center}
+    .nav-links a:not(.nav-cta){font-size:13px;color:var(--gray-500);text-decoration:none;transition:color 0.15s}
+    .nav-links a:not(.nav-cta):hover{color:var(--black)}
+    .nav-cta{font-size:12px;font-weight:500;background:var(--black);color:var(--white);border:none;border-radius:100px;padding:9px 18px;cursor:pointer;text-decoration:none}
+    .nav-cta:hover{opacity:0.8}
+    .nav-cta:active{background:var(--white);color:var(--black)}
+
+    /* MOBILE NAV */
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:1001}
+    .hamburger span{width:22px;height:1.5px;background:var(--black);transition:all 0.25s ease}
+    .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+    .mobile-menu{display:none;position:fixed;inset:0;background:var(--white);z-index:1000;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-family:'DM Serif Display',serif;font-size:28px;color:var(--black);text-decoration:none}
+    .mobile-menu .nav-cta{font-family:'Inter',sans-serif;color:var(--white)!important}
+    @media(max-width:640px){
+      .nav-links a:not(.nav-cta){display:none}
+      .nav-links .nav-cta{display:none}
+      .hamburger{display:flex}
+    }
+
+    main{max-width:var(--max);margin:0 auto;padding:0 2rem 6rem}
+
+    .hero{padding:5rem 0 3rem;border-bottom:0.5px solid var(--border)}
+    .hero-kicker{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
+    .hero-kicker::before{content:'';display:inline-block;width:20px;height:1.5px;background:var(--accent);flex-shrink:0}
+    .hero-h{font-family:'DM Serif Display',serif;font-size:52px;line-height:1.08;font-weight:400;margin-bottom:1.5rem}
+    .hero-h em{font-style:italic;color:var(--accent)}
+    .hero-p{font-size:16px;line-height:1.8;color:var(--gray-700);max-width:560px}
+
+    section{padding:4rem 0;border-bottom:0.5px solid var(--border)}
+    section:last-of-type{border-bottom:none}
+
+    .two-col{display:grid;grid-template-columns:1.2fr 1fr;gap:3.5rem;align-items:start}
+    .section-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:1.25rem}
+    .section-title{font-family:'DM Serif Display',serif;font-size:36px;font-weight:400;margin-bottom:1.25rem;line-height:1.15}
+    .section-title em{font-style:italic;color:var(--accent)}
+    p.body{font-size:15px;line-height:1.85;color:var(--gray-700);margin-bottom:1.25rem}
+
+    .skills-wrap{display:flex;flex-wrap:wrap;gap:7px;margin-top:1.5rem}
+    .skill-tag{font-size:11px;letter-spacing:0.05em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:0.5px solid var(--gray-300);color:var(--gray-700)}
+
+    .exp-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:0}
+    .exp-list{list-style:none}
+    .exp-item{padding:12px 0;border-bottom:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:baseline}
+    .exp-item:first-child{border-top:0.5px solid var(--border)}
+    .exp-co{font-size:14px;font-weight:500;color:var(--black)}
+    .exp-role{font-size:12px;color:var(--gray-500);margin-top:2px}
+    .exp-yr{font-size:11px;color:var(--gray-500)}
+
+    .cta-block{background:var(--black);border-radius:var(--radius);padding:3rem;display:flex;justify-content:space-between;align-items:center;margin-top:3rem}
+    .cta-block p{font-size:20px;font-family:'DM Serif Display',serif;color:var(--white);font-weight:400}
+    .cta-block em{font-style:italic;color:rgba(255,255,255,0.5)}
+    .cta-btns{display:flex;gap:10px;flex-shrink:0}
+    .cta-btn{font-size:13px;font-weight:500;padding:10px 20px;border-radius:100px;cursor:pointer;text-decoration:none;transition:all 0.15s}
+    .cta-btn.outline{border:0.5px solid rgba(255,255,255,0.3);background:transparent;color:var(--white)}
+    .cta-btn.outline:hover{border-color:var(--white)}
+    .cta-btn.filled{background:var(--white);color:var(--black);border:none}
+    .cta-btn.filled:hover{opacity:0.85}
+
+    footer{max-width:var(--max);margin:0 auto;padding:2rem 2rem 3rem;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .footer-note{font-size:14px;font-weight:500}
+    .footer-sub{font-size:12px;color:var(--gray-500);margin-top:4px}
+    .footer-btns{display:flex;gap:10px}
+    .fbtn{font-size:12px;font-weight:500;padding:10px 20px;border-radius:100px;cursor:pointer;border:0.5px solid var(--gray-300);background:transparent;color:var(--gray-700);text-decoration:none;transition:all 0.15s}
+    .fbtn:hover{border-color:var(--black);color:var(--black)}
+    .fbtn.primary{background:var(--black);color:var(--white);border-color:var(--black)}
+    .fbtn.primary:hover{opacity:0.8}
+
+    @media(max-width:640px){
+      .hero-h{font-size:36px}
+      .two-col{grid-template-columns:1fr;gap:2rem}
+      .cta-block{flex-direction:column;gap:1.5rem;text-align:center}
+      footer{flex-direction:column;gap:1.5rem;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">
+    <img src="data:image/avif;base64,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" alt="Peter Stamenoff Logo">
+    Peter Stamenoff
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mailto:hello@peterstamenoff.com" class="nav-cta">Get in touch</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<main>
+
+  <div class="hero">
+    <p class="hero-kicker">About me</p>
+    <h1 class="hero-h">Visual craft meets<br><em>UX thinking.</em></h1>
+    <p class="hero-p">Senior graphic and digital designer with 10+ years of experience, now bringing a research-driven UX/UI approach to every project I work on.</p>
+  </div>
+
+  <section>
+    <div class="two-col">
+      <div>
+        <p class="section-label">My story</p>
+        <h2 class="section-title">Where I'm <em>coming from.</em></h2>
+        <p class="body">I spent 10+ years designing for Sam's Club, Men's Wearhouse, and Havas — building campaigns, systems, and digital experiences for millions of people. Now I'm bringing that visual foundation into UX/UI product design.</p>
+        <p class="body">I care about the details: the hierarchy that guides a user, the copy that calms them, the flow that removes friction. Design that's not just beautiful — but clear.</p>
+        <div class="skills-wrap">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">User Research</span>
+          <span class="skill-tag">Prototyping</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">Usability Testing</span>
+          <span class="skill-tag">Adobe CC</span>
+        </div>
+      </div>
+      <div>
+        <p class="exp-label">Experience</p>
+        <ul class="exp-list">
+          <li class="exp-item">
+            <div>
+              <div class="exp-co">Sam's Club / Walmart</div>
+              <div class="exp-role">Senior Designer</div>
+            </div>
+            <span class="exp-yr">2020–2025</span>
+          </li>
+          <li class="exp-item">
+            <div>
+              <div class="exp-co">Men's Wearhouse</div>
+              <div class="exp-role">Designer</div>
+            </div>
+            <span class="exp-yr">Prior</span>
+          </li>
+          <li class="exp-item">
+            <div>
+              <div class="exp-co">Havas Worldwide</div>
+              <div class="exp-role">Designer</div>
+            </div>
+            <span class="exp-yr">Prior</span>
+          </li>
+          <li class="exp-item">
+            <div>
+              <div class="exp-co">StringCan Agency</div>
+              <div class="exp-role">Designer</div>
+            </div>
+            <span class="exp-yr">Prior</span>
+          </li>
+          <li class="exp-item">
+            <div>
+              <div class="exp-co">UX/UI Bootcamp</div>
+              <div class="exp-role">Graduate</div>
+            </div>
+            <span class="exp-yr">2025</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">What I bring</p>
+    <h2 class="section-title">Design that's <em>research-driven.</em></h2>
+    <div class="two-col">
+      <p class="body">Through my UX/UI bootcamp I've built hands-on experience in user research, personas, user flows, wireframes, prototyping, usability testing, and case study development. I combine that with 10+ years of professional visual design to create experiences that are not just beautiful — but grounded in how real people think and behave.</p>
+      <p class="body">My background in digital marketing, email, web, and brand design means I understand how design decisions connect to business goals. I'm comfortable working across teams with developers, product managers, marketers, and stakeholders — translating complexity into clarity at every step.</p>
+    </div>
+  </section>
+
+  <div class="cta-block">
+    <p>Let's work together on something <em>great.</em></p>
+    <div class="cta-btns">
+      <a href="#" class="cta-btn outline">View resume</a>
+      <a href="mailto:hello@peterstamenoff.com" class="cta-btn filled">Say hello</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-note">Open to UX/UI, Product Design & hybrid roles</div>
+    <div class="footer-sub">San Francisco Bay Area &middot; Remote friendly</div>
+  </div>
+  <div class="footer-btns">
+    <a href="https://www.linkedin.com/in/peterstamenoff/" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;color:#0A0A0A;transition:opacity 0.15s" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.182181,0 L1.76976334,0 C0.792334107,0 0.00011136891,0.768055684 0.00011136891,1.71602784 L0.00011136891,22.2341346 C0.00011136891,23.1821624 0.792612529,23.9508863 1.76976334,23.9508863 L22.182181,23.9508863 C23.1593875,23.9508863 23.9507193,23.1816613 23.9507193,22.2341346 L23.9507193,1.71602784 C23.9507193,0.768334107 23.1593875,0 22.182181,0 Z M7.2612529,20.0485197 L3.64248724,20.0485197 L3.64248724,9.2349884 L7.2612529,9.2349884 L7.2612529,20.0485197 Z M5.45223202,7.75767981 L5.42789791,7.75767981 C4.21436659,7.75767981 3.4277123,6.9277587 3.4277123,5.88874246 C3.4277123,4.82878886 4.23747564,4.02136427 5.47506265,4.02136427 C6.71276102,4.02136427 7.47407889,4.82856613 7.49813457,5.88874246 C7.49813457,6.92798144 6.71303944,7.75767981 5.45223202,7.75767981 Z M20.3058376,20.0485197 L16.6882413,20.0485197 L16.6882413,14.2629049 C16.6882413,12.8091508 16.1640835,11.8171879 14.8558329,11.8171879 C13.8550162,11.8171879 13.2609188,12.4864037 13.0000371,13.1325104 C12.9033689,13.3632668 12.8794246,13.6860139 12.8794246,14.0083155 L12.8794246,20.048297 L9.26249652,20.048297 C9.26249652,20.048297 9.30982831,10.2490023 9.26249652,9.23482135 L12.8799814,9.23482135 L12.8799814,10.7678701 C13.3602042,10.0312204 14.2183573,8.98039907 16.1394153,8.98039907 C18.5204826,8.98039907 20.3058376,10.5250302 20.3058376,13.848 L20.3058376,20.0485197 Z"/></svg></a>
+    <a href="#" class="fbtn">View resume</a>
+    <a href="mailto:hello@peterstamenoff.com" class="fbtn primary">Say hello</a>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+</script>
+
+</body>
+</html>
