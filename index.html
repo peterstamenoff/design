@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --black: #0A0A0A;
       --accent: #C0362C;
@@ -20,21 +19,14 @@
       --gray-700: #4A4A47;
       --border: rgba(0,0,0,0.1);
       --radius-card: 8px;
-      --container: 1240px;
-      --pad: 2.5rem;
+      --max: 780px;
     }
-
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
-    /* ── CONTAINER ── */
-    .container { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad); }
-
-    /* ── NAV ── */
-    nav { border-bottom: 0.5px solid var(--border); }
-    .nav-inner { max-width: var(--container); margin: 0 auto; padding: 1.75rem var(--pad); display: flex; justify-content: space-between; align-items: center; }
+    nav { max-width: var(--max); margin: 0 auto; padding: 2rem 2rem 0; display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    .logo img { height: 24px; width: auto; }
+    .logo img { height: 24px; width: auto; vertical-align: middle; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a:not(.nav-cta) { font-size: 13px; color: var(--gray-500); text-decoration: none; transition: color 0.15s; }
     .nav-links a:not(.nav-cta):hover { color: var(--black); }
@@ -42,7 +34,7 @@
     .nav-cta:hover { opacity: 0.8; }
     .nav-cta:active { background: var(--white); color: var(--black) !important; }
 
-    /* ── HAMBURGER ── */
+    /* MOBILE NAV */
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
     .hamburger span { width: 22px; height: 1.5px; background: var(--black); transition: all 0.25s ease; display: block; }
     .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
@@ -50,38 +42,35 @@
     .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
     .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 1000; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
     .mobile-menu.open { display: flex; }
-    .mobile-menu a { font-family: 'DM Serif Display', serif; font-size: 32px; color: var(--black); text-decoration: none; }
-    .mobile-menu .nav-cta { font-family: 'Inter', sans-serif; font-size: 14px; }
+    .mobile-menu a { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--black); text-decoration: none; }
+    .mobile-menu .nav-cta { font-family: 'Inter', sans-serif; color: var(--white) !important; }
 
-    /* ── HERO ── */
-    .hero { padding: 6rem 0 4rem; border-bottom: 0.5px solid var(--border); }
-    .hero-kicker { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; }
+    main { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+
+    .hero { padding: 5rem 0 1.25rem; border-bottom: 0.5px solid var(--border); }
+    .hero-kicker { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 10px; }
     .hero-kicker::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
-    .hero-h { font-family: 'DM Serif Display', serif; font-size: 34px; line-height: 1.1; font-weight: 400; margin-bottom: 1.5rem; max-width: 700px; }
+    .hero-h { font-family: 'DM Serif Display', serif; font-size: 34px; line-height: 1.1; font-weight: 400; margin-bottom: 1.5rem; }
     .hero-h em { font-style: italic; color: var(--accent); }
-    .hero-p { font-size: 17px; line-height: 1.8; color: var(--gray-700); max-width: 600px; }
+    .hero-p { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
 
-    /* ── SECTION HEADER ── */
-    .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin: 3.5rem 0 1.75rem; }
+    .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin: 3rem 0 1.5rem; }
     .sec-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); }
 
-    /* ── PROJECT GRID ── */
-    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 6rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 5rem; }
     .card { border-radius: var(--radius-card); overflow: hidden; text-decoration: none; display: block; background: var(--gray-50); border: 0.5px solid var(--border); transition: transform 0.18s ease, box-shadow 0.18s ease; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-    .card-img { height: 260px; background-size: cover; background-position: center; position: relative; }
-    .card-img::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0); transition: background 0.25s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+    .card-img { height: 210px; background-size: cover; background-position: center; position: relative; }
+    .card-img::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0); transition: background 0.25s ease; }
     .card:hover .card-img::after { background: rgba(0,0,0,0.21); }
-    .card-body { padding: 1.5rem 1.75rem 1.75rem; }
-    .card-title { font-size: 18px; font-weight: 500; color: var(--black); margin-bottom: 0.4rem; }
-    .card-desc { font-size: 14px; line-height: 1.65; color: var(--gray-700); margin-bottom: 1rem; }
+    .card-body { padding: 1.25rem 1.4rem 1.4rem; }
+    .card-title { font-size: 17px; font-weight: 500; color: var(--black); margin-bottom: 0.4rem; }
+    .card-desc { font-size: 13px; line-height: 1.65; color: var(--gray-700); margin-bottom: 1rem; }
     .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag { font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; border: 0.5px solid var(--gray-300); color: var(--gray-500); }
 
-    /* ── FOOTER ── */
-    footer { border-top: 0.5px solid var(--border); }
-    .footer-inner { max-width: var(--container); margin: 0 auto; padding: 2rem var(--pad) 3rem; display: flex; justify-content: space-between; align-items: center; }
-    .footer-note { font-size: 15px; font-weight: 500; color: var(--black); }
+    footer { max-width: var(--max); margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-note { font-size: 14px; font-weight: 500; color: var(--black); }
     .footer-sub { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
     .footer-btns { display: flex; gap: 10px; align-items: center; }
     .fbtn { font-size: 12px; font-weight: 500; padding: 10px 20px; border-radius: 100px; cursor: pointer; border: 0.5px solid var(--gray-300); background: transparent; color: var(--gray-700); text-decoration: none; transition: all 0.15s; }
@@ -89,50 +78,31 @@
     .fbtn.primary { background: var(--black); color: var(--white); border-color: var(--black); }
     .fbtn.primary:hover { opacity: 0.8; }
 
-    /* ── BREAKPOINT: TABLET 1024px ── */
-    @media (max-width: 1024px) {
-      :root { --pad: 2rem; }
-      .hero { padding: 4rem 0 3rem; }
+    @media (max-width: 640px) {
       .hero-h { font-size: 28px; }
-      .hero-p { font-size: 15px; }
-      .card-img { height: 220px; }
-      .card-title { font-size: 16px; }
-      .card-body { padding: 1.25rem 1.4rem 1.4rem; }
-    }
-
-    /* ── BREAKPOINT: MOBILE 768px ── */
-    @media (max-width: 768px) {
-      :root { --pad: 1.25rem; }
-      .hero { padding: 3rem 0 2.5rem; }
-      .hero-h { font-size: 26px; }
-      .hero-p { font-size: 14px; }
-      .grid { grid-template-columns: 1fr; gap: 16px; }
-      .card-img { height: 200px; }
+      .grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 1.5rem; text-align: center; }
       .nav-links a:not(.nav-cta) { display: none; }
       .nav-links .nav-cta { display: none; }
       .hamburger { display: flex; }
-      .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
-      .footer-btns { justify-content: center; }
     }
   </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <img src="data:image/avif;base64,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" alt="Peter Stamenoff Logo">
-      Peter Stamenoff
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mailto:hello@peterstamenoff.com" class="nav-cta">Get in touch</a>
-    </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+  <a href="index.html" class="logo">
+    <img src="data:image/avif;base64,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" alt="Peter Stamenoff Logo">
+    Peter Stamenoff
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mailto:hello@peterstamenoff.com" class="nav-cta">Get in touch</a>
   </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
@@ -141,7 +111,7 @@
   <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </div>
 
-<div class="container">
+<main>
   <section class="hero">
     <p class="hero-kicker">UX/UI Designer — San Francisco Bay Area</p>
     <h1 class="hero-h">Hi, I'm Peter Stamenoff. I turn complexity into <em>clear, beautiful</em> digital experiences.</h1>
@@ -186,19 +156,17 @@
       </div>
     </a>
   </div>
-</div>
+</main>
 
 <footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-note">Let's Connect</div>
-      <div class="footer-sub">San Francisco Bay Area &middot; Remote friendly</div>
-    </div>
-    <div class="footer-btns">
-      <a href="https://www.linkedin.com/in/peterstamenoff/" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;color:#0A0A0A;transition:opacity 0.15s" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.182181,0 L1.76976334,0 C0.792334107,0 0.00011136891,0.768055684 0.00011136891,1.71602784 L0.00011136891,22.2341346 C0.00011136891,23.1821624 0.792612529,23.9508863 1.76976334,23.9508863 L22.182181,23.9508863 C23.1593875,23.9508863 23.9507193,23.1816613 23.9507193,22.2341346 L23.9507193,1.71602784 C23.9507193,0.768334107 23.1593875,0 22.182181,0 Z M7.2612529,20.0485197 L3.64248724,20.0485197 L3.64248724,9.2349884 L7.2612529,9.2349884 L7.2612529,20.0485197 Z M5.45223202,7.75767981 L5.42789791,7.75767981 C4.21436659,7.75767981 3.4277123,6.9277587 3.4277123,5.88874246 C3.4277123,4.82878886 4.23747564,4.02136427 5.47506265,4.02136427 C6.71276102,4.02136427 7.47407889,4.82856613 7.49813457,5.88874246 C7.49813457,6.92798144 6.71303944,7.75767981 5.45223202,7.75767981 Z M20.3058376,20.0485197 L16.6882413,20.0485197 L16.6882413,14.2629049 C16.6882413,12.8091508 16.1640835,11.8171879 14.8558329,11.8171879 C13.8550162,11.8171879 13.2609188,12.4864037 13.0000371,13.1325104 C12.9033689,13.3632668 12.8794246,13.6860139 12.8794246,14.0083155 L12.8794246,20.048297 L9.26249652,20.048297 C9.26249652,20.048297 9.30982831,10.2490023 9.26249652,9.23482135 L12.8799814,9.23482135 L12.8799814,10.7678701 C13.3602042,10.0312204 14.2183573,8.98039907 16.1394153,8.98039907 C18.5204826,8.98039907 20.3058376,10.5250302 20.3058376,13.848 L20.3058376,20.0485197 Z"/></svg></a>
-      <a href="#" class="fbtn">View resume</a>
-      <a href="mailto:hello@peterstamenoff.com" class="fbtn primary">Say hello</a>
-    </div>
+  <div>
+    <div class="footer-note">Let's Connect</div>
+    <div class="footer-sub">San Francisco Bay Area &middot; Remote friendly</div>
+  </div>
+  <div class="footer-btns">
+    <a href="https://www.linkedin.com/in/peterstamenoff/" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;color:#0A0A0A;transition:opacity 0.15s" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.182181,0 L1.76976334,0 C0.792334107,0 0.00011136891,0.768055684 0.00011136891,1.71602784 L0.00011136891,22.2341346 C0.00011136891,23.1821624 0.792612529,23.9508863 1.76976334,23.9508863 L22.182181,23.9508863 C23.1593875,23.9508863 23.9507193,23.1816613 23.9507193,22.2341346 L23.9507193,1.71602784 C23.9507193,0.768334107 23.1593875,0 22.182181,0 Z M7.2612529,20.0485197 L3.64248724,20.0485197 L3.64248724,9.2349884 L7.2612529,9.2349884 L7.2612529,20.0485197 Z M5.45223202,7.75767981 L5.42789791,7.75767981 C4.21436659,7.75767981 3.4277123,6.9277587 3.4277123,5.88874246 C3.4277123,4.82878886 4.23747564,4.02136427 5.47506265,4.02136427 C6.71276102,4.02136427 7.47407889,4.82856613 7.49813457,5.88874246 C7.49813457,6.92798144 6.71303944,7.75767981 5.45223202,7.75767981 Z M20.3058376,20.0485197 L16.6882413,20.0485197 L16.6882413,14.2629049 C16.6882413,12.8091508 16.1640835,11.8171879 14.8558329,11.8171879 C13.8550162,11.8171879 13.2609188,12.4864037 13.0000371,13.1325104 C12.9033689,13.3632668 12.8794246,13.6860139 12.8794246,14.0083155 L12.8794246,20.048297 L9.26249652,20.048297 C9.26249652,20.048297 9.30982831,10.2490023 9.26249652,9.23482135 L12.8799814,9.23482135 L12.8799814,10.7678701 C13.3602042,10.0312204 14.2183573,8.98039907 16.1394153,8.98039907 C18.5204826,8.98039907 20.3058376,10.5250302 20.3058376,13.848 L20.3058376,20.0485197 Z"/></svg></a>
+    <a href="#" class="fbtn">View resume</a>
+    <a href="mailto:hello@peterstamenoff.com" class="fbtn primary">Say hello</a>
   </div>
 </footer>
 
