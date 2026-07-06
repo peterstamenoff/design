@@ -69,7 +69,7 @@
     .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag { font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; border: 0.5px solid var(--gray-300); color: var(--gray-500); }
 
-    footer { max-width: var(--max); margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    footer { max-width: var(--max); margin: 0 auto; padding: 1rem 2rem 3rem; display: flex; justify-content: space-between; align-items: center; }
     .footer-note { font-size: 14px; font-weight: 500; color: var(--black); }
     .footer-sub { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
     .footer-btns { display: flex; gap: 10px; align-items: center; }
@@ -93,7 +93,7 @@
     html{scroll-behavior:smooth}
     body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased}
     nav{max-width:var(--max);margin:0 auto;padding:2rem 2rem 0;display:flex;justify-content:space-between;align-items:center}
-    main{max-width:var(--max);margin:0 auto;padding:0 2rem 6rem}
+    main{max-width:var(--max);margin:0 auto;padding:0 2rem 0}
     .hero{padding:4rem 0 1.5rem;border-bottom:0.5px solid var(--border)}
     .breadcrumb{font-size:12px;color:var(--gray-500);margin-bottom:1.5rem;display:flex;align-items:center;gap:6px}
     .breadcrumb a{color:var(--gray-500);text-decoration:none}
@@ -111,7 +111,7 @@
     .tag{font-size:10px;letter-spacing:0.05em;text-transform:uppercase;padding:4px 10px;border-radius:100px;border:0.5px solid var(--gray-300);color:var(--gray-500)}
     .hero-img{margin:2.5rem 0 0;margin-bottom:0;border-radius:var(--radius);overflow:hidden;border:0.5px solid var(--border)}
     section{padding:2rem 0;border-bottom:0.5px solid var(--border)}
-    section:last-of-type{border-bottom:none}
+    section:last-of-type{border-bottom:none;padding-bottom:0}
     .section-kicker{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem}
     .section-title{font-family:'DM Serif Display',serif;font-size:36px;font-weight:400;margin-bottom:1.5rem;line-height:1.1}
     .section-title em{font-style:italic;color:var(--accent)}
@@ -439,13 +439,9 @@
     </ul>
   </section>
 
-  <div class="project-nav">
-    <a href="index.html">← Back to all work</a>
-    <a href="index.html#work" class="back">All Projects</a>
-    <a href="skillbridge.html">Skillbridge →</a>
-  </div>
-
 </main>
+
+<div style="text-align:center;padding:0 0 1.5rem"><a href="index.html" style="font-size:13px;font-weight:500;color:#0A0A0A;text-decoration:none;border-bottom:1px solid #0A0A0A;padding-bottom:2px">All Projects</a></div>
 
 <footer>
   <div>
