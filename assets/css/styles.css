@@ -1,0 +1,607 @@
+/* ==========================================================================
+   Peter Stamenoff — Portfolio Design System
+   Consolidated from index.html, about.html, caresync.html, skillbridge.html,
+   and unveil.html, which each previously shipped their own duplicate copy
+   of this stylesheet (with two conflicting resets/`:root` blocks inside
+   caresync.html, skillbridge.html and unveil.html specifically).
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* --------------------------------------------------------------------------
+   Reset
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-primary);
+  background: var(--color-white);
+  color: var(--color-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------------------------------
+   Design tokens
+   -------------------------------------------------------------------------- */
+:root {
+  /* Brand (new system) */
+  --color-primary: #12193A;   /* dark navy — replaces the old --black (#0A0A0A) */
+  --color-secondary: #005356; /* teal */
+  --font-primary: 'Inter', sans-serif;   /* swapped back from Poppins for a lighter, calmer feel */
+  --font-display: var(--font-primary); /* headings share the body font (Inter) — no separate display face */
+
+  /* Neutrals (carried over unchanged from the old scale) */
+  --color-white: #fff;
+  --gray-50: #F7F7F5;
+  --gray-100: #EFEFEC;
+  --gray-300: #C8C8C3;
+  --gray-500: #888884;
+  --gray-700: #4A4A47;
+  --border: rgba(0, 0, 0, 0.1);
+
+  /* Default accent — used on index.html, about.html, and anywhere no
+     .theme-* modifier is present. Previously this was a red (#C0362C)
+     shared with caresync's old accent; see note in redesign summary. */
+  --accent: var(--color-secondary);
+
+  /* Radius scale — the old stylesheets used two same-purpose-but-differently-
+     named tokens (--radius: 12px on case-study blocks, --radius-card: 8px on
+     homepage cards). Renamed for clarity, values unchanged. */
+  --radius-sm: 8px;
+  --radius-lg: 12px;
+
+  --max: 780px;
+}
+
+/* Case-study accent themes. Apply as a class on <body> (or a top-level
+   wrapper) on each project page, e.g. <body class="theme-caresync">.
+   Values are unchanged from each project's original page.
+
+   Unveil has no .theme-unveil entry: its original accent (#005458) was
+   near-identical to the new --color-secondary (#005356), so it was
+   intentionally merged rather than kept as a separate token — Unveil
+   pages just use the site default --accent (teal) with no theme class. */
+.theme-caresync    { --accent: #C0362C; } /* red-orange */
+.theme-skillbridge { --accent: #6848E8; } /* purple */
+.theme-chase        { --accent: #117ACA; } /* "Chase Blue" — matches Chase's real brand blue */
+
+/* --------------------------------------------------------------------------
+   Navigation
+   -------------------------------------------------------------------------- */
+nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo img { height: 24px; width: auto; vertical-align: middle; }
+
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a:not(.nav-cta) { font-size: 13px; color: var(--gray-500); text-decoration: none; transition: color 0.15s; }
+.nav-links a:not(.nav-cta):hover { color: var(--color-primary); }
+.nav-cta {
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--color-primary);
+  color: var(--color-white) !important;
+  border: none;
+  border-radius: 100px;
+  padding: 9px 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.nav-cta:hover { opacity: 0.8; }
+.nav-cta:active { background: var(--color-white); color: var(--color-primary) !important; }
+
+/* Mobile nav */
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
+.hamburger span { width: 22px; height: 1.5px; background: var(--color-primary); transition: all 0.25s ease; display: block; }
+.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--color-white);
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-family: var(--font-display); font-size: 28px; color: var(--color-primary); text-decoration: none; }
+.mobile-menu .nav-cta { font-family: var(--font-primary); color: var(--color-white) !important; }
+
+@media (max-width: 640px) {
+  .nav-links a:not(.nav-cta) { display: none; }
+  .nav-links .nav-cta { display: none; }
+  .hamburger { display: flex; }
+}
+
+/* --------------------------------------------------------------------------
+   Layout containers
+   -------------------------------------------------------------------------- */
+main { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+
+footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-note { font-size: 14px; font-weight: 500; color: var(--color-primary); }
+.footer-sub { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
+.footer-btns { display: flex; gap: 10px; align-items: center; }
+.fbtn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0.5px solid var(--gray-300);
+  background: transparent;
+  color: var(--gray-700);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.fbtn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.fbtn.primary { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+.fbtn.primary:hover { opacity: 0.8; }
+
+.all-projects-link { text-align: center; padding: 0 0 1.5rem; }
+.all-projects-link a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 640px) {
+  footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+/* --------------------------------------------------------------------------
+   Hero — homepage / about variant (.hero-kicker / .hero-h / .hero-p)
+   -------------------------------------------------------------------------- */
+.hero { padding: 5rem 0 1.25rem; border-bottom: 0.5px solid var(--border); }
+.hero-kicker {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-kicker::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
+.hero-h { font-family: var(--font-display); font-size: 34px; line-height: 1.1; font-weight: 600; margin-bottom: 1.5rem; }
+.hero-h em { font-style: normal; color: var(--accent); }
+.hero-p { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
+
+@media (max-width: 640px) {
+  .hero-h { font-size: 28px; }
+}
+
+/* --------------------------------------------------------------------------
+   Hero — case-study variant (breadcrumb / project-label / meta-row / tag-row)
+   -------------------------------------------------------------------------- */
+.breadcrumb { font-size: 12px; color: var(--gray-500); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; }
+.breadcrumb a { color: var(--gray-500); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-primary); }
+.breadcrumb span { color: var(--gray-300); }
+
+.project-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.project-label::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
+
+.hero h1 { font-family: var(--font-display); font-size: 37px; width: 100%; line-height: 1.08; font-weight: 600; margin-top: 2rem; margin-bottom: 1.5rem; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-desc { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
+
+.meta-row { display: flex; gap: 3rem; flex-wrap: wrap; }
+.meta-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 4px; }
+.meta-value { font-size: 13px; font-weight: 500; color: var(--color-primary); }
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 1.5rem 0; }
+.tag {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 0.5px solid var(--gray-300);
+  color: var(--gray-500);
+}
+
+.hero-img { margin: 2.5rem 0 0; border-radius: var(--radius-lg); overflow: hidden; border: 0.5px solid var(--border); }
+.hero-img img { width: 100%; display: block; border-radius: var(--radius-lg); }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 36px; }
+  .meta-row { gap: 1.5rem; }
+}
+
+/* --------------------------------------------------------------------------
+   Sections & body copy
+   -------------------------------------------------------------------------- */
+section { padding: 3rem 0; border-bottom: 0.5px solid var(--border); }
+section:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+/* .section-label (homepage/about) and .section-kicker (case studies) serve
+   the same role — kept both selectors since both are used by existing
+   markup, styled identically except kicker uses the accent color. */
+.section-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 1.25rem; }
+.section-kicker { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+
+.section-title { font-family: var(--font-display); font-size: 36px; font-weight: 600; margin-bottom: 1.5rem; line-height: 1.15; }
+.section-title em { font-style: normal; color: var(--accent); }
+.section-subtitle { font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-primary); margin: 2rem 0 0.75rem; }
+
+p.body { font-size: 15px; line-height: 1.8; color: var(--gray-700); margin-bottom: 1.25rem; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+.two-col-wide { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: start; }
+
+.sec-head { display: flex; justify-content: space-between; align-items: baseline; margin: 3rem 0 1.5rem; }
+.sec-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); }
+
+@media (max-width: 640px) {
+  section { padding: 1.4rem 0; }
+  .two-col, .two-col-wide { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* --------------------------------------------------------------------------
+   Phase labels — numbered chapter markers for long-form case-study flow
+   (Background, Empathize, Define, ... Conclusion). Sits above each phase's
+   h2. Text stays muted so the numbering reads as structural, not
+   decorative; the small tick keeps continuity with .hero-kicker/.project-label.
+   -------------------------------------------------------------------------- */
+.phase-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.phase-label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Extra top spacing on phase sections so each transition reads as a clear
+   chapter break rather than a heading in a continuous scroll. Only
+   padding-top is overridden here — padding-bottom (and the :last-of-type
+   zeroing that removes trailing space before the footer) still come from
+   the base `section` rule above. */
+section.phase { padding-top: 4.5rem; }
+
+@media (max-width: 640px) {
+  section.phase { padding-top: 2.5rem; }
+}
+
+/* --------------------------------------------------------------------------
+   Lists — findings / how-might-we / future enhancements
+   -------------------------------------------------------------------------- */
+.findings { list-style: none; margin: 1rem 0; }
+.findings li {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--gray-700);
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--border);
+  display: flex;
+  gap: 12px;
+}
+.findings li::before { content: '—'; color: var(--accent); flex-shrink: 0; font-weight: 500; }
+.findings li:first-child { border-top: 0.5px solid var(--border); }
+
+.hmw-list { list-style: none; margin: 1rem 0; display: flex; flex-direction: column; }
+.hmw-list li {
+  font-size: 14px;
+  color: var(--gray-700);
+  padding: 0.85rem 0;
+  border-bottom: 0.5px solid var(--border);
+}
+.hmw-list li:first-child { border-top: 0.5px solid var(--border); }
+
+.future { list-style: none; margin: 1rem 0; display: flex; flex-direction: column; gap: 10px; }
+.future li {
+  font-size: 14px;
+  color: var(--gray-700);
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.future li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+.future li:first-child { border-top: 0.5px solid var(--border); }
+
+/* --------------------------------------------------------------------------
+   Card grids — feature / change / worked / stat
+   -------------------------------------------------------------------------- */
+.features { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 1.5rem 0; }
+.feature-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
+.feature-num { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--accent); line-height: 1; margin-bottom: 0.5rem; }
+.feature-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.35rem; }
+.feature-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
+
+/* .changes: base grid has NO automatic last-child spanning. The old
+   caresync/unveil markup hard-coded `:last-child { grid-column: 1/-1 }` to
+   center an odd 3rd card full-width — applying that globally would break
+   skillbridge's 2-card layout by force-stacking its 2nd card. Use the
+   .change-card--full modifier explicitly on whichever card should span. */
+.changes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.5rem 0; }
+.change-card--full { grid-column: 1 / -1; }
+.change-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
+.change-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.5rem; }
+.change-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
+
+.worked { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 1.5rem 0; }
+.worked-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
+.worked-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.4rem; }
+.worked-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
+
+.stat-card { padding: 1.25rem; text-align: center; }
+.stat-n { font-family: var(--font-display); font-size: 36px; font-weight: 500; color: var(--accent); line-height: 1; margin-bottom: 4px; }
+.stat-l { font-size: 11px; color: var(--gray-500); letter-spacing: 0.04em; }
+
+@media (max-width: 640px) {
+  .features, .changes, .worked { grid-template-columns: 1fr; }
+  .change-card--full { grid-column: auto; }
+}
+
+/* --------------------------------------------------------------------------
+   Homepage project grid
+   -------------------------------------------------------------------------- */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 5rem; }
+.card {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  background: var(--gray-50);
+  border: 0.5px solid var(--border);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1); }
+.card-img { height: 210px; background-size: cover; background-position: center; position: relative; }
+.card-img::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0); transition: background 0.25s ease; }
+.card:hover .card-img::after { background: rgba(0, 0, 0, 0.21); }
+.card-body { padding: 1.25rem 1.4rem 1.4rem; }
+.card-title { font-size: 17px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.4rem; }
+.card-desc { font-size: 13px; line-height: 1.65; color: var(--gray-700); margin-bottom: 1rem; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------------------------------------
+   About page — skills & experience list
+   -------------------------------------------------------------------------- */
+.skills-wrap { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 1.5rem; }
+.skill-tag { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; border: 0.5px solid var(--gray-300); color: var(--gray-700); }
+
+.exp-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 0; }
+.exp-list { list-style: none; }
+.exp-item { padding: 12px 0; border-bottom: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: baseline; }
+.exp-item:first-child { border-top: 0.5px solid var(--border); }
+.exp-co { font-size: 14px; font-weight: 500; color: var(--color-primary); }
+.exp-role { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+.exp-yr { font-size: 11px; color: var(--gray-500); }
+
+.cta-block {
+  background: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.cta-block p { font-size: 20px; font-family: var(--font-display); color: var(--color-white); font-weight: 600; }
+.cta-block em { font-style: normal; color: rgba(255, 255, 255, 0.5); }
+.cta-btns { display: flex; gap: 10px; flex-shrink: 0; }
+.cta-btn { font-size: 13px; font-weight: 500; padding: 10px 20px; border-radius: 100px; cursor: pointer; text-decoration: none; transition: all 0.15s; }
+.cta-btn.outline { border: 0.5px solid rgba(255, 255, 255, 0.3); background: transparent; color: var(--color-white); }
+.cta-btn.outline:hover { border-color: var(--color-white); }
+.cta-btn.filled { background: var(--color-white); color: var(--color-primary); border: none; }
+.cta-btn.filled:hover { opacity: 0.85; }
+
+@media (max-width: 640px) {
+  .cta-block { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+/* --------------------------------------------------------------------------
+   Images, captions, Figma links, quote blocks, CTA-to-prototype
+   -------------------------------------------------------------------------- */
+.img-block { margin: 1.5rem 0; border-radius: var(--radius-lg); overflow: hidden; border: 0.5px solid var(--border); background: var(--gray-50); }
+.img-block img { width: 100%; display: block; border-radius: var(--radius-lg); cursor: zoom-in; }
+.img-caption { font-size: 11px; color: var(--gray-500); text-align: center; margin-top: 8px; letter-spacing: 0.04em; }
+
+.figma-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+  border: 0.5px solid var(--gray-300);
+  border-radius: 100px;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.15s;
+}
+.figma-link:hover { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-white); }
+
+.pov {
+  margin: 1.5rem 0;
+}
+.pov p { font-family: var(--font-display); font-size: 20px; line-height: 1.5; color: var(--color-primary); font-style: italic; }
+
+.proto-cta { background: var(--color-primary); border-radius: var(--radius-lg); padding: 3rem; text-align: center; margin-top: 2rem; }
+.proto-cta p { font-size: 14px; color: rgba(255, 255, 255, 0.6); margin-bottom: 1.25rem; }
+.proto-cta a { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; background: var(--color-white); color: var(--color-primary); border-radius: 100px; padding: 12px 24px; text-decoration: none; }
+.proto-cta a:hover { opacity: 0.85; }
+
+.project-nav { display: flex; justify-content: space-between; align-items: center; padding: 3rem 0 0; border-top: 0.5px solid var(--border); margin-top: 4rem; }
+
+/* --------------------------------------------------------------------------
+   Big Picture — short always-visible summary block (progressive disclosure)
+   -------------------------------------------------------------------------- */
+.big-picture { font-size: 17px; line-height: 1.7; color: var(--color-primary); max-width: 640px; }
+
+/* --------------------------------------------------------------------------
+   Key metrics strip — reuses .stat-card/.stat-n/.stat-l, just adds the grid
+   -------------------------------------------------------------------------- */
+.metrics-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 1.5rem 0 2rem; }
+
+@media (max-width: 640px) {
+  .metrics-strip { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------------------------------------
+   Key Decisions — always-visible callout cards
+   -------------------------------------------------------------------------- */
+.decisions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 1.5rem 0; }
+.decision-card {
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.decision-title { font-size: 14px; font-weight: 500; color: var(--accent); margin-bottom: 0.4rem; }
+.decision-desc { font-size: 13px; line-height: 1.65; color: var(--gray-700); }
+
+@media (max-width: 640px) {
+  .decisions-grid { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------------------------------------
+   Disclosure — expandable <details>/<summary> sections (progressive
+   disclosure pattern). Collapsed by default; each summary shows the
+   section name plus a one-line preview of its key insight.
+   -------------------------------------------------------------------------- */
+.disclosure {
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.disclosure summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 14px;
+  color: var(--color-primary);
+  transition: background 0.15s;
+}
+.disclosure summary::-webkit-details-marker { display: none; }
+.disclosure summary::marker { content: ''; }
+.disclosure summary:hover { background: var(--gray-100); }
+.disclosure summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.disclosure-title { font-weight: 500; }
+.disclosure-preview { font-weight: 400; color: var(--gray-500); }
+
+.disclosure summary .chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--gray-500);
+  transition: transform 0.2s ease;
+}
+.disclosure[open] > summary .chevron { transform: rotate(180deg); }
+.disclosure[open] > summary { border-bottom: 0.5px solid var(--border); background: var(--gray-100); }
+
+.disclosure-body { padding: 1.5rem 1.4rem 1.75rem; }
+.disclosure-body p { max-width: 680px; }
+.disclosure-body p.body:last-child,
+.disclosure-body ul:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   Lightbox (case-study image zoom)
+   -------------------------------------------------------------------------- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5); }
+.lightbox-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.2); }
+.lightbox-caption {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

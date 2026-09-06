@@ -1,0 +1,698 @@
+[
+  {
+    "filename": "shared-peter-stamenoff-logo.avif",
+    "source_file": "index.html",
+    "context": "Peter Stamenoff Logo",
+    "mime": "image/avif",
+    "bytes": 2275,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "index-unveil.avif",
+    "source_file": "index.html",
+    "context": "Unveil",
+    "mime": "image/avif",
+    "bytes": 53628,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "index-skillbridge.avif",
+    "source_file": "index.html",
+    "context": "Skillbridge",
+    "mime": "image/avif",
+    "bytes": 64301,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "index-chase-receipt-scanner.avif",
+    "source_file": "index.html",
+    "context": "Chase Receipt Scanner",
+    "mime": "image/avif",
+    "bytes": 36543,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "index-caresync.avif",
+    "source_file": "index.html",
+    "context": "CareSync",
+    "mime": "image/avif",
+    "bytes": 50261,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "shared-peter-stamenoff-logo.avif",
+    "source_file": "about.html",
+    "context": "Peter Stamenoff Logo",
+    "mime": "image/avif",
+    "bytes": 2275,
+    "dedup_of_existing_file": true,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "shared-peter-stamenoff-logo.avif",
+    "source_file": "caresync.html",
+    "context": "Peter Stamenoff Logo",
+    "mime": "image/avif",
+    "bytes": 2275,
+    "dedup_of_existing_file": true,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-caresync-hero.avif",
+    "source_file": "caresync.html",
+    "context": "CareSync Hero",
+    "mime": "image/avif",
+    "bytes": 100562,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-affinity-map.avif",
+    "source_file": "caresync.html",
+    "context": "Affinity Map",
+    "mime": "image/avif",
+    "bytes": 66842,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-competitive-analysis.avif",
+    "source_file": "caresync.html",
+    "context": "Competitive Analysis",
+    "mime": "image/avif",
+    "bytes": 37318,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-rose-the-everyday-caregiver.avif",
+    "source_file": "caresync.html",
+    "context": "Rose \u2014 The Everyday Caregiver",
+    "mime": "image/avif",
+    "bytes": 75977,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-erica-the-busy-family-manager.avif",
+    "source_file": "caresync.html",
+    "context": "Erica \u2014 The Busy Family Manager",
+    "mime": "image/avif",
+    "bytes": 77267,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-caresync-sitemap.avif",
+    "source_file": "caresync.html",
+    "context": "CareSync Sitemap",
+    "mime": "image/avif",
+    "bytes": 44152,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-caresync-user-flow.avif",
+    "source_file": "caresync.html",
+    "context": "CareSync User Flow",
+    "mime": "image/avif",
+    "bytes": 12746,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-low-fidelity-wireframes.avif",
+    "source_file": "caresync.html",
+    "context": "Low-Fidelity Wireframes",
+    "mime": "image/avif",
+    "bytes": 61786,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-mid-fidelity-wireframes.avif",
+    "source_file": "caresync.html",
+    "context": "Mid-Fidelity Wireframes",
+    "mime": "image/avif",
+    "bytes": 62992,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-high-fidelity-wireframes.avif",
+    "source_file": "caresync.html",
+    "context": "High-Fidelity Wireframes",
+    "mime": "image/avif",
+    "bytes": 94939,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-brand-style-tile.avif",
+    "source_file": "caresync.html",
+    "context": "Brand Style Tile",
+    "mime": "image/avif",
+    "bytes": 45955,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-ui-component-library.avif",
+    "source_file": "caresync.html",
+    "context": "UI Component Library",
+    "mime": "image/avif",
+    "bytes": 80662,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-copy-precision-change.avif",
+    "source_file": "caresync.html",
+    "context": "Copy Precision Change",
+    "mime": "image/avif",
+    "bytes": 64850,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-recording-control-change.avif",
+    "source_file": "caresync.html",
+    "context": "Recording Control Change",
+    "mime": "image/avif",
+    "bytes": 62317,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-view-summary-change.avif",
+    "source_file": "caresync.html",
+    "context": "View Summary Change",
+    "mime": "image/avif",
+    "bytes": 63607,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "caresync-caresync-final-screens-8-screens.avif",
+    "source_file": "caresync.html",
+    "context": "CareSync Final Screens \u2014 8 screens",
+    "mime": "image/avif",
+    "bytes": 151290,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "shared-peter-stamenoff-logo.avif",
+    "source_file": "skillbridge.html",
+    "context": "Peter Stamenoff Logo",
+    "mime": "image/avif",
+    "bytes": 2275,
+    "dedup_of_existing_file": true,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-skillbridge-hero.webp",
+    "source_file": "skillbridge.html",
+    "context": "Skillbridge Hero",
+    "mime": "image/webp",
+    "bytes": 123164,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-affinity-map.webp",
+    "source_file": "skillbridge.html",
+    "context": "Affinity Map",
+    "mime": "image/webp",
+    "bytes": 92124,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-competitive-analysis.webp",
+    "source_file": "skillbridge.html",
+    "context": "Competitive Analysis",
+    "mime": "image/webp",
+    "bytes": 13188,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-marcus-lee-the-adaptive-improver.webp",
+    "source_file": "skillbridge.html",
+    "context": "Marcus Lee \u2014 The Adaptive Improver",
+    "mime": "image/webp",
+    "bytes": 63986,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-emily-chen-the-career-changer.webp",
+    "source_file": "skillbridge.html",
+    "context": "Emily Chen \u2014 The Career Changer",
+    "mime": "image/webp",
+    "bytes": 55764,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-skillbridge-sitemap.webp",
+    "source_file": "skillbridge.html",
+    "context": "Skillbridge Sitemap",
+    "mime": "image/webp",
+    "bytes": 23352,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-skillbridge-user-flow.webp",
+    "source_file": "skillbridge.html",
+    "context": "Skillbridge User Flow",
+    "mime": "image/webp",
+    "bytes": 43640,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-mid-fidelity-wireframes.webp",
+    "source_file": "skillbridge.html",
+    "context": "Mid-Fidelity Wireframes",
+    "mime": "image/webp",
+    "bytes": 77596,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-high-fidelity-screens.webp",
+    "source_file": "skillbridge.html",
+    "context": "High-Fidelity Screens",
+    "mime": "image/webp",
+    "bytes": 167748,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-skillbridge-brand-system.webp",
+    "source_file": "skillbridge.html",
+    "context": "Skillbridge Brand System",
+    "mime": "image/webp",
+    "bytes": 28436,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-ui-component-library.webp",
+    "source_file": "skillbridge.html",
+    "context": "UI Component Library",
+    "mime": "image/webp",
+    "bytes": 108122,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-weekly-goal-language-change.webp",
+    "source_file": "skillbridge.html",
+    "context": "Weekly Goal Language Change",
+    "mime": "image/webp",
+    "bytes": 138422,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-confirmation-screen-change.webp",
+    "source_file": "skillbridge.html",
+    "context": "Confirmation Screen Change",
+    "mime": "image/webp",
+    "bytes": 74882,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "skillbridge-skillbridge-8-final-screens.webp",
+    "source_file": "skillbridge.html",
+    "context": "Skillbridge 8 Final Screens",
+    "mime": "image/webp",
+    "bytes": 288174,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "shared-peter-stamenoff-logo.avif",
+    "source_file": "unveil.html",
+    "context": "Peter Stamenoff Logo",
+    "mime": "image/avif",
+    "bytes": 2275,
+    "dedup_of_existing_file": true,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "unveil-hero-image-upload-to-replace.webp",
+    "source_file": "unveil.html",
+    "context": "Hero image \u2014 upload to replace",
+    "mime": "image/webp",
+    "bytes": 140626,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Three Unveil app screens showing a hike activity card with map, the Explore feed with suggested activities, and an event preview",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-affinity-map-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Affinity map \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 120682,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Affinity map clustering user interview quotes into themes like trust, social pressure, activity discovery, and the effort of putting yourself out there",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-competitive-analysis-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Competitive analysis \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 18168,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Logos of the six competitors analyzed: Nextdoor, Sonaara, Bumble BFF, Partiful, Eventbrite, and Meetup",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-alex-primary-persona.webp",
+    "source_file": "unveil.html",
+    "context": "Alex \u2014 Primary Persona",
+    "mime": "image/webp",
+    "bytes": 119286,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "unveil-dannie-secondary-persona.webp",
+    "source_file": "unveil.html",
+    "context": "Dannie \u2014 Secondary Persona",
+    "mime": "image/webp",
+    "bytes": 115114,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false
+  },
+  {
+    "filename": "unveil-sitemap-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Sitemap \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 11578,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Unveil sitemap showing the Discover/Home page branching to Activity Detail, Host an Activity, Activities with chat threads, and Profile",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-user-flows-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "User flows \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 68550,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Three user flow diagrams: account setup and onboarding, hosting an activity, and joining an activity",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-mid-fidelity-wireframes-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Mid-fidelity wireframes \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 99014,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, activity detail, and Chat screens",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-high-fidelity-wireframes-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "High-fidelity wireframes \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 174456,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "High-fidelity screens for Explore, Preview Event, Event Details, My Events, My Info, and identity confirmation",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-brand-style-tile-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Brand style tile \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 77736,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Unveil brand style tile showing typeface, color palette, logo lockups, and onboarding screen mockups",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-ui-component-library-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "UI component library \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 95708,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Unveil UI component library covering navigation, buttons, icons, toggles, dropdowns, and activity cards",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-timing-change-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Timing change \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 167966,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Before and after comparison showing the suggested-activity card updated with an 'In planning' status and more immediate copy",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-language-change-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Language change \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 138106,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Before and after comparison showing 'Group comfort level' relabeled to 'Group size' with added helper text",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "unveil-final-screens-upload-image.webp",
+    "source_file": "unveil.html",
+    "context": "Final screens \u2014 upload image",
+    "mime": "image/webp",
+    "bytes": 222384,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "fixed_alt_text": "Eight final Unveil screens: My Info, Explore, My Events, activity detail with map, event details, profile preview, identity confirmation, and event preview",
+    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+  },
+  {
+    "filename": "chase-hero.webp",
+    "source_file": "chase.html",
+    "context": "Hero \u2014 Chase Receipt Scanner, 4 phones",
+    "mime": "image/webp",
+    "bytes": 210522,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Hero Home Chase- long 4 phones copy.webp",
+    "used_in_page_section": "Snapshot header (hero)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "6000x1533"
+  },
+  {
+    "filename": "chase-hero-app-alt.webp",
+    "source_file": "chase.html",
+    "context": "Hero (alternate) \u2014 Chase app",
+    "mime": "image/webp",
+    "bytes": 211480,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Hero Chase app.webp",
+    "used_in_page_section": null,
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "3348x1475"
+  },
+  {
+    "filename": "chase-hero-home-alt.webp",
+    "source_file": "chase.html",
+    "context": "Hero (alternate) \u2014 long crop",
+    "mime": "image/webp",
+    "bytes": 214300,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Hero Home Chase- long copy.webp",
+    "used_in_page_section": null,
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "6000x1533"
+  },
+  {
+    "filename": "chase-affinity-map.webp",
+    "source_file": "chase.html",
+    "context": "Affinity map",
+    "mime": "image/webp",
+    "bytes": 612532,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Receipt Scanner Integration (Chase App Concept) copy.webp",
+    "used_in_page_section": "User Interviews (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "7098x1698"
+  },
+  {
+    "filename": "chase-competitive-analysis.webp",
+    "source_file": "chase.html",
+    "context": "Competitive analysis grid",
+    "mime": "image/webp",
+    "bytes": 77324,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Competitive Analysis.webp",
+    "used_in_page_section": "Competitive Analysis (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "2558x502"
+  },
+  {
+    "filename": "chase-competitive-analysis-mobile.webp",
+    "source_file": "chase.html",
+    "context": "Competitive analysis, mobile view",
+    "mime": "image/webp",
+    "bytes": 221222,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Competitive Analysis \u2014Mobile copy.webp",
+    "used_in_page_section": "Competitive Analysis (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "2674x1377"
+  },
+  {
+    "filename": "chase-amanda-torres-the-busy-family-manager.webp",
+    "source_file": "chase.html",
+    "context": "Persona: Amanda Torres",
+    "mime": "image/webp",
+    "bytes": 341804,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Persona_ Amanda Torres \u2014 The Busy Family Manager copy.webp",
+    "used_in_page_section": "Persona & Problem Framing (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "1739x1699"
+  },
+  {
+    "filename": "chase-user-flow.webp",
+    "source_file": "chase.html",
+    "context": "User flow diagram",
+    "mime": "image/webp",
+    "bytes": 146554,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Receipt Scanner Integration -userflow copy.webp",
+    "used_in_page_section": "Feature Prioritization & User Flow (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "6074x1510"
+  },
+  {
+    "filename": "chase-mid-fidelity-wireframes.webp",
+    "source_file": "chase.html",
+    "context": "Mid-fidelity wireframes",
+    "mime": "image/webp",
+    "bytes": 1027756,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Receipt Scanner Mid-Fidelity Wireframes-white.webp",
+    "used_in_page_section": "Mid-Fi Testing & Findings (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "9044x2748"
+  },
+  {
+    "filename": "chase-high-fidelity-screens.webp",
+    "source_file": "chase.html",
+    "context": "High-fidelity screens",
+    "mime": "image/webp",
+    "bytes": 956748,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "High-fidelity.webp",
+    "used_in_page_section": "Final Design (always-visible)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "9046x2749"
+  },
+  {
+    "filename": "chase-ui-elements.webp",
+    "source_file": "chase.html",
+    "context": "Chase UI component elements",
+    "mime": "image/webp",
+    "bytes": 48032,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Chase UI Elements.webp",
+    "used_in_page_section": "Final Design (always-visible)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "2134x764"
+  },
+  {
+    "filename": "chase-iphone-with-reminder.png",
+    "source_file": "chase.html",
+    "context": "iPhone screen \u2014 reminder confirmation",
+    "mime": "image/png",
+    "bytes": 647269,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "iPhone with reminder.png",
+    "used_in_page_section": "Design Iterations (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "1926x1812"
+  },
+  {
+    "filename": "chase-iphone-post-receipt.png",
+    "source_file": "chase.html",
+    "context": "iPhone screen \u2014 post-receipt / labeling",
+    "mime": "image/png",
+    "bytes": 591041,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "iPhone post receipt.png",
+    "used_in_page_section": "Design Iterations (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "1926x1812"
+  },
+  {
+    "filename": "chase-iphone-cta-location-change.png",
+    "source_file": "chase.html",
+    "context": "iPhone screen \u2014 CTA hierarchy change",
+    "mime": "image/png",
+    "bytes": 706897,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "iPhone CTA location chage.png",
+    "used_in_page_section": "Design Iterations (expandable)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "1926x1812"
+  },
+  {
+    "filename": "chase-8-final-screens.webp",
+    "source_file": "chase.html",
+    "context": "8 final selected screens",
+    "mime": "image/webp",
+    "bytes": 957838,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "original_wix_filename": "Chase 8 screens.webp",
+    "used_in_page_section": "Final Design (always-visible)",
+    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
+    "dimensions": "4414x4207"
+  }
+]

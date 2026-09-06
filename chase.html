@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chase Receipt Scanner — Peter Stamenoff</title>
+  <meta name="description" content="A concept feature reimagining Chase's discontinued receipt capture tool, with camera-first scanning, automatic receipt-to-transaction matching, and contextual warranty and return reminders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="theme-chase">
+
+<nav>
+  <a href="index.html" class="logo">
+    <img src="assets/images/shared-peter-stamenoff-logo.avif" alt="Peter Stamenoff Logo">
+    Peter Stamenoff
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mailto:hello@peterstamenoff.com" class="nav-cta">Get in touch</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="project-label">Capstone Project: Add a Feature</p>
+    <div class="hero-img"><img src="assets/images/chase-hero.webp" alt="Chase Receipt Scanner concept shown across four phone screens" style="width:100%;display:block;border-radius:8px;"></div>
+    <h1 style="margin-top:2rem;font-size:37px;width:100%">Chase Receipt Scanner — <em>Effortless</em> Receipt Capture</h1>
+    <p class="hero-desc">Chase Receipt Scanner is a concept feature that reimagines Chase's discontinued receipt capture tool, allowing users to scan, upload, or forward receipts that are automatically matched to transactions to provide better support for returns, warranties, and recordkeeping without added complexity.</p>
+    <div class="meta-row">
+      <div><div class="meta-label">My Role</div><div class="meta-value">UX/UI Design</div></div>
+      <div><div class="meta-label">Timeline</div><div class="meta-value">2-week project (Oct–Nov 2025)</div></div>
+      <div><div class="meta-label">Tools</div><div class="meta-value">Figma, FigJam, Photoshop, Illustrator, ChatGPT</div></div>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Fintech</span>
+      <span class="tag">Mobile UX</span>
+      <span class="tag">UI Design</span>
+      <span class="tag">Capstone Project</span>
+    </div>
+  </div>
+
+  <!-- BACKGROUND -->
+  <section class="phase">
+    <p class="phase-label">01 — Background</p>
+    <h2 class="section-title">Why <em>Chase Receipt Scanner?</em></h2>
+    <p class="body">I've always struggled to organize receipts and find them later for returns, warranty claims, or recordkeeping. As a long-time Chase user, I saw an opportunity for a more seamless in-app receipt capture feature. My vision was a single system where users could upload or forward email receipts, scan paper ones, automatically match them to transactions, and set warranty or expiration reminders.</p>
+  </section>
+
+  <!-- EMPATHIZE -->
+  <section class="phase">
+    <p class="phase-label">02 — Empathize</p>
+    <h2 class="section-title">User <em>Interviews</em></h2>
+    <p class="section-subtitle">Goal</p>
+    <p class="body">Through user interviews, I wanted to understand how users currently manage receipts, where the biggest pain points exist, and what they expect from a built-in receipt management feature in a banking app.</p>
+    <p class="section-subtitle" style="margin-top:1.5rem">Approach</p>
+    <p class="body">I conducted 6 semi-structured user interviews, each lasting 20–25 minutes, with participants of varied ages, professions, and household types.</p>
+
+    <div class="img-block" style="margin-top:1.5rem"><img src="assets/images/chase-affinity-map.webp" alt="Affinity map synthesizing findings from Chase receipt management user interviews" style="width:100%;display:block;border-radius:8px;"></div>
+    <p class="img-caption">Affinity Map</p>
+    <a class="figma-link" href="https://www.figma.com/board/XcHosFXuVcCuM2mGq7tql9/Receipt-Scanner-Integration--Chase-App-Concept-?node-id=0-1" target="_blank"><svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5z" fill="#1ABCFE"/><path d="M9.5 47.5A9.5 9.5 0 0 1 19 38h9.5v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/><path d="M19 0H9.5A9.5 9.5 0 0 0 9.5 19H19V0z" fill="#FF7262"/><path d="M28.5 0H19v19h9.5a9.5 9.5 0 0 0 0-19z" fill="#F24E1E"/><path d="M9.5 19A9.5 9.5 0 0 0 9.5 38H19V19H9.5z" fill="#A259FF"/></svg> View Affinity Map</a>
+
+    <p class="section-subtitle" style="margin-top:2rem">Key Findings</p>
+    <ul class="findings">
+      <li><strong>Capture Experience</strong> Users want capturing a receipt to be quick, familiar, and flexible.</li>
+      <li><strong>Automation &amp; Smart Matching</strong> Automation is the most desired capability. Users expect automatic recognition, matching, and minimal manual tagging.</li>
+      <li><strong>Organization &amp; Visibility</strong> Users want a single, centralized "home" for receipts inside their banking app.</li>
+      <li><strong>Reminders &amp; Warranties</strong> Useful only for expensive or time-bound items.</li>
+      <li><strong>Trust, Security &amp; Control</strong> Users trust their bank more than any other app for sensitive data.</li>
+      <li><strong>Simplicity &amp; Timing</strong> Users take action only if it's fast and fits habits.</li>
+    </ul>
+
+    <p class="section-subtitle" style="margin-top:2rem">Competitive Analysis</p>
+    <p class="body">I conducted a competitive analysis of the receipt management ecosystem, evaluating Expensify, Shoeboxed, QuickBooks, American Express, and Warranty Keeper / ReceiptBox.</p>
+    <div class="img-block"><img src="assets/images/chase-competitive-analysis.webp" alt="Competitive analysis comparing Expensify, Shoeboxed, QuickBooks, American Express, and Warranty Keeper" style="width:100%;display:block;border-radius:8px;"></div>
+    <div class="img-block"><img src="assets/images/chase-competitive-analysis-mobile.webp" alt="Competitive analysis, mobile app comparison view" style="width:100%;display:block;border-radius:8px;"></div>
+    <p class="body" style="margin-top:1.25rem"><strong>Opportunity for Chase:</strong> Most competitors focus on business users, and none combine receipt-to-transaction matching with warranty or return reminders within a trusted banking ecosystem.</p>
+  </section>
+
+  <!-- DEFINE -->
+  <section class="phase">
+    <p class="phase-label">03 — Define</p>
+    <h2 class="section-title">User <em>Persona</em></h2>
+    <p class="body">Based on my research, I defined a primary user persona: Amanda Torres, "The Busy Family Manager," a busy, tech-savvy customer who actively manages family finances and expects receipts to be captured easily on the go and securely stored within the Chase app, so she can access proof of purchase without extra effort when returns, warranties, or disputes arise.</p>
+    <div class="img-block" style="max-width:60%;margin:1.5rem auto 0"><img src="assets/images/chase-amanda-torres-the-busy-family-manager.webp" alt="Persona: Amanda Torres, The Busy Family Manager" style="width:100%;display:block;border-radius:8px;"></div>
+    <p class="img-caption">Amanda Torres, The Busy Family Manager</p>
+
+    <p class="section-subtitle" style="margin-top:2rem">POV Statement</p>
+    <div class="pov">
+      <p>Users need a fast, familiar way to capture receipts without disrupting their routine. They also value reminders only when they're contextually relevant, such as for warranties, big purchases, or time-sensitive returns.</p>
+    </div>
+
+    <p class="section-subtitle" style="margin-top:2rem">How Might We Questions</p>
+    <ul class="hmw-list">
+      <li>How might we make it easier for users to capture receipts?</li>
+      <li>How might we help users set important reminders in a user friendly way?</li>
+    </ul>
+  </section>
+
+  <!-- IDEATE -->
+  <section class="phase">
+    <p class="phase-label">04 — Ideate</p>
+    <h2 class="section-title">Priority <em>Features</em></h2>
+    <p class="body">Based on insights from user interviews, competitive analysis, and the defined user persona, I identified key pain points and translated them into a focused set of MVP features.</p>
+    <div class="features">
+      <div class="feature-card"><div class="feature-num">01</div><div class="feature-title">Instant Photo Capture</div><div class="feature-desc">Capture receipts instantly using the same interface as mobile check deposit.</div></div>
+      <div class="feature-card"><div class="feature-num">02</div><div class="feature-title">Warranty Tracker</div><div class="feature-desc">Track warranty info and alert users before expiration.</div></div>
+      <div class="feature-card"><div class="feature-num">03</div><div class="feature-title">Auto-Matching Engine</div><div class="feature-desc">OCR automatically links receipt data to the correct transaction by date, amount, and merchant.</div></div>
+    </div>
+
+    <p class="section-subtitle" style="margin-top:2.5rem">User Flow</p>
+    <p class="body">I created a user flow to define how the feature would work end-to-end, mapping the experience from scanning a receipt to attaching it to a transaction and accessing it later, with a focus on reducing friction, minimizing steps, and maintaining speed and clarity.</p>
+    <div class="img-block"><img src="assets/images/chase-user-flow.webp" alt="Chase Receipt Scanner user flow, from capture to transaction attachment" style="width:100%;display:block;border-radius:8px;"></div>
+  </section>
+
+  <!-- DESIGN -->
+  <section class="phase">
+    <p class="phase-label">05 — Design</p>
+    <h2 class="section-title">Mid-Fidelity <em>Wireframes</em></h2>
+    <p class="body">I created mid-fidelity wireframes and ran a moderated, remote usability test with five participants to validate the end-to-end flow before moving into high-fidelity.</p>
+    <div class="img-block"><img src="assets/images/chase-mid-fidelity-wireframes.webp" alt="Chase Receipt Scanner mid-fidelity wireframes" style="width:100%;display:block;border-radius:8px;"></div>
+    <a class="figma-link" href="https://www.figma.com/design/fAdKPArhzzoqtjWyR5xKI4/Receipt-Scanner-Integration--Chase-App-Concept-?node-id=8-819" target="_blank"><svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5z" fill="#1ABCFE"/><path d="M9.5 47.5A9.5 9.5 0 0 1 19 38h9.5v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/><path d="M19 0H9.5A9.5 9.5 0 0 0 9.5 19H19V0z" fill="#FF7262"/><path d="M28.5 0H19v19h9.5a9.5 9.5 0 0 0 0-19z" fill="#F24E1E"/><path d="M9.5 19A9.5 9.5 0 0 0 9.5 38H19V19H9.5z" fill="#A259FF"/></svg> View Mid-Fidelity Wireframes</a>
+
+    <p class="section-subtitle" style="margin-top:2.5rem">What Was Tested</p>
+    <ul class="findings">
+      <li>The "Add a receipt" flow: photo capture, confirmation, and optional reminders.</li>
+      <li>Early ideas for warranty and return reminders.</li>
+      <li>Clarity of receipt capture and warranty setup confirmation messages.</li>
+    </ul>
+
+    <p class="section-subtitle" style="margin-top:2.5rem">Key Findings — Mid Fidelity</p>
+    <ul class="findings">
+      <li><strong>End state is missing</strong> Users need to clearly see where the receipt lives after confirmation; without this, the flow feels incomplete.</li>
+      <li><strong>Retrieval paths are unclear</strong> Scanning is easy to find, but users expect receipts to live in Transaction Details and a centralized Receipt Center.</li>
+      <li><strong>Camera layout should follow check deposit patterns</strong> Users expect stacked front and back capture; the side-by-side layout felt cramped.</li>
+      <li><strong>Back of receipt should be optional</strong> Many users questioned its necessity, suggesting an "Add another page" option instead.</li>
+      <li><strong>Predefined quick-action reminders preferred</strong> Users favored quick-action reminder options (30, 60, 90 days) rather than manual entry.</li>
+    </ul>
+  </section>
+
+  <!-- PROTOTYPE -->
+  <section class="phase">
+    <p class="phase-label">06 — Prototype</p>
+    <h2 class="section-title">High-Fidelity <em>Design</em></h2>
+    <p class="body">Based on mid-fidelity usability feedback, I revised several screens and introduced a new dashboard state that clearly confirms when receipts and reminders have been successfully added.</p>
+    <div class="img-block"><img src="assets/images/chase-high-fidelity-screens.webp" alt="Chase Receipt Scanner high-fidelity screens" style="width:100%;display:block;border-radius:8px;"></div>
+    <a class="figma-link" href="https://www.figma.com/design/fAdKPArhzzoqtjWyR5xKI4/Receipt-Scanner-Integration--Chase-App-Concept-?node-id=33-2384" target="_blank"><svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5z" fill="#1ABCFE"/><path d="M9.5 47.5A9.5 9.5 0 0 1 19 38h9.5v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/><path d="M19 0H9.5A9.5 9.5 0 0 0 9.5 19H19V0z" fill="#FF7262"/><path d="M28.5 0H19v19h9.5a9.5 9.5 0 0 0 0-19z" fill="#F24E1E"/><path d="M9.5 19A9.5 9.5 0 0 0 9.5 38H19V19H9.5z" fill="#A259FF"/></svg> View High-Fidelity Wireframes</a>
+
+    <p class="section-subtitle" style="margin-top:2.5rem">Visual Identity</p>
+    <p class="body">To ensure the Scan a Receipt feature and high-fidelity screens integrated seamlessly with the Chase app, I studied Chase's existing branding, including color usage, typography, and UI patterns, and aligned the designs to the established system. I also designed two new icons, Scan a Receipt and Receipt, that follow the visual style of Chase's existing iconography.</p>
+    <div class="img-block" style="max-width:60%;margin:1.5rem auto 0"><img src="assets/images/chase-ui-elements.webp" alt="Chase UI component elements, including the two new Scan a Receipt and Receipt icons" style="width:100%;display:block;border-radius:8px;"></div>
+    <p class="img-caption">Chase UI Elements</p>
+  </section>
+
+  <!-- USABILITY TESTING -->
+  <section class="phase">
+    <p class="phase-label">07 — Usability Test</p>
+    <h2 class="section-title">Usability <em>Testing</em></h2>
+    <p class="body">The goal of the usability test was to evaluate the clarity, usability, and perceived value of the Receipt Scanner concept within the Chase mobile app. I focused on whether users could easily scan and save receipts, understand where they are stored, and set return or warranty reminders. The study also identified friction points in the core task flows and validated alignment with existing Chase app patterns, language, and visual hierarchy.</p>
+
+    <div class="two-col" style="margin-top:1.5rem">
+      <div>
+        <p class="section-subtitle">Objectives</p>
+        <ul class="findings">
+          <li>Determine if users can find and complete the "Add Receipt" and "Add Receipt + Reminder" flows without assistance.</li>
+          <li>Measure how confident participants feel after saving a receipt or setting a reminder.</li>
+          <li>Observe how users interpret where saved receipts live within the app.</li>
+          <li>Evaluate whether the language and tone feel consistent with Chase's trusted brand voice.</li>
+          <li>Capture qualitative feedback on UI clarity, copy, and feature expectations.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="section-subtitle">Method</p>
+        <ul class="findings">
+          <li><strong>Format:</strong> Prototype walkthrough (moderated via Zoom recording).</li>
+          <li><strong>Participants:</strong> Six users, current or recent Chase users with a mix of digital proficiency.</li>
+          <li><strong>Tasks:</strong> Add a receipt to a recent transaction, then add a receipt and set a reminder for a 30-day return policy.</li>
+          <li><strong>Metrics:</strong> Ease of completion (1–5 scale), confidence in completion, comprehension of reminder, tone and trust perception, and open-ended qualitative feedback.</li>
+          <li><strong>Test Tools:</strong> Figma prototype simulating the Chase mobile app UI with two functional flows.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="section-subtitle" style="margin-top:2rem">Test Flows</p>
+    <ul class="findings">
+      <li><strong>Add a Receipt</strong> Participants simulated scanning or uploading a store receipt to attach to a recent purchase, such as a backpack.</li>
+      <li><strong>Add a Receipt + Reminder</strong> Participants used the same receipt flow, then added a return reminder with prefilled or editable date and method options, such as notification or email.</li>
+    </ul>
+
+    <p class="section-subtitle" style="margin-top:2rem">What Worked Well</p>
+    <p class="body">Usability testing validated the experience as intuitive, low-friction, and aligned with Chase's design patterns. Users quickly understood receipt capture, trusted that receipts were saved, and recognized clear value for returns and warranties.</p>
+    <div class="worked">
+      <div class="worked-card"><div class="worked-title">Camera-first capture</div><div class="worked-desc">Users found the "Scan Receipt" flow familiar and intuitive, often comparing it to mobile check deposit workflows.</div></div>
+      <div class="worked-card"><div class="worked-title">Visual integration</div><div class="worked-desc">Consistent fonts, colors, and tone reinforced trust and alignment with Chase's brand.</div></div>
+      <div class="worked-card"><div class="worked-title">Clear confirmation feedback</div><div class="worked-desc">Success states and visible icons gave users confidence that receipts were saved.</div></div>
+      <div class="worked-card"><div class="worked-title">Minimal friction</div><div class="worked-desc">Once users found the entry point, tasks were completed quickly, with high ease ratings (avg. 4.7/5).</div></div>
+      <div class="worked-card"><div class="worked-title">Strong value perception</div><div class="worked-desc">Participants consistently noted usefulness for returns, warranties, and expense tracking.</div></div>
+    </div>
+
+    <p class="section-subtitle" style="margin-top:2.5rem">Prioritized Changes</p>
+    <p class="body">Based on usability testing, I made three prioritized changes to improve clarity and confidence.</p>
+    <div class="changes">
+      <div class="change-card">
+        <div class="img-block"><img src="assets/images/chase-iphone-with-reminder.png" alt="Confirmation message shown after setting a receipt reminder" style="width:100%;display:block;border-radius:8px;"></div>
+        <div class="change-title" style="margin-top:0.75rem">Reminder Confirmation</div>
+        <div class="change-desc">Added a clear confirmation message after setting the reminder date, addressing feedback that explicit confirmation was needed before saving the reminder (for example, "Reminder added. You'll be notified 5 days before the return deadline.").</div>
+      </div>
+      <div class="change-card">
+        <div class="img-block"><img src="assets/images/chase-iphone-post-receipt.png" alt="Updated receipt storage screen with clearer copy and visual cues" style="width:100%;display:block;border-radius:8px;"></div>
+        <div class="change-title" style="margin-top:0.75rem">Refined Copy &amp; Visual Cues</div>
+        <div class="change-desc">Updated the entry-point label from "Scan Receipt" to "Scan Receipts" to better reflect the action, and improved receipt location visibility by adding a clear text label, "Receipt," alongside the icon.</div>
+      </div>
+      <div class="change-card change-card--full">
+        <div class="img-block" style="max-width:50%;margin:0 auto"><img src="assets/images/chase-iphone-cta-location-change.png" alt="Reordered CTA hierarchy prioritizing Save Receipt over Add Receipt Reminder" style="width:100%;display:block;border-radius:8px;"></div>
+        <div class="change-title" style="margin-top:0.75rem">CTA Hierarchy</div>
+        <div class="change-desc">Several users noted that the "Add Receipt Reminder" button overshadowed the primary "Save Receipt" action, so I reversed the order to better emphasize the main task.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL DESIGN -->
+  <section class="phase">
+    <p class="phase-label">08 — Final Design</p>
+    <h2 class="section-title">Selected <em>Screens</em></h2>
+    <div class="img-block"><img src="assets/images/chase-8-final-screens.webp" alt="Chase Receipt Scanner, 8 final selected screens" style="width:100%;display:block;border-radius:8px;"></div>
+    <div class="proto-cta">
+      <p>Explore the full interactive prototype in Figma</p>
+      <a href="https://www.figma.com/proto/fAdKPArhzzoqtjWyR5xKI4/Receipt-Scanner-Integration--Chase-App-Concept-?page-id=116%3A2186&node-id=116-2301&viewport=533%2C-860%2C0.5&t=QHqPp1ZDMhigI8tN-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=116%3A2301" target="_blank">View Prototype →</a>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="phase">
+    <p class="phase-label">09 — Conclusion</p>
+    <h2 class="section-title">Key <em>Takeaways</em></h2>
+    <p class="body">Completed in just two weeks, this project encouraged me to be intentional about where to focus my time. Through research, iteration, and usability testing, I gained a deeper appreciation for how clarity, feedback, and hierarchy influence user confidence. The final design supported smooth task completion and strong ease-of-use feedback, resulting in an experience that feels clear, trustworthy, and genuinely helpful.</p>
+    <p class="section-subtitle" style="margin-top:2rem">Future Enhancements</p>
+    <ul class="future">
+      <li><strong>Dual entry points:</strong> Support both a global "Scan Receipts" flow and an in-transaction "Attach Receipt" flow.</li>
+      <li><strong>Link confirmation &amp; correction:</strong> After a scan, show the matched transaction and let the user confirm or change it inline.</li>
+      <li><strong>Context-aware onboarding:</strong> Add a one-time tooltip, short feature card, or brief video explaining where receipts are saved and how reminders work.</li>
+      <li><strong>Email forwarding:</strong> Forward receipt emails to a dedicated address, where they are automatically matched to credit card transactions.</li>
+    </ul>
+  </section>
+
+</main>
+
+<div class="all-projects-link"><a href="index.html">All Projects</a></div>
+
+<footer>
+  <div>
+    <div class="footer-note">Let's Connect</div>
+    <div class="footer-sub">San Francisco Bay Area &middot; Remote friendly</div>
+  </div>
+  <div class="footer-btns">
+    <a href="https://www.linkedin.com/in/peterstamenoff/" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;color:var(--color-primary);transition:opacity 0.15s" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.182181,0 L1.76976334,0 C0.792334107,0 0.00011136891,0.768055684 0.00011136891,1.71602784 L0.00011136891,22.2341346 C0.00011136891,23.1821624 0.792612529,23.9508863 1.76976334,23.9508863 L22.182181,23.9508863 C23.1593875,23.9508863 23.9507193,23.1816613 23.9507193,22.2341346 L23.9507193,1.71602784 C23.9507193,0.768334107 23.1593875,0 22.182181,0 Z M7.2612529,20.0485197 L3.64248724,20.0485197 L3.64248724,9.2349884 L7.2612529,9.2349884 L7.2612529,20.0485197 Z M5.45223202,7.75767981 L5.42789791,7.75767981 C4.21436659,7.75767981 3.4277123,6.9277587 3.4277123,5.88874246 C3.4277123,4.82878886 4.23747564,4.02136427 5.47506265,4.02136427 C6.71276102,4.02136427 7.47407889,4.82856613 7.49813457,5.88874246 C7.49813457,6.92798144 6.71303944,7.75767981 5.45223202,7.75767981 Z M20.3058376,20.0485197 L16.6882413,20.0485197 L16.6882413,14.2629049 C16.6882413,12.8091508 16.1640835,11.8171879 14.8558329,11.8171879 C13.8550162,11.8171879 13.2609188,12.4864037 13.0000371,13.1325104 C12.9033689,13.3632668 12.8794246,13.6860139 12.8794246,14.0083155 L12.8794246,20.048297 L9.26249652,20.048297 C9.26249652,20.048297 9.30982831,10.2490023 9.26249652,9.23482135 L12.8799814,9.23482135 L12.8799814,10.7678701 C13.3602042,10.0312204 14.2183573,8.98039907 16.1394153,8.98039907 C18.5204826,8.98039907 20.3058376,10.5250302 20.3058376,13.848 L20.3058376,20.0485197 Z"/></svg></a>
+    <a href="#" class="fbtn">View resume</a>
+    <a href="mailto:hello@peterstamenoff.com" class="fbtn primary">Say hello</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+  const lbClose = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('.img-block img, .hero-img img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCaption.textContent = img.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
