@@ -31,12 +31,14 @@
   <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </div>
 
+<a href="index.html" class="back-home-btn" id="backHomeBtn" aria-label="Back to Home">Back to Home</a>
+
 <main>
 
   <div class="hero">
     <p class="project-label">Case Study: MOBILE-FIRST RESPONSIVE WEBSITE</p>
     <div class="hero-img"><img src="assets/images/skillbridge-skillbridge-hero.webp" alt="Skillbridge Hero" style="width:100%;display:block;border-radius:8px;"></div>
-    <h1 style="margin-top:2rem;font-size:37px;width:100%">Skillbridge — <em>Personalized Learning</em> Platform</h1>
+    <h1 style="margin-top:2rem;width:100%">Skillbridge — <em>Personalized Learning</em> Platform</h1>
     <p class="hero-desc">A conceptual learning platform designed to help learners stay motivated and on track through personalized study plans, clear progress tracking, and on demand mentorship.</p>
     <div class="meta-row">
       <div><div class="meta-label">My Role</div><div class="meta-value">UI/UX Design, Branding, Research, Personas, User flow, Wireframing, Prototyping, Usability testing</div></div>
@@ -48,14 +50,26 @@
     </div>
   </div>
 
-  <section class="phase">
-    <p class="phase-label">01 — Background</p>
+  <nav class="phase-nav" aria-label="Case study sections">
+    <a href="#phase-01" class="phase-nav-link" data-phase="phase-01">Background</a>
+    <a href="#phase-02" class="phase-nav-link" data-phase="phase-02">Empathize</a>
+    <a href="#phase-03" class="phase-nav-link" data-phase="phase-03">Define</a>
+    <a href="#phase-04" class="phase-nav-link" data-phase="phase-04">Ideate</a>
+    <a href="#phase-05" class="phase-nav-link" data-phase="phase-05">Design</a>
+    <a href="#phase-06" class="phase-nav-link" data-phase="phase-06">Prototype</a>
+    <a href="#phase-07" class="phase-nav-link" data-phase="phase-07">Usability Test</a>
+    <a href="#phase-08" class="phase-nav-link" data-phase="phase-08">Final Design</a>
+    <a href="#phase-09" class="phase-nav-link" data-phase="phase-09">Conclusion</a>
+  </nav>
+
+  <section class="phase" id="phase-01">
+    <p class="phase-label">Background</p>
     <h2 class="section-title">The <em>Problem</em></h2>
     <p class="body">With technology and careers evolving rapidly, continuous learning is essential, yet many learners struggle to stay consistent amid busy schedules and information overload. I fall into this category myself, which is why I started this project to understand what truly motivates learners and to explore solutions that help them stay engaged over time. My hypothesis was that learners stay engaged longer when supported by a personalized AI generated study plan and the option to connect with a professional network for accountability, encouragement, and opportunities.</p>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">02 — Empathize</p>
+  <section class="phase" id="phase-02">
+    <p class="phase-label">Empathize</p>
     <h2 class="section-title">User <em>Interviews</em></h2>
     <p class="section-subtitle">Goal</p>
     <p class="body">I wanted to understand how people approach learning new skills and what helps them stay motivated and consistent over time in order to plan an app that supports learners more effectively.</p>
@@ -81,8 +95,8 @@
     <p class="body" style="margin-top:1rem"><strong>Opportunity:</strong> I found that none of the competitors combine structure, motivation, and personalized support in a single platform.</p>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">03 — Define</p>
+  <section class="phase" id="phase-03">
+    <p class="phase-label">Define</p>
     <h2 class="section-title">User <em>Personas</em></h2>
     <p class="body">Creating user personas helped me better understand learners' goals, challenges, and motivations. The research revealed two core learner types: experienced professionals seeking quick, practical skill upgrades and learners navigating career transitions who need structure and accountability. These insights guided me to focus on flexibility, clear pathways, and motivation support as core principles for SkillBridge.</p>
     <div class="two-col" style="margin-top:1.5rem">
@@ -99,8 +113,8 @@
     </ul>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">04 — Ideate</p>
+  <section class="phase" id="phase-04">
+    <p class="phase-label">Ideate</p>
     <h2 class="section-title">Priority Features &amp; <em>Information Architecture</em></h2>
     <p class="section-subtitle">Priority Features</p>
     <p class="body">Drawing from user interviews, competitive analysis, and persona insights, I identified the core pain points learners face and translated them into a focused MVP that prioritizes structure, motivation, and accountability.</p>
@@ -117,16 +131,16 @@
     <div class="img-block"><img src="assets/images/skillbridge-skillbridge-user-flow.webp" alt="Skillbridge User Flow" style="width:100%;display:block;border-radius:8px;"></div>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">05 — Design</p>
+  <section class="phase" id="phase-05">
+    <p class="phase-label">Design</p>
     <h2 class="section-title">Mid-Fidelity <em>Wireframes</em></h2>
     <p class="body">Next, I moved into mid-fidelity wireframes to focus on layout and information hierarchy without the distraction of visual styling. This step allowed me to gather early feedback on structure and user flow, helping guide iterations before moving into higher-fidelity design.</p>
     <div class="img-block"><img src="assets/images/skillbridge-mid-fidelity-wireframes.webp" alt="Mid-Fidelity Wireframes" style="width:100%;display:block;border-radius:8px;"></div>
     <a class="figma-link" href="https://www.figma.com/design/6mVU4EVLcVg5zE9bLLz3ig/SkillBridge?node-id=690-12381&t=4s7edMFok80lIcvL-1" target="_blank"><svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5z" fill="#1ABCFE"/><path d="M9.5 47.5A9.5 9.5 0 0 1 19 38h9.5v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/><path d="M19 0H9.5A9.5 9.5 0 0 0 9.5 19H19V0z" fill="#FF7262"/><path d="M28.5 0H19v19h9.5a9.5 9.5 0 0 0 0-19z" fill="#F24E1E"/><path d="M9.5 19A9.5 9.5 0 0 0 9.5 38H19V19H9.5z" fill="#A259FF"/></svg> View Mid-Fidelity Wireframes</a>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">06 — Prototype</p>
+  <section class="phase" id="phase-06">
+    <p class="phase-label">Prototype</p>
     <h2 class="section-title">High-Fidelity <em>Prototype</em></h2>
     <p class="body">I translated research insights into an interactive prototype focused on daily usability and motivation flow.</p>
     <p class="section-subtitle" style="margin-top:1.5rem">Key Screens</p>
@@ -146,8 +160,8 @@
     <p class="body" style="margin-top:1rem">I created a simple UI component library to ensure visual consistency and speed up iteration across the SkillBridge interface. Establishing these shared building blocks made the design more scalable and allowed me and future designers to prototype and update screens more efficiently.</p>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">07 — Usability Test</p>
+  <section class="phase" id="phase-07">
+    <p class="phase-label">Usability Test</p>
     <h2 class="section-title">Test Goals &amp; <em>Objectives</em></h2>
     <p class="body">I ran remote usability testing to validate two core journeys: (1) ensuring first-time mobile users could modify their weekly study goals and seamlessly resume Today's Class, and (2) confirming they could schedule a Mentor on Demand session end to end without moderator help. The sessions focused on measuring clarity, findability, and decision friction across both flows.</p>
     <div class="two-col">
@@ -194,8 +208,8 @@
     </div>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">08 — Final Design</p>
+  <section class="phase" id="phase-08">
+    <p class="phase-label">Final Design</p>
     <h2 class="section-title">Selected <em>Screens</em></h2>
     <p class="body">SkillBridge's design is about clarity and growth. With purple as the primary color for creativity and ambition, paired with clean type and simple layouts, the product feels motivating and easy to use. Every choice supports learners in staying consistent and confident.</p>
     <div class="img-block"><img src="assets/images/skillbridge-skillbridge-8-final-screens.webp" alt="Skillbridge 8 Final Screens" style="width:100%;display:block;border-radius:8px;"></div>
@@ -205,8 +219,8 @@
     </div>
   </section>
 
-  <section class="phase">
-    <p class="phase-label">09 — Conclusion</p>
+  <section class="phase" id="phase-09">
+    <p class="phase-label">Conclusion</p>
     <h2 class="section-title">Key <em>Takeaways</em></h2>
     <p class="body">Working on SkillBridge taught me how much structure, clarity, and timely support matter in helping learners stay consistent. Through interviews, synthesis, wireframing, and usability testing, I learned to translate research into focused features, validate assumptions, and refine the experience based on real user behavior.</p>
     <p class="body">This project was ultimately about learning the UX process end to end — how to ask the right questions, test ideas early, and iterate with purpose. The insights I gained about motivation, goal-setting, and mentorship shaped a clearer, more supportive product direction and helped me grow as a designer.</p>
@@ -279,6 +293,43 @@
   lbClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // Sticky desktop nav: track the current phase via IntersectionObserver
+  // and toggle the active link. Desktop-only nav; no mobile equivalent.
+  const phaseSections = Array.from(document.querySelectorAll('.phase[id]'));
+  if (phaseSections.length) {
+    const navLinks = Array.from(document.querySelectorAll('.phase-nav-link'));
+
+    function setActivePhase(id) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.phase === id);
+      });
+    }
+
+    const phaseObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActivePhase(entry.target.id);
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+
+    phaseSections.forEach(sec => phaseObserver.observe(sec));
+    setActivePhase(phaseSections[0].id);
+  }
+
+  // Fixed "Back to Home" button: hidden at the top of the page, fades in
+  // once the real header (top nav/logo) scrolls out of view.
+  const topNav = document.querySelector('body > nav');
+  const backHomeBtn = document.getElementById('backHomeBtn');
+  if (topNav && backHomeBtn) {
+    const headerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        backHomeBtn.classList.toggle('visible', !entry.isIntersecting);
+      });
+    }, { threshold: 0 });
+    headerObserver.observe(topNav);
+  }
 </script>
 
 </body>

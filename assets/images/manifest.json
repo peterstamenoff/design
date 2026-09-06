@@ -514,32 +514,6 @@
     "dimensions": "6000x1533"
   },
   {
-    "filename": "chase-hero-app-alt.webp",
-    "source_file": "chase.html",
-    "context": "Hero (alternate) \u2014 Chase app",
-    "mime": "image/webp",
-    "bytes": 211480,
-    "dedup_of_existing_file": false,
-    "placeholder_alt_text": false,
-    "original_wix_filename": "Hero Chase app.webp",
-    "used_in_page_section": null,
-    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
-    "dimensions": "3348x1475"
-  },
-  {
-    "filename": "chase-hero-home-alt.webp",
-    "source_file": "chase.html",
-    "context": "Hero (alternate) \u2014 long crop",
-    "mime": "image/webp",
-    "bytes": 214300,
-    "dedup_of_existing_file": false,
-    "placeholder_alt_text": false,
-    "original_wix_filename": "Hero Home Chase- long copy.webp",
-    "used_in_page_section": null,
-    "note": "Downloaded from the real static.wixstatic.com source URL provided by the user (full original resolution, not a resized thumbnail).",
-    "dimensions": "6000x1533"
-  },
-  {
     "filename": "chase-affinity-map.webp",
     "source_file": "chase.html",
     "context": "Affinity map",

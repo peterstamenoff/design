@@ -31,12 +31,14 @@
   <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </div>
 
+<a href="index.html" class="back-home-btn" id="backHomeBtn" aria-label="Back to Home">Back to Home</a>
+
 <main>
 
   <div class="hero">
     <p class="project-label">UX/UI Design for Pre-MVP Platform</p>
     <div class="hero-img"><img src="assets/images/unveil-hero-image-upload-to-replace.webp" alt="Three Unveil app screens showing a hike activity card with map, the Explore feed with suggested activities, and an event preview" style="width:100%;display:block;border-radius:8px;"></div>
-    <h1 style="margin-top:2rem;font-size:37px;width:100%">Unveil — <em>Social Connection</em> Platform</h1>
+    <h1 style="margin-top:2rem;width:100%">Unveil — <em>Social Connection</em> Platform</h1>
     <p class="hero-desc">Unveil Lab is an early-stage startup building a mobile-first social connection platform designed to help people discover new experiences and form meaningful connections in real life. Unlike traditional social or dating apps, Unveil focuses on group activities and shared interests that encourage users to try new things, meet new people, and build community. In this project, I collaborated with two other UX/UI designers to design a seamless, trust-centered mobile experience that supports spontaneous, real-world connections.</p>
     <div class="meta-row">
       <div><div class="meta-label">My Role</div><div class="meta-value">UI/UX Design, Branding, Research, Personas, User flow, Wireframing, Prototyping, Usability testing</div></div>
@@ -54,16 +56,28 @@
     </div>
   </div>
 
+  <nav class="phase-nav" aria-label="Case study sections">
+    <a href="#phase-01" class="phase-nav-link" data-phase="phase-01">Background</a>
+    <a href="#phase-02" class="phase-nav-link" data-phase="phase-02">Empathize</a>
+    <a href="#phase-03" class="phase-nav-link" data-phase="phase-03">Define</a>
+    <a href="#phase-04" class="phase-nav-link" data-phase="phase-04">Ideate</a>
+    <a href="#phase-05" class="phase-nav-link" data-phase="phase-05">Design</a>
+    <a href="#phase-06" class="phase-nav-link" data-phase="phase-06">Prototype</a>
+    <a href="#phase-07" class="phase-nav-link" data-phase="phase-07">Usability Test</a>
+    <a href="#phase-08" class="phase-nav-link" data-phase="phase-08">Final Design</a>
+    <a href="#phase-09" class="phase-nav-link" data-phase="phase-09">Conclusion</a>
+  </nav>
+
   <!-- BACKGROUND -->
-  <section class="phase">
-    <p class="phase-label">01 — Background</p>
+  <section class="phase" id="phase-01">
+    <p class="phase-label">Background</p>
     <h2 class="section-title">The <em>Problem</em></h2>
     <p class="body">Many adults want deeper social connections through shared, real-world experiences. However, planning effort, safety concerns, and social pressure from dating apps and event platforms often get in the way. Existing solutions rely heavily on profiles, advance scheduling, and endless browsing, which can lead to decision fatigue and inaction. This creates an opportunity to design an experience-first, small-group, real-time matching model that reduces friction and prioritizes trust, making spontaneous, in-person connections feel safer and more accessible.</p>
   </section>
 
   <!-- EMPATHIZE -->
-  <section class="phase">
-    <p class="phase-label">02 — Empathize</p>
+  <section class="phase" id="phase-02">
+    <p class="phase-label">Empathize</p>
     <h2 class="section-title">User <em>Interviews</em></h2>
     <p class="body">The team started the project by planning and conducting user interviews.</p>
 
@@ -98,8 +112,8 @@
   </section>
 
   <!-- DEFINE -->
-  <section class="phase">
-    <p class="phase-label">03 — Define</p>
+  <section class="phase" id="phase-03">
+    <p class="phase-label">Define</p>
     <h2 class="section-title">User <em>Personas</em></h2>
     <p class="body">We created two user personas to ground design decisions in real user needs and behaviors around social connection. Alex, the primary persona, values spontaneity and shared experiences but is frustrated by slow, planning-heavy platforms, while the secondary persona (Dannie) reinforced the need for small-group, low-pressure interactions. Together, the personas shaped Unveil's focus on experience-first discovery, minimal coordination, and flexible participation.</p>
     <div class="two-col" style="margin-top:1.5rem">
@@ -118,8 +132,8 @@
   </section>
 
   <!-- IDEATE -->
-  <section class="phase">
-    <p class="phase-label">04 — Ideate</p>
+  <section class="phase" id="phase-04">
+    <p class="phase-label">Ideate</p>
     <h2 class="section-title">Project Goal &amp; <em>Sitemap</em></h2>
 
     <p class="section-subtitle">Project Goal</p>
@@ -149,8 +163,8 @@
   </section>
 
   <!-- DESIGN -->
-  <section class="phase">
-    <p class="phase-label">05 — Design</p>
+  <section class="phase" id="phase-05">
+    <p class="phase-label">Design</p>
     <h2 class="section-title">Mid-Fidelity <em>Wireframes</em></h2>
     <p class="body">After finalizing the user flows, we created mid-fidelity wireframes to validate layout, content hierarchy, and key interactions before moving into visual refinement. This step helped ensure the experience remained clear, low-friction, and aligned with Unveil's activity-first principles.</p>
     <div class="img-block"><img src="assets/images/unveil-mid-fidelity-wireframes-upload-image.webp" alt="Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, activity detail, and Chat screens" style="width:100%;display:block;border-radius:8px;"></div>
@@ -158,8 +172,8 @@
   </section>
 
   <!-- PROTOTYPE -->
-  <section class="phase">
-    <p class="phase-label">06 — Prototype</p>
+  <section class="phase" id="phase-06">
+    <p class="phase-label">Prototype</p>
     <h2 class="section-title">High-Fidelity <em>Prototype</em></h2>
     <p class="body">With the core structure confirmed through revisions of the mid-fidelity prototype across onboarding, discovery, and participation, we moved confidently into high-fidelity prototyping to refine visual design, interaction details, and overall experience quality before usability testing.</p>
 
@@ -194,8 +208,8 @@
   </section>
 
   <!-- USABILITY TESTING -->
-  <section class="phase">
-    <p class="phase-label">07 — Usability Test</p>
+  <section class="phase" id="phase-07">
+    <p class="phase-label">Usability Test</p>
     <h2 class="section-title">Test Goals &amp; <em>Objectives</em></h2>
     <p class="body">We ran usability testing to evaluate whether users could confidently complete the core actions that lead to a first real-world social connection on Unveil, while maintaining a low-pressure and trustworthy experience. Testing focused on onboarding, browsing and joining activities, and creating new activities using a high-fidelity interactive prototype to assess clarity, confidence, and ease of participation.</p>
 
@@ -249,8 +263,8 @@
   </section>
 
   <!-- FINAL DESIGN -->
-  <section class="phase">
-    <p class="phase-label">08 — Final Design</p>
+  <section class="phase" id="phase-08">
+    <p class="phase-label">Final Design</p>
     <h2 class="section-title">Selected <em>Screens</em></h2>
     <div class="img-block"><img src="assets/images/unveil-final-screens-upload-image.webp" alt="Eight final Unveil screens: My Info, Explore, My Events, activity detail with map, event details, profile preview, identity confirmation, and event preview" style="width:100%;display:block;border-radius:8px;"></div>
     <div class="proto-cta">
@@ -260,8 +274,8 @@
   </section>
 
   <!-- CONCLUSION -->
-  <section class="phase">
-    <p class="phase-label">09 — Conclusion</p>
+  <section class="phase" id="phase-09">
+    <p class="phase-label">Conclusion</p>
     <h2 class="section-title">What I <em>Learned</em></h2>
     <p class="body">This project reinforced the value of grounding design decisions in research while moving quickly and collaboratively. Working within a five-week timeline and a limited 20-hour weekly scope required strong prioritization, clear communication, and a willingness to iterate based on evidence rather than assumptions. Collaborating with a data-driven UX team and a highly creative, feedback-oriented client sharpened my ability to translate qualitative insights into focused product decisions and validated how small details in language, timing, and trust cues can significantly impact user confidence and follow-through.</p>
 
@@ -330,6 +344,43 @@
   lbClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // Sticky desktop nav: track the current phase via IntersectionObserver
+  // and toggle the active link. Desktop-only nav; no mobile equivalent.
+  const phaseSections = Array.from(document.querySelectorAll('.phase[id]'));
+  if (phaseSections.length) {
+    const navLinks = Array.from(document.querySelectorAll('.phase-nav-link'));
+
+    function setActivePhase(id) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.phase === id);
+      });
+    }
+
+    const phaseObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActivePhase(entry.target.id);
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+
+    phaseSections.forEach(sec => phaseObserver.observe(sec));
+    setActivePhase(phaseSections[0].id);
+  }
+
+  // Fixed "Back to Home" button: hidden at the top of the page, fades in
+  // once the real header (top nav/logo) scrolls out of view.
+  const topNav = document.querySelector('body > nav');
+  const backHomeBtn = document.getElementById('backHomeBtn');
+  if (topNav && backHomeBtn) {
+    const headerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        backHomeBtn.classList.toggle('visible', !entry.isIntersecting);
+      });
+    }, { threshold: 0 });
+    headerObserver.observe(topNav);
+  }
 </script>
 
 </body>

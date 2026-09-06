@@ -97,8 +97,6 @@ All 15 images below are real downloads from `static.wixstatic.com`, fetched at f
 | File in /assets/images | Original Wix filename | Dimensions | Used in chase.html | Size |
 |---|---|---|---|---|
 | `chase-hero.webp` | Hero Home Chase- long 4 phones copy.webp | 6000x1533 | Snapshot header (hero) | 206 KB |
-| `chase-hero-app-alt.webp` | Hero Chase app.webp | 3348x1475 | *intentionally unused — extra asset per user request* | 207 KB |
-| `chase-hero-home-alt.webp` | Hero Home Chase- long copy.webp | 6000x1533 | *intentionally unused — extra asset per user request* | 209 KB |
 | `chase-affinity-map.webp` | Receipt Scanner Integration (Chase App Concept) copy.webp | 7098x1698 | User Interviews (expandable) | 598 KB |
 | `chase-competitive-analysis.webp` | Competitive Analysis.webp | 2558x502 | Competitive Analysis (expandable) | 76 KB |
 | `chase-competitive-analysis-mobile.webp` | Competitive Analysis —Mobile copy.webp | 2674x1377 | Competitive Analysis (expandable) | 216 KB |
@@ -111,5 +109,3 @@ All 15 images below are real downloads from `static.wixstatic.com`, fetched at f
 | `chase-iphone-post-receipt.png` | iPhone post receipt.png | 1926x1812 | Design Iterations (expandable) | 577 KB |
 | `chase-iphone-cta-location-change.png` | iPhone CTA location chage.png | 1926x1812 | Design Iterations (expandable) | 690 KB |
 | `chase-8-final-screens.webp` | Chase 8 screens.webp | 4414x4207 | Final Design (always-visible) | 935 KB |
-
-`chase-hero-app-alt.webp` and `chase-hero-home-alt.webp` are downloaded and available in `/assets/images` but deliberately not referenced anywhere in chase.html, per user instruction — kept for completeness only.

@@ -31,6 +31,8 @@
   <a href="mailto:hello@peterstamenoff.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </div>
 
+<a href="index.html" class="back-home-btn" id="backHomeBtn" aria-label="Back to Home">Back to Home</a>
+
 <main>
 
   <div class="hero">
@@ -53,16 +55,28 @@
     </div>
   </div>
 
+  <nav class="phase-nav" aria-label="Case study sections">
+    <a href="#phase-01" class="phase-nav-link" data-phase="phase-01">Background</a>
+    <a href="#phase-02" class="phase-nav-link" data-phase="phase-02">Empathize</a>
+    <a href="#phase-03" class="phase-nav-link" data-phase="phase-03">Define</a>
+    <a href="#phase-04" class="phase-nav-link" data-phase="phase-04">Ideate</a>
+    <a href="#phase-05" class="phase-nav-link" data-phase="phase-05">Design</a>
+    <a href="#phase-06" class="phase-nav-link" data-phase="phase-06">Prototype</a>
+    <a href="#phase-07" class="phase-nav-link" data-phase="phase-07">Usability Test</a>
+    <a href="#phase-08" class="phase-nav-link" data-phase="phase-08">Final Design</a>
+    <a href="#phase-09" class="phase-nav-link" data-phase="phase-09">Conclusion</a>
+  </nav>
+
   <!-- BACKGROUND -->
-  <section class="phase">
-    <p class="phase-label">01 — Background</p>
+  <section class="phase" id="phase-01">
+    <p class="phase-label">Background</p>
     <h2 class="section-title">Why <em>CareSync?</em></h2>
     <p class="body">This project was inspired by my experience managing healthcare for my wife, a toddler, an aging parent, and myself across multiple providers, insurance plans, and platforms. Relying on scattered notes, manual reminders, and visit preparation often led to missed questions during appointments and unclear follow-up afterward. This project explores how a thoughtfully designed digital tool, supported by AI, can reduce cognitive overload, improve clarity, and help patients and caregivers act confidently on medical advice.</p>
   </section>
 
   <!-- EMPATHIZE -->
-  <section class="phase">
-    <p class="phase-label">02 — Empathize</p>
+  <section class="phase" id="phase-02">
+    <p class="phase-label">Empathize</p>
     <h2 class="section-title">User <em>Interviews</em></h2>
     <p class="section-subtitle">Goal</p>
     <p class="body">The user interviews focused on understanding how patients and caregivers prepare for medical visits, capture and process information during appointments, and follow through afterward — while identifying where stress, cognitive overload, and fragmented tools disrupt this flow and how AI could support that process.</p>
@@ -88,8 +102,8 @@
   </section>
 
   <!-- DEFINE -->
-  <section class="phase">
-    <p class="phase-label">03 — Define</p>
+  <section class="phase" id="phase-03">
+    <p class="phase-label">Define</p>
     <h2 class="section-title">User <em>Personas</em></h2>
     <p class="body">Based on qualitative interviews, two core user archetypes emerged for CareSync: self-managing patients and everyday caregivers. While their responsibilities differ, both struggle with fragmented tools, cognitive overload, and unclear follow-through.</p>
     <div class="two-col" style="margin-top:1.5rem">
@@ -113,8 +127,8 @@
   </section>
 
   <!-- IDEATE -->
-  <section class="phase">
-    <p class="phase-label">04 — Ideate</p>
+  <section class="phase" id="phase-04">
+    <p class="phase-label">Ideate</p>
     <h2 class="section-title">Priority <em>Features</em></h2>
     <p class="body">Based on insights from user interviews, competitive analysis, and the defined user personas, I identified key pain points and translated them into a focused set of MVP features. Due to the short timeframe of the project, I prioritized the top three features to ensure the most critical user needs were addressed first.</p>
     <div class="features">
@@ -133,8 +147,8 @@
   </section>
 
   <!-- WIREFRAMES -->
-  <section class="phase">
-    <p class="phase-label">05 — Design</p>
+  <section class="phase" id="phase-05">
+    <p class="phase-label">Design</p>
     <h2 class="section-title">Wireframes &amp; <em>Iteration</em></h2>
 
     <p class="section-subtitle">Low-Fidelity Wireframes</p>
@@ -159,8 +173,8 @@
   </section>
 
   <!-- PROTOTYPE -->
-  <section class="phase">
-    <p class="phase-label">06 — Prototype</p>
+  <section class="phase" id="phase-06">
+    <p class="phase-label">Prototype</p>
     <h2 class="section-title">High-Fidelity <em>Design</em></h2>
     <p class="body">Based on mid-fidelity usability feedback, I refined the UI, added FAQs to clarify recording consent, and introduced a quick record button to reduce friction.</p>
     <div class="img-block"><img src="assets/images/caresync-high-fidelity-wireframes.avif" alt="High-Fidelity Wireframes" style="width:100%;display:block;border-radius:12px;"></div>
@@ -181,8 +195,8 @@
   </section>
 
   <!-- USABILITY TESTING -->
-  <section class="phase">
-    <p class="phase-label">07 — Usability Test</p>
+  <section class="phase" id="phase-07">
+    <p class="phase-label">Usability Test</p>
     <h2 class="section-title">Usability <em>Testing</em></h2>
     <div class="two-col">
       <div>
@@ -235,8 +249,8 @@
   </section>
 
   <!-- FINAL DESIGN -->
-  <section class="phase">
-    <p class="phase-label">08 — Final Design</p>
+  <section class="phase" id="phase-08">
+    <p class="phase-label">Final Design</p>
     <h2 class="section-title">Selected <em>Screens</em></h2>
     <p class="body">CareSync's design prioritizes clarity, trust, and peace of mind during high-stress medical moments. Blue conveys calm and reliability, while a clean layout and simple typography reduce cognitive load.</p>
     <div class="img-block"><img src="assets/images/caresync-caresync-final-screens-8-screens.avif" alt="CareSync Final Screens — 8 screens" style="width:100%;display:block;border-radius:12px;"></div>
@@ -247,8 +261,8 @@
   </section>
 
   <!-- CONCLUSION -->
-  <section class="phase">
-    <p class="phase-label">09 — Conclusion</p>
+  <section class="phase" id="phase-09">
+    <p class="phase-label">Conclusion</p>
     <h2 class="section-title">Key <em>Takeaways</em></h2>
     <p class="body">Through a research-driven and iterative design process, CareSync evolved into a patient-centered product concept that supports preparation, understanding, and follow-through during healthcare visits. As an end-to-end capstone delivered within a three-week timeline, I defined the problem space, prioritized core user needs, and led UX from discovery through high-fidelity prototyping and usability testing — making deliberate tradeoffs to maximize impact.</p>
     <p class="section-subtitle" style="margin-top:2rem">Future Enhancements</p>
@@ -319,6 +333,43 @@
   lbClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // Sticky desktop nav: track the current phase via IntersectionObserver
+  // and toggle the active link. Desktop-only nav; no mobile equivalent.
+  const phaseSections = Array.from(document.querySelectorAll('.phase[id]'));
+  if (phaseSections.length) {
+    const navLinks = Array.from(document.querySelectorAll('.phase-nav-link'));
+
+    function setActivePhase(id) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.phase === id);
+      });
+    }
+
+    const phaseObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActivePhase(entry.target.id);
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+
+    phaseSections.forEach(sec => phaseObserver.observe(sec));
+    setActivePhase(phaseSections[0].id);
+  }
+
+  // Fixed "Back to Home" button: hidden at the top of the page, fades in
+  // once the real header (top nav/logo) scrolls out of view.
+  const topNav = document.querySelector('body > nav');
+  const backHomeBtn = document.getElementById('backHomeBtn');
+  if (topNav && backHomeBtn) {
+    const headerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        backHomeBtn.classList.toggle('visible', !entry.isIntersecting);
+      });
+    }, { threshold: 0 });
+    headerObserver.observe(topNav);
+  }
 </script>
 
 </body>
