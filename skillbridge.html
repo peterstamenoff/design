@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="theme-skillbridge">
+<body class="theme-skillbridge skillbridge-page">
 
 <nav>
   <a href="index.html" class="logo">
@@ -205,9 +205,16 @@
     <h2 class="section-title">Selected <em>Screens</em></h2>
     <p class="body">SkillBridge's design is about clarity and growth. With purple as the primary color for creativity and ambition, paired with clean type and simple layouts, the product feels motivating and easy to use. Every choice supports learners in staying consistent and confident.</p>
     <div class="img-block"><img src="assets/images/skillbridge-skillbridge-8-final-screens.webp" alt="Four selected final screens of the SkillBridge app" style="width:100%;display:block;"></div>
+    <div class="img-block video-block" style="margin-top:1.5rem">
+      <video id="skillbridgeDemoVideo" src="assets/videos/skillbridge-demo.mp4" poster="assets/videos/skillbridge-demo-poster.jpg" autoplay muted playsinline></video>
+      <button class="video-replay-btn" id="videoReplayBtn" aria-label="Replay video">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="23 4 23 10 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="1 20 1 14 7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Replay
+      </button>
+    </div>
     <div class="proto-cta">
       <p>Explore the full interactive prototype in Figma</p>
-      <a href="https://www.figma.com/proto/6mVU4EVLcVg5zE9bLLz3ig/SkillBridge?page-id=433%3A10548&node-id=433-10550&viewport=319%2C1621%2C0.5&t=IZHLdHTHn16VmVjs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=433%3A10550" target="_blank">View Prototype →</a>
+      <a href="https://www.figma.com/proto/6mVU4EVLcVg5zE9bLLz3ig/SkillBridge?page-id=433%3A10548&node-id=433-10550&viewport=319%2C1621%2C0.5&t=IZHLdHTHn16VmVjs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=433%3A10550" target="_blank">View Prototype</a>
     </div>
   </section>
 
@@ -308,6 +315,21 @@
 
     phaseSections.forEach(sec => phaseObserver.observe(sec));
     setActivePhase(phaseSections[0].id);
+  }
+
+  // Demo video: plays once (muted, autoplay) then shows a "Replay" button
+  // overlaid on the paused frame. Clicking it restarts playback from 0.
+  const demoVideo = document.getElementById('skillbridgeDemoVideo');
+  const videoReplayBtn = document.getElementById('videoReplayBtn');
+  if (demoVideo && videoReplayBtn) {
+    demoVideo.addEventListener('ended', () => {
+      videoReplayBtn.classList.add('visible');
+    });
+    videoReplayBtn.addEventListener('click', () => {
+      videoReplayBtn.classList.remove('visible');
+      demoVideo.currentTime = 0;
+      demoVideo.play();
+    });
   }
 
   // Fixed "Back to Home" button: hidden at the top of the page, fades in

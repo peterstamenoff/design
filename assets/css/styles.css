@@ -424,7 +424,7 @@ section.phase { padding-top: 4.5rem; }
   left: 0;
   top: 0.8rem;
   line-height: 1;
-  color: var(--accent);
+  color: var(--gray-500);
   font-weight: 500;
 }
 .findings li strong { display: block; margin-bottom: 2px; }
@@ -449,7 +449,7 @@ section.phase { padding-top: 4.5rem; }
   gap: 12px;
   align-items: baseline;
 }
-.future li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+.future li::before { content: '•'; color: var(--gray-500); flex-shrink: 0; }
 .future li:first-child { border-top: 0.5px solid var(--border); }
 
 /* --------------------------------------------------------------------------
@@ -554,6 +554,29 @@ section.phase { padding-top: 4.5rem; }
 .img-block { margin: 1.5rem 0; border-radius: 0; overflow: hidden; background: var(--gray-50); }
 .img-block img { width: 100%; display: block; border-radius: 0; cursor: zoom-in; }
 .img-caption { font-size: 11px; color: var(--gray-500); text-align: center; margin-top: 8px; letter-spacing: 0.04em; }
+
+.video-block { position: relative; background: var(--color-white); padding-top: 10%; padding-bottom: 10%; }
+.video-block video { width: 55%; display: block; margin: 0 auto; }
+.video-replay-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(10, 10, 10, 0.55);
+  color: var(--color-white);
+  transition: all 0.15s;
+}
+.video-replay-btn:hover { background: rgba(10, 10, 10, 0.75); border-color: rgba(255, 255, 255, 0.7); }
+.video-replay-btn.visible { display: inline-flex; }
 
 .figma-link {
   display: inline-flex;
@@ -701,4 +724,49 @@ section.phase { padding-top: 4.5rem; }
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   SkillBridge-only layout overrides (scoped to body.skillbridge-page so
+   chase/caresync/unveil keep the shared divider/spacing rules above
+   untouched). Removes all divider lines, standardizes paragraph spacing,
+   and widens the gap between phase "chapters" — this page only.
+   -------------------------------------------------------------------------- */
+.skillbridge-page section { border-bottom: none; }
+.skillbridge-page .hero { border-bottom: none; }
+
+.skillbridge-page .findings li,
+.skillbridge-page .hmw-list li,
+.skillbridge-page .future li,
+.skillbridge-page .feature-card,
+.skillbridge-page .change-card,
+.skillbridge-page .worked-card {
+  border-top: none;
+  border-bottom: none;
+}
+
+.skillbridge-page p.body,
+.skillbridge-page .hero-desc {
+  margin-bottom: 1.25rem;
+}
+
+/* Section-to-section gap must come only from section.phase's own
+   padding-top/padding-bottom, never from whatever element happens to end
+   a section (a paragraph, a list, an image block, a CTA...). Zeroing the
+   last direct child's margin-bottom makes every boundary identical
+   regardless of content. */
+.skillbridge-page section.phase > *:last-child {
+  margin-bottom: 0;
+}
+
+.skillbridge-page section.phase {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .skillbridge-page section.phase {
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+  }
 }
