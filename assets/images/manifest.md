@@ -50,20 +50,20 @@ embedded in (as base64), so the original source can be found later. See also
 | File in /assets/images | Original alt/context | Size | Notes |
 |---|---|---|---|
 | `shared-peter-stamenoff-logo.avif` | Peter Stamenoff Logo | 2 KB | duplicate of a file already saved from an earlier page (identical bytes) |
-| `skillbridge-skillbridge-hero.webp` | Skillbridge Hero | 120 KB | — |
-| `skillbridge-affinity-map.webp` | Affinity Map | 90 KB | — |
-| `skillbridge-competitive-analysis.webp` | Competitive Analysis | 13 KB | — |
-| `skillbridge-marcus-lee-the-adaptive-improver.webp` | Marcus Lee — The Adaptive Improver | 62 KB | — |
-| `skillbridge-emily-chen-the-career-changer.webp` | Emily Chen — The Career Changer | 54 KB | — |
-| `skillbridge-skillbridge-sitemap.webp` | Skillbridge Sitemap | 23 KB | — |
-| `skillbridge-skillbridge-user-flow.webp` | Skillbridge User Flow | 43 KB | — |
-| `skillbridge-mid-fidelity-wireframes.webp` | Mid-Fidelity Wireframes | 76 KB | — |
-| `skillbridge-high-fidelity-screens.webp` | High-Fidelity Screens | 164 KB | — |
-| `skillbridge-skillbridge-brand-system.webp` | Skillbridge Brand System | 28 KB | — |
-| `skillbridge-ui-component-library.webp` | UI Component Library | 106 KB | — |
-| `skillbridge-weekly-goal-language-change.webp` | Weekly Goal Language Change | 135 KB | — |
-| `skillbridge-confirmation-screen-change.webp` | Confirmation Screen Change | 73 KB | — |
-| `skillbridge-skillbridge-8-final-screens.webp` | Skillbridge 8 Final Screens | 281 KB | — |
+| `skillbridge-hero-v2.webp` | Three phone mockups of the SkillBridge app (homepage, Today's Class dashboard, Current Course tracker) | 93 KB | Supersedes `skillbridge-skillbridge-hero.webp` (swapped in an earlier session) — now 1600×1000. Old file is still on disk but no longer referenced. |
+| `skillbridge-affinity-map.webp` | Affinity Map | 49 KB | Replaced by user, same filename — now 1600×800 |
+| `skillbridge-competitive-analysis.webp` | Competitive Analysis | 16 KB | Replaced by user, same filename — now 1600×800 |
+| `skillbridge-marcus-lee-the-adaptive-improver.webp` | Marcus Lee — The Adaptive Improver | 46 KB | Replaced by user, same filename — now 800×800 |
+| `skillbridge-emily-chen-the-career-changer.webp` | Emily Chen — The Career Changer | 41 KB | Replaced by user, same filename — now 800×800 |
+| `skillbridge-skillbridge-sitemap.webp` | Skillbridge Sitemap | 29 KB | Replaced by user, same filename — now 1600×800 |
+| `skillbridge-skillbridge-user-flow.webp` | Skillbridge User Flow | 32 KB | Replaced by user, same filename — now 1600×800 |
+| `skillbridge-mid-fidelity-wireframes.webp` | Mid-Fidelity Wireframes | 57 KB | Replaced by user, same filename — now 1600×1000 |
+| `skillbridge-high-fidelity-screens.webp` | High-Fidelity Screens | 106 KB | Replaced by user, same filename — now 1600×1000 |
+| `skillbridge-skillbridge-brand-system.webp` | Skillbridge Brand System | 39 KB | Replaced by user, same filename — now 1600×800 |
+| `skillbridge-ui-component-library.webp` | UI Component Library | 77 KB | Replaced by user, same filename — now 1600×1000 |
+| `skillbridge-weekly-goal-language-change.webp` | Weekly Goal Language Change | 63 KB | Replaced by user, same filename — now 1600×1000 |
+| `skillbridge-confirmation-screen-change.webp` | Confirmation Screen Change | 35 KB | Replaced by user, same filename — now 1600×1000 |
+| `skillbridge-skillbridge-8-final-screens.webp` | Four selected final screens of the SkillBridge app | 94 KB | Replaced by user, same filename — now 1600×1000, shows 4 screens (was 8); alt text updated to match |
 
 ## unveil.html
 

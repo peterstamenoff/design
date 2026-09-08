@@ -216,130 +216,158 @@
     "placeholder_alt_text": false
   },
   {
-    "filename": "skillbridge-skillbridge-hero.webp",
+    "filename": "skillbridge-hero-v2.webp",
     "source_file": "skillbridge.html",
-    "context": "Skillbridge Hero",
+    "context": "Three phone mockups of the SkillBridge app: a homepage promoting 4,000+ classes, a Today's Class dashboard showing AWS certification progress, and a Current Course tracker at 40% completion",
     "mime": "image/webp",
-    "bytes": 123164,
+    "bytes": 95300,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Supersedes skillbridge-skillbridge-hero.webp, swapped in during an earlier session (new filename, different aspect ratio). The old file remains on disk at assets/images/skillbridge-skillbridge-hero.webp but is no longer referenced anywhere in skillbridge.html."
   },
   {
     "filename": "skillbridge-affinity-map.webp",
     "source_file": "skillbridge.html",
     "context": "Affinity Map",
     "mime": "image/webp",
-    "bytes": 92124,
+    "bytes": 50506,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-competitive-analysis.webp",
     "source_file": "skillbridge.html",
     "context": "Competitive Analysis",
     "mime": "image/webp",
-    "bytes": 13188,
+    "bytes": 16426,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-marcus-lee-the-adaptive-improver.webp",
     "source_file": "skillbridge.html",
     "context": "Marcus Lee \u2014 The Adaptive Improver",
     "mime": "image/webp",
-    "bytes": 63986,
+    "bytes": 47332,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-emily-chen-the-career-changer.webp",
     "source_file": "skillbridge.html",
     "context": "Emily Chen \u2014 The Career Changer",
     "mime": "image/webp",
-    "bytes": 55764,
+    "bytes": 41792,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-skillbridge-sitemap.webp",
     "source_file": "skillbridge.html",
     "context": "Skillbridge Sitemap",
     "mime": "image/webp",
-    "bytes": 23352,
+    "bytes": 29582,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-skillbridge-user-flow.webp",
     "source_file": "skillbridge.html",
     "context": "Skillbridge User Flow",
     "mime": "image/webp",
-    "bytes": 43640,
+    "bytes": 33074,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-mid-fidelity-wireframes.webp",
     "source_file": "skillbridge.html",
     "context": "Mid-Fidelity Wireframes",
     "mime": "image/webp",
-    "bytes": 77596,
+    "bytes": 58352,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-high-fidelity-screens.webp",
     "source_file": "skillbridge.html",
     "context": "High-Fidelity Screens",
     "mime": "image/webp",
-    "bytes": 167748,
+    "bytes": 108544,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-skillbridge-brand-system.webp",
     "source_file": "skillbridge.html",
     "context": "Skillbridge Brand System",
     "mime": "image/webp",
-    "bytes": 28436,
+    "bytes": 39632,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-ui-component-library.webp",
     "source_file": "skillbridge.html",
     "context": "UI Component Library",
     "mime": "image/webp",
-    "bytes": 108122,
+    "bytes": 78482,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-weekly-goal-language-change.webp",
     "source_file": "skillbridge.html",
     "context": "Weekly Goal Language Change",
     "mime": "image/webp",
-    "bytes": 138422,
+    "bytes": 64876,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-confirmation-screen-change.webp",
     "source_file": "skillbridge.html",
     "context": "Confirmation Screen Change",
     "mime": "image/webp",
-    "bytes": 74882,
+    "bytes": 35804,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "skillbridge-skillbridge-8-final-screens.webp",
     "source_file": "skillbridge.html",
-    "context": "Skillbridge 8 Final Screens",
+    "context": "Four selected final screens of the SkillBridge app",
     "mime": "image/webp",
-    "bytes": 288174,
+    "bytes": 96124,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced with a new version by the user at the same filename; now shows 4 selected screens instead of the previous 8-screen layout. Dimensions/bytes/alt text updated accordingly."
   },
   {
     "filename": "shared-peter-stamenoff-logo.avif",
