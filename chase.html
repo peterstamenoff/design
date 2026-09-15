@@ -100,7 +100,6 @@
     <p class="section-subtitle" style="margin-top:2rem">Competitive Analysis</p>
     <p class="body">I conducted a competitive analysis of the receipt management ecosystem, evaluating Expensify, Shoeboxed, QuickBooks, American Express, and Warranty Keeper / ReceiptBox.</p>
     <div class="img-block"><img src="assets/images/chase-competitive-analysis.webp" alt="Competitive analysis comparing Expensify, Shoeboxed, QuickBooks, American Express, and Warranty Keeper" style="width:100%;display:block;"></div>
-    <div class="img-block"><img src="assets/images/chase-competitive-analysis-mobile.webp" alt="Competitive analysis, mobile app comparison view" style="width:100%;display:block;"></div>
     <p class="body" style="margin-top:1.25rem"><strong>Opportunity for Chase:</strong> Most competitors focus on business users, and none combine receipt-to-transaction matching with warranty or return reminders within a trusted banking ecosystem.</p>
   </section>
 
@@ -109,7 +108,7 @@
     <p class="phase-label">Define</p>
     <h2 class="section-title">User <em>Persona</em></h2>
     <p class="body">Based on my research, I defined a primary user persona: Amanda Torres, "The Busy Family Manager," a busy, tech-savvy customer who actively manages family finances and expects receipts to be captured easily on the go and securely stored within the Chase app, so she can access proof of purchase without extra effort when returns, warranties, or disputes arise.</p>
-    <div class="img-block" style="max-width:60%;margin:1.5rem auto 0"><img src="assets/images/chase-amanda-torres-the-busy-family-manager.webp" alt="Persona: Amanda Torres, The Busy Family Manager" style="width:100%;display:block;"></div>
+    <div class="img-block" style="margin-top:1.5rem"><img src="assets/images/chase-amanda-torres-the-busy-family-manager.webp" alt="Persona: Amanda Torres, The Busy Family Manager" style="width:100%;display:block;"></div>
     <p class="img-caption">Amanda Torres, The Busy Family Manager</p>
 
     <p class="section-subtitle" style="margin-top:2rem">POV Statement</p>
@@ -175,7 +174,7 @@
 
     <p class="section-subtitle" style="margin-top:2.5rem">Visual Identity</p>
     <p class="body">To ensure the Scan a Receipt feature and high-fidelity screens integrated seamlessly with the Chase app, I studied Chase's existing branding, including color usage, typography, and UI patterns, and aligned the designs to the established system. I also designed two new icons, Scan a Receipt and Receipt, that follow the visual style of Chase's existing iconography.</p>
-    <div class="img-block" style="max-width:60%;margin:1.5rem auto 0"><img src="assets/images/chase-ui-elements.webp" alt="Chase UI component elements, including the two new Scan a Receipt and Receipt icons" style="width:100%;display:block;"></div>
+    <div class="img-block" style="margin-top:1.5rem"><img src="assets/images/chase-ui-elements.webp" alt="Chase UI component elements, including the two new Scan a Receipt and Receipt icons" style="width:100%;display:block;"></div>
     <p class="img-caption">Chase UI Elements</p>
   </section>
 
@@ -228,17 +227,17 @@
     <p class="body">Based on usability testing, I made three prioritized changes to improve clarity and confidence.</p>
     <div class="changes">
       <div class="change-card">
-        <div class="img-block"><img src="assets/images/chase-iphone-with-reminder.png" alt="Confirmation message shown after setting a receipt reminder" style="width:100%;display:block;"></div>
+        <div class="img-block"><img src="assets/images/chase-reminder-confirmation.webp" alt="Confirmation message shown after setting a receipt reminder" style="width:100%;display:block;"></div>
         <div class="change-title" style="margin-top:0.75rem">Reminder Confirmation</div>
         <div class="change-desc">Added a clear confirmation message after setting the reminder date, addressing feedback that explicit confirmation was needed before saving the reminder (for example, "Reminder added. You'll be notified 5 days before the return deadline.").</div>
       </div>
       <div class="change-card">
-        <div class="img-block"><img src="assets/images/chase-iphone-post-receipt.png" alt="Updated receipt storage screen with clearer copy and visual cues" style="width:100%;display:block;"></div>
+        <div class="img-block"><img src="assets/images/chase-refined-copy-visual-cues.webp" alt="Updated receipt storage screen with clearer copy and visual cues" style="width:100%;display:block;"></div>
         <div class="change-title" style="margin-top:0.75rem">Refined Copy &amp; Visual Cues</div>
         <div class="change-desc">Updated the entry-point label from "Scan Receipt" to "Scan Receipts" to better reflect the action, and improved receipt location visibility by adding a clear text label, "Receipt," alongside the icon.</div>
       </div>
       <div class="change-card change-card--full">
-        <div class="img-block" style="max-width:50%;margin:0 auto"><img src="assets/images/chase-iphone-cta-location-change.png" alt="Reordered CTA hierarchy prioritizing Save Receipt over Add Receipt Reminder" style="width:100%;display:block;"></div>
+        <div class="img-block"><img src="assets/images/chase-cta-hierarchy.webp" alt="Reordered CTA hierarchy prioritizing Save Receipt over Add Receipt Reminder" style="width:100%;display:block;"></div>
         <div class="change-title" style="margin-top:0.75rem">CTA Hierarchy</div>
         <div class="change-desc">Several users noted that the "Add Receipt Reminder" button overshadowed the primary "Save Receipt" action, so I reversed the order to better emphasize the main task.</div>
       </div>
@@ -249,7 +248,14 @@
   <section class="phase" id="phase-08">
     <p class="phase-label">Final Design</p>
     <h2 class="section-title">Selected <em>Screens</em></h2>
-    <div class="img-block"><img src="assets/images/chase-8-final-screens.webp" alt="Chase Receipt Scanner, 8 final selected screens" style="width:100%;display:block;"></div>
+    <div class="img-block"><img src="assets/images/chase-8-final-screens.webp" alt="Four selected final screens of the Chase Receipt Scanner app" style="width:100%;display:block;"></div>
+    <div class="img-block video-block" style="margin-top:1.5rem">
+      <video id="chaseDemoVideo" src="assets/videos/chase-demo.mp4" poster="assets/videos/chase-demo-poster.jpg" autoplay muted playsinline></video>
+      <button class="video-replay-btn" id="videoReplayBtn" aria-label="Replay video">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="23 4 23 10 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="1 20 1 14 7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Replay
+      </button>
+    </div>
     <div class="proto-cta">
       <p>Explore the full interactive prototype in Figma</p>
       <a href="https://www.figma.com/proto/fAdKPArhzzoqtjWyR5xKI4/Receipt-Scanner-Integration--Chase-App-Concept-?page-id=116%3A2186&node-id=116-2301&viewport=533%2C-860%2C0.5&t=QHqPp1ZDMhigI8tN-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=116%3A2301" target="_blank">View Prototype</a>
@@ -352,6 +358,21 @@
 
     phaseSections.forEach(sec => phaseObserver.observe(sec));
     setActivePhase(phaseSections[0].id);
+  }
+
+  // Demo video: plays once (muted, autoplay) then shows a "Replay" button
+  // overlaid on the paused frame. Clicking it restarts playback from 0.
+  const demoVideo = document.getElementById('chaseDemoVideo');
+  const videoReplayBtn = document.getElementById('videoReplayBtn');
+  if (demoVideo && videoReplayBtn) {
+    demoVideo.addEventListener('ended', () => {
+      videoReplayBtn.classList.add('visible');
+    });
+    videoReplayBtn.addEventListener('click', () => {
+      videoReplayBtn.classList.remove('visible');
+      demoVideo.currentTime = 0;
+      demoVideo.play();
+    });
   }
 
   // Fixed "Back to Home" button: hidden at the top of the page, fades in

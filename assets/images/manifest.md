@@ -96,16 +96,15 @@ All 15 images below are real downloads from `static.wixstatic.com`, fetched at f
 
 | File in /assets/images | Original Wix filename | Dimensions | Used in chase.html | Size |
 |---|---|---|---|---|
-| `chase-hero.webp` | Hero Home Chase- long 4 phones copy.webp | 6000x1533 | Snapshot header (hero) | 206 KB |
-| `chase-affinity-map.webp` | Receipt Scanner Integration (Chase App Concept) copy.webp | 7098x1698 | User Interviews (expandable) | 598 KB |
-| `chase-competitive-analysis.webp` | Competitive Analysis.webp | 2558x502 | Competitive Analysis (expandable) | 76 KB |
-| `chase-competitive-analysis-mobile.webp` | Competitive Analysis —Mobile copy.webp | 2674x1377 | Competitive Analysis (expandable) | 216 KB |
-| `chase-amanda-torres-the-busy-family-manager.webp` | Persona_ Amanda Torres — The Busy Family Manager copy.webp | 1739x1699 | Persona & Problem Framing (expandable) | 334 KB |
-| `chase-user-flow.webp` | Receipt Scanner Integration -userflow copy.webp | 6074x1510 | Feature Prioritization & User Flow (expandable) | 143 KB |
-| `chase-mid-fidelity-wireframes.webp` | Receipt Scanner Mid-Fidelity Wireframes-white.webp | 9044x2748 | Mid-Fi Testing & Findings (expandable) | 1004 KB |
-| `chase-high-fidelity-screens.webp` | High-fidelity.webp | 9046x2749 | Final Design (always-visible) | 934 KB |
-| `chase-ui-elements.webp` | Chase UI Elements.webp | 2134x764 | Final Design (always-visible) | 47 KB |
-| `chase-iphone-with-reminder.png` | iPhone with reminder.png | 1926x1812 | Design Iterations (expandable) | 632 KB |
-| `chase-iphone-post-receipt.png` | iPhone post receipt.png | 1926x1812 | Design Iterations (expandable) | 577 KB |
-| `chase-iphone-cta-location-change.png` | iPhone CTA location chage.png | 1926x1812 | Design Iterations (expandable) | 690 KB |
-| `chase-8-final-screens.webp` | Chase 8 screens.webp | 4414x4207 | Final Design (always-visible) | 935 KB |
+| `chase-hero.webp` | Hero Home Chase- long 4 phones copy.webp | 1600x1000 (replaced) | Snapshot header (hero) | 56 KB |
+| `chase-affinity-map.webp` | Receipt Scanner Integration (Chase App Concept) copy.webp | 1600x800 (replaced) | User Interviews (expandable) | 53 KB |
+| `chase-competitive-analysis.webp` | Competitive Analysis.webp | 1600x1000 (replaced) | Competitive Analysis (expandable) | 81 KB |
+| `chase-amanda-torres-the-busy-family-manager.webp` | Persona_ Amanda Torres — The Busy Family Manager copy.webp | 1600x1000 (replaced) | Persona & Problem Framing (expandable) | 69 KB |
+| `chase-user-flow.webp` | Receipt Scanner Integration -userflow copy.webp | 1600x800 (replaced) | Feature Prioritization & User Flow (expandable) | 19 KB |
+| `chase-mid-fidelity-wireframes.webp` | Receipt Scanner Mid-Fidelity Wireframes-white.webp | 1600x1000 (replaced) | Mid-Fi Testing & Findings (expandable) | 39 KB |
+| `chase-high-fidelity-screens.webp` | High-fidelity.webp | 1600x1000 (replaced) | Final Design (always-visible) | 53 KB |
+| `chase-ui-elements.webp` | Chase UI Elements.webp | 1600x1000 (replaced) | Final Design (always-visible) | 37 KB |
+| `chase-reminder-confirmation.webp` | iPhone with reminder.png | 1600x1000 (replaced, was .png) | Design Iterations (expandable) | 52 KB |
+| `chase-refined-copy-visual-cues.webp` | iPhone post receipt.png | 1600x1000 (replaced, was .png) | Design Iterations (expandable) | 56 KB |
+| `chase-cta-hierarchy.webp` | iPhone CTA location chage.png | 1600x1000 (replaced, was .png) | Design Iterations (expandable) | 41 KB |
+| `chase-8-final-screens.webp` | Chase 8 screens.webp | 1600x1000 (replaced) | Final Design (always-visible) | 70 KB — now shows 4 screens, not 8; alt text updated to match |
