@@ -485,6 +485,9 @@ section.phase { padding-top: 4.5rem; }
    Card grids — feature / change / worked / stat
    -------------------------------------------------------------------------- */
 .features { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 1.5rem 0; }
+/* Modifier for feature grids with 4 items that should arrange as 2x2
+   instead of the default 3-per-row (which would wrap to 3+1). */
+.features--2col { grid-template-columns: 1fr 1fr; }
 .feature-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
 .feature-num { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--accent); line-height: 1; margin-bottom: 0.5rem; }
 .feature-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.35rem; }
@@ -502,6 +505,9 @@ section.phase { padding-top: 4.5rem; }
 .change-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
 
 .worked { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 1.5rem 0; }
+/* Modifier for worked-card grids with 4 items that should arrange as 2x2
+   instead of the default 3-per-row (which would wrap to 3+1). */
+.worked--2col { grid-template-columns: 1fr 1fr; }
 .worked-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
 .worked-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.4rem; }
 .worked-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
@@ -869,6 +875,46 @@ section.phase { padding-top: 4.5rem; }
 
 @media (max-width: 640px) {
   .chase-page section.phase {
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Unveil-only layout overrides (scoped to body.unveil-page so
+   chase/caresync/skillbridge keep the shared divider/spacing rules above
+   untouched). Same treatment as .chase-page/.caresync-page/.skillbridge-page
+   above.
+   -------------------------------------------------------------------------- */
+.unveil-page section { border-bottom: none; }
+.unveil-page .hero { border-bottom: none; }
+
+.unveil-page .findings li,
+.unveil-page .hmw-list li,
+.unveil-page .future li,
+.unveil-page .feature-card,
+.unveil-page .change-card,
+.unveil-page .worked-card {
+  border-top: none;
+  border-bottom: none;
+}
+
+.unveil-page p.body,
+.unveil-page .hero-desc {
+  margin-bottom: 1.25rem;
+}
+
+.unveil-page section.phase > *:last-child {
+  margin-bottom: 0;
+}
+
+.unveil-page section.phase {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .unveil-page section.phase {
     padding-top: 2.25rem;
     padding-bottom: 1.75rem;
   }
