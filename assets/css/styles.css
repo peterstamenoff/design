@@ -430,6 +430,11 @@ section.phase { padding-top: 4.5rem; }
 .findings li strong { display: block; margin-bottom: 2px; }
 .findings li:first-child { border-top: 0.5px solid var(--border); }
 
+/* Modifier for findings lists where the label should run inline with its
+   description (e.g. "Format: Remote (Zoom) + ...") instead of the default
+   blockified title used by longer, wrapping findings. */
+.findings--inline li strong { display: inline; margin-bottom: 0; }
+
 .hmw-list { list-style: none; margin: 1rem 0; display: flex; flex-direction: column; }
 .hmw-list li {
   font-size: 14px;
@@ -451,6 +456,26 @@ section.phase { padding-top: 4.5rem; }
 }
 .future li::before { content: '•'; color: var(--gray-500); flex-shrink: 0; }
 .future li:first-child { border-top: 0.5px solid var(--border); }
+
+/* .future li normally lays out its bullet via display:flex, which makes
+   <strong> its own flex item separate from the trailing text (flex items
+   are blockified regardless of their own display value) — so label and
+   description render as two independent boxes even with no block-level
+   HTML wrapper. This modifier drops flex entirely and switches to the
+   same absolutely-positioned-bullet approach .findings uses, so <strong>
+   and the following text become one ordinary inline text run. */
+.future--inline li {
+  display: block;
+  position: relative;
+  padding: 0.75rem 0 0.75rem 20px;
+}
+.future--inline li::before {
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  line-height: 1;
+}
+.future--inline li strong { display: inline; }
 
 /* --------------------------------------------------------------------------
    Card grids — feature / change / worked / stat
@@ -579,20 +604,16 @@ section.phase { padding-top: 4.5rem; }
 .video-replay-btn.visible { display: inline-flex; }
 
 .figma-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-block;
   font-size: 13px;
   font-weight: 500;
   color: var(--color-primary);
-  border: 0.5px solid var(--gray-300);
-  border-radius: 100px;
-  padding: 8px 16px;
   text-decoration: none;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 2px;
   margin-top: 1rem;
-  transition: all 0.15s;
 }
-.figma-link:hover { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-white); }
+.figma-link svg { display: none; }
 
 .pov {
   margin: 1.5rem 0;
@@ -766,6 +787,45 @@ section.phase { padding-top: 4.5rem; }
 
 @media (max-width: 640px) {
   .skillbridge-page section.phase {
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   CareSync-only layout overrides (scoped to body.caresync-page so
+   chase/skillbridge/unveil keep the shared divider/spacing rules above
+   untouched). Same treatment as .skillbridge-page above.
+   -------------------------------------------------------------------------- */
+.caresync-page section { border-bottom: none; }
+.caresync-page .hero { border-bottom: none; }
+
+.caresync-page .findings li,
+.caresync-page .hmw-list li,
+.caresync-page .future li,
+.caresync-page .feature-card,
+.caresync-page .change-card,
+.caresync-page .worked-card {
+  border-top: none;
+  border-bottom: none;
+}
+
+.caresync-page p.body,
+.caresync-page .hero-desc {
+  margin-bottom: 1.25rem;
+}
+
+.caresync-page section.phase > *:last-child {
+  margin-bottom: 0;
+}
+
+.caresync-page section.phase {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .caresync-page section.phase {
     padding-top: 2.25rem;
     padding-bottom: 1.75rem;
   }

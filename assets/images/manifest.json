@@ -63,148 +63,180 @@
     "placeholder_alt_text": false
   },
   {
-    "filename": "caresync-caresync-hero.avif",
+    "filename": "caresync-caresync-hero.webp",
     "source_file": "caresync.html",
     "context": "CareSync Hero",
-    "mime": "image/avif",
-    "bytes": 100562,
+    "mime": "image/webp",
+    "bytes": 121312,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-caresync-hero.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-affinity-map.avif",
+    "filename": "caresync-affinity-map.webp",
     "source_file": "caresync.html",
     "context": "Affinity Map",
-    "mime": "image/avif",
-    "bytes": 66842,
+    "mime": "image/webp",
+    "bytes": 67984,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced caresync-affinity-map.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-competitive-analysis.avif",
+    "filename": "caresync-competitive-analysis.webp",
     "source_file": "caresync.html",
     "context": "Competitive Analysis",
-    "mime": "image/avif",
-    "bytes": 37318,
+    "mime": "image/webp",
+    "bytes": 75758,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced caresync-competitive-analysis.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-rose-the-everyday-caregiver.avif",
+    "filename": "caresync-rose-the-everyday-caregiver.webp",
     "source_file": "caresync.html",
     "context": "Rose \u2014 The Everyday Caregiver",
-    "mime": "image/avif",
-    "bytes": 75977,
+    "mime": "image/webp",
+    "bytes": 54972,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced caresync-rose-the-everyday-caregiver.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-erica-the-busy-family-manager.avif",
+    "filename": "caresync-erica-the-busy-family-manager.webp",
     "source_file": "caresync.html",
     "context": "Erica \u2014 The Busy Family Manager",
-    "mime": "image/avif",
-    "bytes": 77267,
+    "mime": "image/webp",
+    "bytes": 56320,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced caresync-erica-the-busy-family-manager.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-caresync-sitemap.avif",
+    "filename": "caresync-caresync-sitemap.webp",
     "source_file": "caresync.html",
     "context": "CareSync Sitemap",
-    "mime": "image/avif",
-    "bytes": 44152,
+    "mime": "image/webp",
+    "bytes": 35276,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced caresync-caresync-sitemap.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-caresync-user-flow.avif",
+    "filename": "caresync-caresync-user-flow.webp",
     "source_file": "caresync.html",
     "context": "CareSync User Flow",
-    "mime": "image/avif",
-    "bytes": 12746,
+    "mime": "image/webp",
+    "bytes": 14686,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced caresync-caresync-user-flow.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-low-fidelity-wireframes.avif",
+    "filename": "caresync-low-fidelity-wireframes.webp",
     "source_file": "caresync.html",
     "context": "Low-Fidelity Wireframes",
-    "mime": "image/avif",
-    "bytes": 61786,
+    "mime": "image/webp",
+    "bytes": 60674,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-low-fidelity-wireframes.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-mid-fidelity-wireframes.avif",
+    "filename": "caresync-mid-fidelity-wireframes.webp",
     "source_file": "caresync.html",
     "context": "Mid-Fidelity Wireframes",
-    "mime": "image/avif",
-    "bytes": 62992,
+    "mime": "image/webp",
+    "bytes": 53126,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-mid-fidelity-wireframes.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-high-fidelity-wireframes.avif",
+    "filename": "caresync-high-fidelity-wireframes.webp",
     "source_file": "caresync.html",
     "context": "High-Fidelity Wireframes",
-    "mime": "image/avif",
-    "bytes": 94939,
+    "mime": "image/webp",
+    "bytes": 60150,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-high-fidelity-wireframes.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-brand-style-tile.avif",
+    "filename": "caresync-brand-style-tile.webp",
     "source_file": "caresync.html",
     "context": "Brand Style Tile",
-    "mime": "image/avif",
-    "bytes": 45955,
+    "mime": "image/webp",
+    "bytes": 36554,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
+    "note": "Replaced caresync-brand-style-tile.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-ui-component-library.avif",
+    "filename": "caresync-ui-component-library.webp",
     "source_file": "caresync.html",
     "context": "UI Component Library",
-    "mime": "image/avif",
-    "bytes": 80662,
+    "mime": "image/webp",
+    "bytes": 67856,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-ui-component-library.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-copy-precision-change.avif",
+    "filename": "caresync-copy-precision-change.webp",
     "source_file": "caresync.html",
     "context": "Copy Precision Change",
-    "mime": "image/avif",
-    "bytes": 64850,
+    "mime": "image/webp",
+    "bytes": 50804,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-copy-precision-change.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-recording-control-change.avif",
+    "filename": "caresync-recording-control-change.webp",
     "source_file": "caresync.html",
     "context": "Recording Control Change",
-    "mime": "image/avif",
-    "bytes": 62317,
+    "mime": "image/webp",
+    "bytes": 46938,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-recording-control-change.avif at a new filename/format (avif to webp)."
   },
   {
-    "filename": "caresync-view-summary-change.avif",
+    "filename": "caresync-clear-transitions.webp",
     "source_file": "caresync.html",
     "context": "View Summary Change",
-    "mime": "image/avif",
-    "bytes": 63607,
+    "mime": "image/webp",
+    "bytes": 47500,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaces caresync-view-summary-change.avif \u2014 renamed (not just re-encoded) to caresync-clear-transitions.webp since the on-page card title changed from \"View Summary Change\" to \"Clear Transitions.\" The img alt text still reads \"View Summary Change\" (left untouched per this task's path-only scope)."
   },
   {
-    "filename": "caresync-caresync-final-screens-8-screens.avif",
+    "filename": "caresync-caresync-final-screens-8-screens.webp",
     "source_file": "caresync.html",
-    "context": "CareSync Final Screens \u2014 8 screens",
-    "mime": "image/avif",
-    "bytes": 151290,
+    "context": "Four selected final screens of the CareSync app",
+    "mime": "image/webp",
+    "bytes": 68692,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
+    "note": "Replaced caresync-caresync-final-screens-8-screens.avif at a new filename/format (avif to webp); now shows 4 selected screens instead of 8, so alt text was updated to match (filename left as-is since renaming it wasn't requested)."
   },
   {
     "filename": "shared-peter-stamenoff-logo.avif",

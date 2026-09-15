@@ -28,22 +28,22 @@ embedded in (as base64), so the original source can be found later. See also
 | File in /assets/images | Original alt/context | Size | Notes |
 |---|---|---|---|
 | `shared-peter-stamenoff-logo.avif` | Peter Stamenoff Logo | 2 KB | duplicate of a file already saved from an earlier page (identical bytes) |
-| `caresync-caresync-hero.avif` | CareSync Hero | 98 KB | — |
-| `caresync-affinity-map.avif` | Affinity Map | 65 KB | — |
-| `caresync-competitive-analysis.avif` | Competitive Analysis | 36 KB | — |
-| `caresync-rose-the-everyday-caregiver.avif` | Rose — The Everyday Caregiver | 74 KB | — |
-| `caresync-erica-the-busy-family-manager.avif` | Erica — The Busy Family Manager | 75 KB | — |
-| `caresync-caresync-sitemap.avif` | CareSync Sitemap | 43 KB | — |
-| `caresync-caresync-user-flow.avif` | CareSync User Flow | 12 KB | — |
-| `caresync-low-fidelity-wireframes.avif` | Low-Fidelity Wireframes | 60 KB | — |
-| `caresync-mid-fidelity-wireframes.avif` | Mid-Fidelity Wireframes | 62 KB | — |
-| `caresync-high-fidelity-wireframes.avif` | High-Fidelity Wireframes | 93 KB | — |
-| `caresync-brand-style-tile.avif` | Brand Style Tile | 45 KB | — |
-| `caresync-ui-component-library.avif` | UI Component Library | 79 KB | — |
-| `caresync-copy-precision-change.avif` | Copy Precision Change | 63 KB | — |
-| `caresync-recording-control-change.avif` | Recording Control Change | 61 KB | — |
-| `caresync-view-summary-change.avif` | View Summary Change | 62 KB | — |
-| `caresync-caresync-final-screens-8-screens.avif` | CareSync Final Screens — 8 screens | 148 KB | — |
+| `caresync-caresync-hero.webp` | CareSync Hero | 118 KB | Replaced `caresync-caresync-hero.avif` (avif→webp) — 1600×1000 |
+| `caresync-affinity-map.webp` | Affinity Map | 66 KB | Replaced `caresync-affinity-map.avif` (avif→webp) — 1600×800 |
+| `caresync-competitive-analysis.webp` | Competitive Analysis | 74 KB | Replaced `caresync-competitive-analysis.avif` (avif→webp) — 1600×800 |
+| `caresync-rose-the-everyday-caregiver.webp` | Rose — The Everyday Caregiver | 54 KB | Replaced `caresync-rose-the-everyday-caregiver.avif` (avif→webp) — 800×800 |
+| `caresync-erica-the-busy-family-manager.webp` | Erica — The Busy Family Manager | 55 KB | Replaced `caresync-erica-the-busy-family-manager.avif` (avif→webp) — 800×800 |
+| `caresync-caresync-sitemap.webp` | CareSync Sitemap | 34 KB | Replaced `caresync-caresync-sitemap.avif` (avif→webp) — 1600×800 |
+| `caresync-caresync-user-flow.webp` | CareSync User Flow | 14 KB | Replaced `caresync-caresync-user-flow.avif` (avif→webp) — 1600×800 |
+| `caresync-low-fidelity-wireframes.webp` | Low-Fidelity Wireframes | 59 KB | Replaced `caresync-low-fidelity-wireframes.avif` (avif→webp) — 1600×1000 |
+| `caresync-mid-fidelity-wireframes.webp` | Mid-Fidelity Wireframes | 52 KB | Replaced `caresync-mid-fidelity-wireframes.avif` (avif→webp) — 1600×1000 |
+| `caresync-high-fidelity-wireframes.webp` | High-Fidelity Wireframes | 59 KB | Replaced `caresync-high-fidelity-wireframes.avif` (avif→webp) — 1600×1000 |
+| `caresync-brand-style-tile.webp` | Brand Style Tile | 36 KB | Replaced `caresync-brand-style-tile.avif` (avif→webp) — 1600×800 |
+| `caresync-ui-component-library.webp` | UI Component Library | 66 KB | Replaced `caresync-ui-component-library.avif` (avif→webp) — 1600×1000 |
+| `caresync-copy-precision-change.webp` | Copy Precision Change | 50 KB | Replaced `caresync-copy-precision-change.avif` (avif→webp) — 1600×1000 |
+| `caresync-recording-control-change.webp` | Recording Control Change | 46 KB | Replaced `caresync-recording-control-change.avif` (avif→webp) — 1600×1000 |
+| `caresync-clear-transitions.webp` | View Summary Change | 46 KB | Renamed from `caresync-view-summary-change.avif` — card title on page is now "Clear Transitions" (1600×1000). Alt text still reads "View Summary Change," left as-is per task scope. |
+| `caresync-caresync-final-screens-8-screens.webp` | Four selected final screens of the CareSync app | 67 KB | Replaced `caresync-caresync-final-screens-8-screens.avif` (avif→webp) — now shows 4 screens, not 8; alt text updated to match (1600×1000) |
 
 ## skillbridge.html
 
