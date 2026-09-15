@@ -261,6 +261,13 @@
     <p class="phase-label">Final Design</p>
     <h2 class="section-title">Selected <em>Screens</em></h2>
     <div class="img-block"><img src="assets/images/unveil-final-screens-upload-image.webp" alt="Eight final Unveil screens: My Info, Explore, My Events, activity detail with map, event details, profile preview, identity confirmation, and event preview" style="width:100%;display:block;"></div>
+    <div class="img-block video-block" style="margin-top:1.5rem">
+      <video id="unveilDemoVideo" src="assets/videos/unveil-demo.mp4" poster="assets/videos/unveil-demo-poster.jpg" style="max-width:200px;width:100%;height:auto;" autoplay muted playsinline></video>
+      <button class="video-replay-btn" id="videoReplayBtn" aria-label="Replay video">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="23 4 23 10 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="1 20 1 14 7 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Replay
+      </button>
+    </div>
     <div class="proto-cta">
       <p>Explore the full interactive prototype in Figma</p>
       <a href="https://www.figma.com/proto/VweDiFBAQSo6Gc5qcul5GX/Unveillab-App?page-id=596%3A2519&node-id=596-4261&viewport=264%2C495%2C0.25&t=J0ihqn3LnR3xkWOS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=596%3A4261&show-proto-sidebar=1" target="_blank">View Prototype</a>
@@ -361,6 +368,21 @@
 
     phaseSections.forEach(sec => phaseObserver.observe(sec));
     setActivePhase(phaseSections[0].id);
+  }
+
+  // Demo video: plays once (muted, autoplay) then shows a "Replay" button
+  // overlaid on the paused frame. Clicking it restarts playback from 0.
+  const demoVideo = document.getElementById('unveilDemoVideo');
+  const videoReplayBtn = document.getElementById('videoReplayBtn');
+  if (demoVideo && videoReplayBtn) {
+    demoVideo.addEventListener('ended', () => {
+      videoReplayBtn.classList.add('visible');
+    });
+    videoReplayBtn.addEventListener('click', () => {
+      videoReplayBtn.classList.remove('visible');
+      demoVideo.currentTime = 0;
+      demoVideo.play();
+    });
   }
 
   // Fixed "Back to Home" button: hidden at the top of the page, fades in
