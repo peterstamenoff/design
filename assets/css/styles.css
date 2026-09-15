@@ -435,6 +435,10 @@ section.phase { padding-top: 4.5rem; }
    blockified title used by longer, wrapping findings. */
 .findings--inline li strong { display: inline; margin-bottom: 0; }
 
+/* Modifier to hide the bullet marker entirely, for findings lists that
+   should read as plain labeled lines with no dot. */
+.findings--no-bullet li::before { display: none; }
+
 .hmw-list { list-style: none; margin: 1rem 0; display: flex; flex-direction: column; }
 .hmw-list li {
   font-size: 14px;
@@ -826,6 +830,45 @@ section.phase { padding-top: 4.5rem; }
 
 @media (max-width: 640px) {
   .caresync-page section.phase {
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Chase-only layout overrides (scoped to body.chase-page so
+   caresync/skillbridge/unveil keep the shared divider/spacing rules above
+   untouched). Same treatment as .skillbridge-page/.caresync-page above.
+   -------------------------------------------------------------------------- */
+.chase-page section { border-bottom: none; }
+.chase-page .hero { border-bottom: none; }
+
+.chase-page .findings li,
+.chase-page .hmw-list li,
+.chase-page .future li,
+.chase-page .feature-card,
+.chase-page .change-card,
+.chase-page .worked-card {
+  border-top: none;
+  border-bottom: none;
+}
+
+.chase-page p.body,
+.chase-page .hero-desc {
+  margin-bottom: 1.25rem;
+}
+
+.chase-page section.phase > *:last-child {
+  margin-bottom: 0;
+}
+
+.chase-page section.phase {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .chase-page section.phase {
     padding-top: 2.25rem;
     padding-bottom: 1.75rem;
   }

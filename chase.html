@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="theme-chase">
+<body class="theme-chase chase-page">
 
 <nav>
   <a href="index.html" class="logo">
@@ -184,28 +184,22 @@
     <h2 class="section-title">Usability <em>Testing</em></h2>
     <p class="body">The goal of the usability test was to evaluate the clarity, usability, and perceived value of the Receipt Scanner concept within the Chase mobile app. I focused on whether users could easily scan and save receipts, understand where they are stored, and set return or warranty reminders. The study also identified friction points in the core task flows and validated alignment with existing Chase app patterns, language, and visual hierarchy.</p>
 
-    <div class="two-col" style="margin-top:1.5rem">
-      <div>
-        <p class="section-subtitle">Objectives</p>
-        <ul class="findings">
-          <li>Determine if users can find and complete the "Add Receipt" and "Add Receipt + Reminder" flows without assistance.</li>
-          <li>Measure how confident participants feel after saving a receipt or setting a reminder.</li>
-          <li>Observe how users interpret where saved receipts live within the app.</li>
-          <li>Evaluate whether the language and tone feel consistent with Chase's trusted brand voice.</li>
-          <li>Capture qualitative feedback on UI clarity, copy, and feature expectations.</li>
-        </ul>
-      </div>
-      <div>
-        <p class="section-subtitle">Method</p>
-        <ul class="findings">
-          <li><strong>Format:</strong> Prototype walkthrough (moderated via Zoom recording).</li>
-          <li><strong>Participants:</strong> Six users, current or recent Chase users with a mix of digital proficiency.</li>
-          <li><strong>Tasks:</strong> Add a receipt to a recent transaction, then add a receipt and set a reminder for a 30-day return policy.</li>
-          <li><strong>Metrics:</strong> Ease of completion (1–5 scale), confidence in completion, comprehension of reminder, tone and trust perception, and open-ended qualitative feedback.</li>
-          <li><strong>Test Tools:</strong> Figma prototype simulating the Chase mobile app UI with two functional flows.</li>
-        </ul>
-      </div>
-    </div>
+    <p class="section-subtitle" style="margin-top:1.5rem">Objectives</p>
+    <ul class="findings">
+      <li>Determine if users can find and complete the "Add Receipt" and "Add Receipt + Reminder" flows without assistance.</li>
+      <li>Measure how confident participants feel after saving a receipt or setting a reminder.</li>
+      <li>Observe how users interpret where saved receipts live within the app.</li>
+      <li>Evaluate whether the language and tone feel consistent with Chase's trusted brand voice.</li>
+      <li>Capture qualitative feedback on UI clarity, copy, and feature expectations.</li>
+    </ul>
+    <p class="section-subtitle" style="margin-top:1.5rem">Method</p>
+    <ul class="findings findings--inline findings--no-bullet">
+      <li><strong>Format:</strong> Prototype walkthrough (moderated via Zoom recording).</li>
+      <li><strong>Participants:</strong> Six users, current or recent Chase users with a mix of digital proficiency.</li>
+      <li><strong>Tasks:</strong> Add a receipt to a recent transaction, then add a receipt and set a reminder for a 30-day return policy.</li>
+      <li><strong>Metrics:</strong> Ease of completion (1–5 scale), confidence in completion, comprehension of reminder, tone and trust perception, and open-ended qualitative feedback.</li>
+      <li><strong>Test Tools:</strong> Figma prototype simulating the Chase mobile app UI with two functional flows.</li>
+    </ul>
 
     <p class="section-subtitle" style="margin-top:2rem">Test Flows</p>
     <ul class="findings">
@@ -225,22 +219,20 @@
 
     <p class="section-subtitle" style="margin-top:2.5rem">Prioritized Changes</p>
     <p class="body">Based on usability testing, I made three prioritized changes to improve clarity and confidence.</p>
-    <div class="changes">
-      <div class="change-card">
-        <div class="img-block"><img src="assets/images/chase-reminder-confirmation.webp" alt="Confirmation message shown after setting a receipt reminder" style="width:100%;display:block;"></div>
-        <div class="change-title" style="margin-top:0.75rem">Reminder Confirmation</div>
-        <div class="change-desc">Added a clear confirmation message after setting the reminder date, addressing feedback that explicit confirmation was needed before saving the reminder (for example, "Reminder added. You'll be notified 5 days before the return deadline.").</div>
-      </div>
-      <div class="change-card">
-        <div class="img-block"><img src="assets/images/chase-refined-copy-visual-cues.webp" alt="Updated receipt storage screen with clearer copy and visual cues" style="width:100%;display:block;"></div>
-        <div class="change-title" style="margin-top:0.75rem">Refined Copy &amp; Visual Cues</div>
-        <div class="change-desc">Updated the entry-point label from "Scan Receipt" to "Scan Receipts" to better reflect the action, and improved receipt location visibility by adding a clear text label, "Receipt," alongside the icon.</div>
-      </div>
-      <div class="change-card change-card--full">
-        <div class="img-block"><img src="assets/images/chase-cta-hierarchy.webp" alt="Reordered CTA hierarchy prioritizing Save Receipt over Add Receipt Reminder" style="width:100%;display:block;"></div>
-        <div class="change-title" style="margin-top:0.75rem">CTA Hierarchy</div>
-        <div class="change-desc">Several users noted that the "Add Receipt Reminder" button overshadowed the primary "Save Receipt" action, so I reversed the order to better emphasize the main task.</div>
-      </div>
+    <div class="change-card">
+      <div class="img-block"><img src="assets/images/chase-reminder-confirmation.webp" alt="Confirmation message shown after setting a receipt reminder" style="width:100%;display:block;"></div>
+      <div class="change-title" style="margin-top:0.75rem">Reminder Confirmation</div>
+      <div class="change-desc">Added a clear confirmation message after setting the reminder date, addressing feedback that explicit confirmation was needed before saving the reminder (for example, "Reminder added. You'll be notified 5 days before the return deadline.").</div>
+    </div>
+    <div class="change-card">
+      <div class="img-block"><img src="assets/images/chase-refined-copy-visual-cues.webp" alt="Updated receipt storage screen with clearer copy and visual cues" style="width:100%;display:block;"></div>
+      <div class="change-title" style="margin-top:0.75rem">Refined Copy &amp; Visual Cues</div>
+      <div class="change-desc">Updated the entry-point label from "Scan Receipt" to "Scan Receipts" to better reflect the action, and improved receipt location visibility by adding a clear text label, "Receipt," alongside the icon.</div>
+    </div>
+    <div class="change-card">
+      <div class="img-block"><img src="assets/images/chase-cta-hierarchy.webp" alt="Reordered CTA hierarchy prioritizing Save Receipt over Add Receipt Reminder" style="width:100%;display:block;"></div>
+      <div class="change-title" style="margin-top:0.75rem">CTA Hierarchy</div>
+      <div class="change-desc">Several users noted that the "Add Receipt Reminder" button overshadowed the primary "Save Receipt" action, so I reversed the order to better emphasize the main task.</div>
     </div>
   </section>
 
@@ -268,7 +260,7 @@
     <h2 class="section-title">Key <em>Takeaways</em></h2>
     <p class="body">Completed in just two weeks, this project encouraged me to be intentional about where to focus my time. Through research, iteration, and usability testing, I gained a deeper appreciation for how clarity, feedback, and hierarchy influence user confidence. The final design supported smooth task completion and strong ease-of-use feedback, resulting in an experience that feels clear, trustworthy, and genuinely helpful.</p>
     <p class="section-subtitle" style="margin-top:2rem">Future Enhancements</p>
-    <ul class="future">
+    <ul class="future future--inline">
       <li><strong>Dual entry points:</strong> Support both a global "Scan Receipts" flow and an in-transaction "Attach Receipt" flow.</li>
       <li><strong>Link confirmation &amp; correction:</strong> After a scan, show the matched transaction and let the user confirm or change it inline.</li>
       <li><strong>Context-aware onboarding:</strong> Add a one-time tooltip, short feature card, or brief video explaining where receipts are saved and how reminders work.</li>
