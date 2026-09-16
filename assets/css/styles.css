@@ -592,6 +592,10 @@ section.phase { padding-top: 4.5rem; }
 
 .video-block { position: relative; background: var(--color-white); padding-top: 10%; padding-bottom: 10%; }
 .video-block video { width: 55%; display: block; margin: 0 auto; }
+
+@media (max-width: 640px) {
+  .video-block video { min-width: 200px; }
+}
 .video-replay-btn {
   position: absolute;
   top: 50%;
@@ -802,6 +806,17 @@ section.phase { padding-top: 4.5rem; }
   }
 }
 
+/* Empathize-phase insight paragraph: match Unveil's testimonial treatment
+   (.pov--quote). Scoped to .pov--insight (added only to this specific
+   block) plus .skillbridge-page so it can't affect the base .pov p rule
+   used by chase/caresync/unveil. font-style/color are already inherited
+   from .pov p but declared explicitly here for parity with .pov--quote. */
+.skillbridge-page .pov--insight p {
+  font-style: italic;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
 /* --------------------------------------------------------------------------
    CareSync-only layout overrides (scoped to body.caresync-page so
    chase/skillbridge/unveil keep the shared divider/spacing rules above
@@ -839,6 +854,17 @@ section.phase { padding-top: 4.5rem; }
     padding-top: 2.25rem;
     padding-bottom: 1.75rem;
   }
+}
+
+/* Empathize-phase insight paragraph: match Unveil's testimonial treatment
+   (.pov--quote). Scoped to .pov--insight (added only to this specific
+   block) plus .caresync-page so it can't affect the base .pov p rule used
+   by chase/skillbridge/unveil. font-style/color are already inherited from
+   .pov p but declared explicitly here for parity with .pov--quote. */
+.caresync-page .pov--insight p {
+  font-style: italic;
+  color: var(--color-primary);
+  font-size: 16px;
 }
 
 /* --------------------------------------------------------------------------
@@ -880,6 +906,17 @@ section.phase { padding-top: 4.5rem; }
   }
 }
 
+/* POV Statement in the Define phase: reduce size and de-italicize, matching
+   Unveil's .pov--problem-statement treatment. Scoped to
+   .pov--problem-statement (added only to this specific block) plus
+   .chase-page so it can't affect the base .pov p rule used by
+   caresync/skillbridge or Unveil's own page-scoped .pov rules. Color is
+   left fully inherited from the base .pov p rule. */
+.chase-page .pov--problem-statement p {
+  font-size: 15.47px;
+  font-style: normal;
+}
+
 /* --------------------------------------------------------------------------
    Unveil-only layout overrides (scoped to body.unveil-page so
    chase/caresync/skillbridge keep the shared divider/spacing rules above
@@ -918,4 +955,22 @@ section.phase { padding-top: 4.5rem; }
     padding-top: 2.25rem;
     padding-bottom: 1.75rem;
   }
+}
+
+/* Client testimonial in the Conclusion phase: shrink to standard body copy
+   size. Scoped to .pov--quote (added only to this specific block) plus
+   .unveil-page so it can't affect the other .pov usage on this same page
+   (the Problem Statement POV) or the shared .pov rule used by
+   chase/caresync/skillbridge. */
+.unveil-page .pov--quote p { font-size: 16px; }
+
+/* Problem Statement POV in the Empathize phase: reduce size (30% down from
+   the shared .pov p 20px base) and de-italicize. Scoped to
+   .pov--problem-statement (added only to this specific block) plus
+   .unveil-page so it can't affect the .pov--quote testimonial on this same
+   page or the shared .pov rule used by chase/caresync/skillbridge. Color
+   is left fully inherited from the base .pov p rule. */
+.unveil-page .pov--problem-statement p {
+  font-size: 15.47px;
+  font-style: normal;
 }

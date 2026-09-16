@@ -75,20 +75,20 @@ descriptions after visually inspecting each image's actual content. Filenames ar
 | File in /assets/images | Fixed alt text | Size |
 |---|---|---|
 | `shared-peter-stamenoff-logo.avif` | Peter Stamenoff Logo | 2 KB |
-| `unveil-hero-image-upload-to-replace.webp` | Three Unveil app screens showing a hike activity card with map, the Explore feed with suggested activities, and an event preview | 137 KB |
-| `unveil-affinity-map-upload-image.webp` | Affinity map clustering user interview quotes into themes like trust, social pressure, activity discovery, and the effort of putting yourself out there | 118 KB |
-| `unveil-competitive-analysis-upload-image.webp` | Logos of the six competitors analyzed: Nextdoor, Sonaara, Bumble BFF, Partiful, Eventbrite, and Meetup | 18 KB |
-| `unveil-alex-primary-persona.webp` | Alex, Primary Persona (unchanged — was already descriptive) | 116 KB |
-| `unveil-dannie-secondary-persona.webp` | Dannie, Secondary Persona (unchanged — was already descriptive) | 112 KB |
-| `unveil-sitemap-upload-image.webp` | Unveil sitemap showing the Discover/Home page branching to Activity Detail, Host an Activity, Activities with chat threads, and Profile | 11 KB |
-| `unveil-user-flows-upload-image.webp` | Three user flow diagrams: account setup and onboarding, hosting an activity, and joining an activity | 67 KB |
-| `unveil-mid-fidelity-wireframes-upload-image.webp` | Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, activity detail, and Chat screens | 97 KB |
-| `unveil-high-fidelity-wireframes-upload-image.webp` | High-fidelity screens for Explore, Preview Event, Event Details, My Events, My Info, and identity confirmation | 170 KB |
-| `unveil-brand-style-tile-upload-image.webp` | Unveil brand style tile showing typeface, color palette, logo lockups, and onboarding screen mockups | 76 KB |
-| `unveil-ui-component-library-upload-image.webp` | Unveil UI component library covering navigation, buttons, icons, toggles, dropdowns, and activity cards | 93 KB |
-| `unveil-timing-change-upload-image.webp` | Before and after comparison showing the suggested-activity card updated with an "In planning" status and more immediate copy | 164 KB |
-| `unveil-language-change-upload-image.webp` | Before and after comparison showing "Group comfort level" relabeled to "Group size" with added helper text | 135 KB |
-| `unveil-final-screens-upload-image.webp` | Eight final Unveil screens: My Info, Explore, My Events, activity detail with map, event details, profile preview, identity confirmation, and event preview | 217 KB |
+| `unveil-hero.webp` | Unveil app open on a phone showing the Explore feed with a suggested hike activity card and nearby event listings, resting on a desk near a coffee cup | 103 KB |
+| `unveil-affinity-map.webp` | Affinity map clustering user interview quotes into themes like trust, social pressure, activity discovery, and the effort of putting yourself out there | 61 KB |
+| `unveil-competitive-analysis.webp` | Logos of the six competitors analyzed: Nextdoor, Sonaara, Bumble BFF, Partiful, Eventbrite, and Meetup | 30 KB |
+| `unveil-alex-primary-persona.webp` | Alex, Primary Persona — replaced by user, same filename (800x800) | 59 KB |
+| `unveil-dannie-secondary-persona.webp` | Dannie, Secondary Persona — replaced by user, same filename (800x800) | 58 KB |
+| `unveil-sitemap.webp` | Unveil sitemap showing the Discover/Home page branching to Activity Detail, Host an Activity, Activities with chat threads, and Profile — renamed from unveil-sitemap-upload-image.webp | 15 KB |
+| `unveil-user-flows.webp` | Three user flow diagrams: account setup and onboarding, hosting an activity, and joining an activity — renamed from unveil-user-flows-upload-image.webp | 40 KB |
+| `unveil-mid-fidelity-wireframes.webp` | Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, and activity detail screens — new image uploaded under a different filename than the old file, renamed reference accordingly (1600x1000) | 59 KB |
+| `unveil-high-fidelity-wireframes.webp` | High-fidelity screens showing the Explore feed, two Create Event steps, and an event preview with a live confirmation modal — renamed from unveil-high-fidelity-wireframes-upload-image.webp | 110 KB |
+| `unveil-brand-style-tile.webp` | Unveil brand style tile showing typeface, color palette, logo lockups, and app screen mockups including onboarding and the activities feed — renamed from unveil-brand-style-tile-upload-image.webp (1600x800) | 45 KB |
+| `unveil-ui-component-library.webp` | Unveil UI component library covering navigation, buttons, icons, toggles, dropdowns, and activity cards — renamed from unveil-ui-component-library-upload-image.webp (1600x800) | 51 KB |
+| `unveil-timing-change.webp` | Before and after comparison showing the suggested-activity card updated with an "In planning" status and more immediate copy — renamed from unveil-timing-change-upload-image.webp (1600x1000) | 72 KB |
+| `unveil-language-change.webp` | Before and after comparison showing "Group comfort level" relabeled to "Group size" with added helper text — resolved filename mix-up (was misplaced under unveil-final-screens-upload-image.webp), renamed accordingly (1600x1000) | 60 KB |
+| `unveil-final-screens.webp` | Four final Unveil screens: the Explore feed, the Create Event flow, an event preview, and the event preview with a live confirmation modal — renamed from unveil-final-screens-upload-image.webp (1600x1000) | 117 KB |
 
 ## chase.html
 

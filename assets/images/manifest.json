@@ -411,154 +411,170 @@
     "placeholder_alt_text": false
   },
   {
-    "filename": "unveil-hero-image-upload-to-replace.webp",
+    "filename": "unveil-hero.webp",
     "source_file": "unveil.html",
-    "context": "Hero image \u2014 upload to replace",
+    "context": "Hero image",
     "mime": "image/webp",
-    "bytes": 140626,
+    "bytes": 105158,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
-    "fixed_alt_text": "Three Unveil app screens showing a hike activity card with map, the Explore feed with suggested activities, and an event preview",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "dimensions": "1600x1000",
+    "fixed_alt_text": "Unveil app open on a phone showing the Explore feed with a suggested hike activity card and nearby event listings, resting on a desk near a coffee cup",
+    "note": "Renamed from unveil-hero-image-upload-to-replace.webp; replaced with a new image and new alt text. The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-affinity-map-upload-image.webp",
+    "filename": "unveil-affinity-map.webp",
     "source_file": "unveil.html",
-    "context": "Affinity map \u2014 upload image",
+    "context": "Affinity map",
     "mime": "image/webp",
-    "bytes": 120682,
+    "bytes": 62968,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x800",
     "fixed_alt_text": "Affinity map clustering user interview quotes into themes like trust, social pressure, activity discovery, and the effort of putting yourself out there",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-affinity-map-upload-image.webp; replaced with a new image, same alt text (still accurate). The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-competitive-analysis-upload-image.webp",
+    "filename": "unveil-competitive-analysis.webp",
     "source_file": "unveil.html",
-    "context": "Competitive analysis \u2014 upload image",
+    "context": "Competitive analysis",
     "mime": "image/webp",
-    "bytes": 18168,
+    "bytes": 30210,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x800",
     "fixed_alt_text": "Logos of the six competitors analyzed: Nextdoor, Sonaara, Bumble BFF, Partiful, Eventbrite, and Meetup",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-competitive-analysis-upload-image.webp; replaced with a new image, same alt text (still accurate). The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
     "filename": "unveil-alex-primary-persona.webp",
     "source_file": "unveil.html",
     "context": "Alex \u2014 Primary Persona",
     "mime": "image/webp",
-    "bytes": 119286,
+    "bytes": 60020,
     "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
+    "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
   },
   {
     "filename": "unveil-dannie-secondary-persona.webp",
     "source_file": "unveil.html",
     "context": "Dannie \u2014 Secondary Persona",
     "mime": "image/webp",
-    "bytes": 115114,
-    "dedup_of_existing_file": false,
-    "placeholder_alt_text": false
-  },
-  {
-    "filename": "unveil-sitemap-upload-image.webp",
-    "source_file": "unveil.html",
-    "context": "Sitemap \u2014 upload image",
-    "mime": "image/webp",
-    "bytes": 11578,
+    "bytes": 59286,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "800x800",
+    "note": "Replaced with a new version by the user at the same filename; dimensions/bytes updated accordingly."
+  },
+  {
+    "filename": "unveil-sitemap.webp",
+    "source_file": "unveil.html",
+    "context": "Sitemap",
+    "mime": "image/webp",
+    "bytes": 15468,
+    "dedup_of_existing_file": false,
+    "placeholder_alt_text": false,
+    "dimensions": "1600x800",
     "fixed_alt_text": "Unveil sitemap showing the Discover/Home page branching to Activity Detail, Host an Activity, Activities with chat threads, and Profile",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-sitemap-upload-image.webp; replaced with a new image, same alt text (still accurate)."
   },
   {
-    "filename": "unveil-user-flows-upload-image.webp",
+    "filename": "unveil-user-flows.webp",
     "source_file": "unveil.html",
-    "context": "User flows \u2014 upload image",
+    "context": "User flows",
     "mime": "image/webp",
-    "bytes": 68550,
+    "bytes": 40944,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
     "fixed_alt_text": "Three user flow diagrams: account setup and onboarding, hosting an activity, and joining an activity",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-user-flows-upload-image.webp; replaced with a new image, same alt text (still accurate)."
   },
   {
-    "filename": "unveil-mid-fidelity-wireframes-upload-image.webp",
+    "filename": "unveil-mid-fidelity-wireframes.webp",
     "source_file": "unveil.html",
-    "context": "Mid-fidelity wireframes \u2014 upload image",
+    "context": "Mid-fidelity wireframes",
     "mime": "image/webp",
-    "bytes": 99014,
+    "bytes": 60460,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
-    "fixed_alt_text": "Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, activity detail, and Chat screens",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "dimensions": "1600x1000",
+    "fixed_alt_text": "Mid-fidelity wireframes for Profile, Explore, New Activity creation, My Events, and activity detail screens",
+    "note": "The replacement image was uploaded under a new filename (no '-upload-image' suffix) rather than overwriting the old file in place. Renamed the reference accordingly. The old unveil-mid-fidelity-wireframes-upload-image.webp file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-high-fidelity-wireframes-upload-image.webp",
+    "filename": "unveil-high-fidelity-wireframes.webp",
     "source_file": "unveil.html",
-    "context": "High-fidelity wireframes \u2014 upload image",
+    "context": "High-fidelity wireframes",
     "mime": "image/webp",
-    "bytes": 174456,
+    "bytes": 112616,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
-    "fixed_alt_text": "High-fidelity screens for Explore, Preview Event, Event Details, My Events, My Info, and identity confirmation",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "dimensions": "1600x1000",
+    "fixed_alt_text": "High-fidelity screens showing the Explore feed, two Create Event steps, and an event preview with a live confirmation modal",
+    "note": "Renamed from unveil-high-fidelity-wireframes-upload-image.webp; replaced with a new image and new alt text."
   },
   {
-    "filename": "unveil-brand-style-tile-upload-image.webp",
+    "filename": "unveil-brand-style-tile.webp",
     "source_file": "unveil.html",
-    "context": "Brand style tile \u2014 upload image",
+    "context": "Brand style tile",
     "mime": "image/webp",
-    "bytes": 77736,
+    "bytes": 45808,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
-    "fixed_alt_text": "Unveil brand style tile showing typeface, color palette, logo lockups, and onboarding screen mockups",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "dimensions": "1600x800",
+    "fixed_alt_text": "Unveil brand style tile showing typeface, color palette, logo lockups, and app screen mockups including onboarding and the activities feed",
+    "note": "Renamed from unveil-brand-style-tile-upload-image.webp; replaced with a new image and new alt text. The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-ui-component-library-upload-image.webp",
+    "filename": "unveil-ui-component-library.webp",
     "source_file": "unveil.html",
-    "context": "UI component library \u2014 upload image",
+    "context": "UI component library",
     "mime": "image/webp",
-    "bytes": 95708,
+    "bytes": 52072,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x800",
     "fixed_alt_text": "Unveil UI component library covering navigation, buttons, icons, toggles, dropdowns, and activity cards",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-ui-component-library-upload-image.webp; replaced with a new image, same alt text (still accurate). The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-timing-change-upload-image.webp",
+    "filename": "unveil-timing-change.webp",
     "source_file": "unveil.html",
-    "context": "Timing change \u2014 upload image",
+    "context": "Timing change",
     "mime": "image/webp",
-    "bytes": 167966,
+    "bytes": 73646,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
     "fixed_alt_text": "Before and after comparison showing the suggested-activity card updated with an 'In planning' status and more immediate copy",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from unveil-timing-change-upload-image.webp; replaced with a new image, same alt text (still accurate). The old file remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-language-change-upload-image.webp",
+    "filename": "unveil-language-change.webp",
     "source_file": "unveil.html",
-    "context": "Language change \u2014 upload image",
+    "context": "Language change",
     "mime": "image/webp",
-    "bytes": 138106,
+    "bytes": 61072,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
+    "dimensions": "1600x1000",
     "fixed_alt_text": "Before and after comparison showing 'Group comfort level' relabeled to 'Group size' with added helper text",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "note": "Renamed from the misplaced unveil-final-screens-upload-image.webp (which actually contained this language-change image); resolved the earlier filename mix-up. Alt text unchanged. The old unveil-language-change-upload-image.webp file (138,106 bytes) remains on disk but is no longer referenced anywhere in unveil.html."
   },
   {
-    "filename": "unveil-final-screens-upload-image.webp",
+    "filename": "unveil-final-screens.webp",
     "source_file": "unveil.html",
-    "context": "Final screens \u2014 upload image",
+    "context": "Final screens",
     "mime": "image/webp",
-    "bytes": 222384,
+    "bytes": 119958,
     "dedup_of_existing_file": false,
     "placeholder_alt_text": false,
-    "fixed_alt_text": "Eight final Unveil screens: My Info, Explore, My Events, activity detail with map, event details, profile preview, identity confirmation, and event preview",
-    "note": "Alt text fixed during unveil.html progressive-disclosure restructure \u2014 verified against actual image content before writing the description."
+    "dimensions": "1600x1000",
+    "fixed_alt_text": "Four final Unveil screens: the Explore feed, the Create Event flow, an event preview, and the event preview with a live confirmation modal",
+    "note": "Renamed from unveil-final-screens-upload-image.webp; replaced with a new image and new alt text."
   },
   {
     "filename": "chase-hero.webp",
