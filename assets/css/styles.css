@@ -594,7 +594,7 @@ section.phase { padding-top: 4.5rem; }
 .video-block video { width: 55%; display: block; margin: 0 auto; }
 
 @media (max-width: 640px) {
-  .video-block video { min-width: 200px; }
+  .video-block video { min-width: 440px; }
 }
 .video-replay-btn {
   position: absolute;
