@@ -594,17 +594,37 @@ section.phase { padding-top: 4.5rem; }
 .video-block video { width: 55%; display: block; margin: 0 auto; }
 
 @media (max-width: 640px) {
-  .video-block video { min-width: 200px; }
+  .video-block video { min-width: 100px; }
 }
 
-/* Chase/SkillBridge use the shared 55%-width video rule with no inline
-   override, so they benefit from a larger mobile floor than the 200px
-   fallback above (which exists for CareSync/Unveil, whose videos carry
-   their own inline max-width:200px anyway and are unaffected either way). */
+/* This shared 100px floor is set deliberately low so it stays under
+   CareSync/Unveil's page-scoped max-width:144px (below) and never
+   conflicts with it. Chase/SkillBridge carry no page-scoped max-width
+   override, so they instead get the larger, more legible floor below. */
 @media (max-width: 640px) {
   .chase-page .video-block video,
   .skillbridge-page .video-block video {
     min-width: 320px;
+  }
+}
+
+/* CareSync/Unveil videos are tall/portrait, so they're capped to a fixed
+   pixel width instead of the shared 55% rule above — 200px on desktop/
+   tablet (the original size before mobile-sizing work began), narrowed to
+   144px below the mobile breakpoint. Previously set via an inline style on
+   the <video> tag itself; moved here so it's easier to tune alongside the
+   other page-scoped video rules. */
+.caresync-page .video-block video,
+.unveil-page .video-block video {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .caresync-page .video-block video,
+  .unveil-page .video-block video {
+    max-width: 144px;
   }
 }
 .video-replay-btn {
