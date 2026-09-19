@@ -596,6 +596,17 @@ section.phase { padding-top: 4.5rem; }
 @media (max-width: 640px) {
   .video-block video { min-width: 200px; }
 }
+
+/* Chase/SkillBridge use the shared 55%-width video rule with no inline
+   override, so they benefit from a larger mobile floor than the 200px
+   fallback above (which exists for CareSync/Unveil, whose videos carry
+   their own inline max-width:200px anyway and are unaffected either way). */
+@media (max-width: 640px) {
+  .chase-page .video-block video,
+  .skillbridge-page .video-block video {
+    min-width: 320px;
+  }
+}
 .video-replay-btn {
   position: absolute;
   top: 50%;
