@@ -489,7 +489,7 @@ section.phase { padding-top: 4.5rem; }
    instead of the default 3-per-row (which would wrap to 3+1). */
 .features--2col { grid-template-columns: 1fr 1fr; }
 .feature-card { padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border); }
-.feature-num { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--accent); line-height: 1; margin-bottom: 0.5rem; }
+.feature-num { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--color-primary); line-height: 1; margin-bottom: 0.5rem; }
 .feature-title { font-size: 13px; font-weight: 500; color: var(--color-primary); margin-bottom: 0.35rem; }
 .feature-desc { font-size: 12px; line-height: 1.65; color: var(--gray-500); }
 
