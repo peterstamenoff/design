@@ -48,10 +48,14 @@
     main { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
 
     .hero { padding: 5rem 0 1.25rem; border-bottom: 0.5px solid var(--border); }
-    .hero-kicker { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 10px; }
-    .hero-kicker::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
-    .hero-h { font-family: 'DM Serif Display', serif; font-size: 34px; line-height: 1.1; font-weight: 400; margin-bottom: 1.5rem; }
+    .hero-kicker { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 2.5rem; display: flex; align-items: center; gap: 10px; }
+    .hero-h { font-family: 'Inter', sans-serif; font-size: 34px; line-height: 1.1; font-weight: 400; margin-bottom: 1.5rem; }
     .hero-h em { font-style: italic; color: var(--accent); }
+    .typewriter { border-right: 2px solid var(--black); }
+    @keyframes blink-cursor { 0%, 50% { border-color: var(--black); } 51%, 100% { border-color: transparent; } }
+    .typewriter { animation: blink-cursor 0.8s step-end infinite; }
+    .typewriter { background-color: #F2F2F2; padding: 2px 8px; }
+    .hero-greeting { font-size: 16.8px; font-weight: 400; line-height: 1.2; margin-bottom: 16px; }
     .hero-p { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
 
     .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin: 3rem 0 1.5rem; }
@@ -113,9 +117,9 @@
 
 <main>
   <section class="hero">
-    <p class="hero-kicker">UX/UI Designer — San Francisco Bay Area</p>
-    <h1 class="hero-h">Hi, I'm Peter Stamenoff. I turn complexity into <em>clear, beautiful</em> digital experiences.</h1>
-    <p class="hero-p">I am a senior visual designer transitioning into UX/UI, creating clear and thoughtful digital experiences through research, structure, and strong visual design.</p>
+    <p class="hero-greeting">Hi, I am Peter.</p>
+    <h1 class="hero-h">Product Designer blending <span class="typewriter" id="typewriter"></span></h1>
+    <p class="hero-p">10+ years designing for leading brands, including Fortune 500 companies, combining strategy, craft, and collaboration to create thoughtful digital experiences.</p>
   </section>
 
   <div class="sec-head">
@@ -183,6 +187,38 @@
     hamburger.classList.toggle('open');
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
+
+  const words = ["brand", "visual design", "and UX together."];
+  const typewriterEl = document.getElementById('typewriter');
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeLoop() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      charIndex--;
+      typewriterEl.textContent = currentWord.substring(0, charIndex);
+    } else {
+      charIndex++;
+      typewriterEl.textContent = currentWord.substring(0, charIndex);
+    }
+
+    let delay = isDeleting ? 56 : 112;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      delay = 2100;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      delay = 420;
+    }
+
+    setTimeout(typeLoop, delay);
+  }
+
+  typeLoop();
 </script>
 
 </body>
