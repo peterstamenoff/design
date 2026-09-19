@@ -202,7 +202,7 @@ footer {
 }
 .hero-kicker::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
 .hero-h { font-family: var(--font-display); font-size: 34px; line-height: 1.1; font-weight: 600; margin-bottom: 1.5rem; }
-.hero-h em { font-style: normal; color: var(--accent); }
+.hero-h em { font-style: normal; color: var(--color-primary); }
 .hero-p { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
 
 @media (max-width: 640px) {
@@ -230,7 +230,7 @@ footer {
 .project-label::before { content: ''; display: inline-block; width: 20px; height: 1.5px; background: var(--accent); flex-shrink: 0; }
 
 .hero h1 { font-family: var(--font-display); font-size: 32px; width: 100%; line-height: 1.08; font-weight: 600; margin-top: 2rem; margin-bottom: 1.5rem; }
-.hero h1 em { font-style: normal; color: var(--accent); }
+.hero h1 em { font-style: normal; color: var(--color-primary); }
 .hero-desc { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 2.5rem; }
 
 .meta-row { display: flex; gap: 3rem; flex-wrap: wrap; }
@@ -269,7 +269,7 @@ section:last-of-type { border-bottom: none; padding-bottom: 0; }
 .section-kicker { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
 
 .section-title { font-family: var(--font-display); font-size: 26px; font-weight: 600; margin-bottom: 1.5rem; line-height: 1.15; }
-.section-title em { font-style: normal; color: var(--accent); }
+.section-title em { font-style: normal; color: var(--color-primary); }
 .section-subtitle { font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-primary); margin: 2rem 0 0.75rem; }
 
 p.body { font-size: 16px; line-height: 1.8; color: #666666; margin-bottom: 1.25rem; }
@@ -624,7 +624,7 @@ section.phase { padding-top: 4.5rem; }
 @media (max-width: 640px) {
   .caresync-page .video-block video,
   .unveil-page .video-block video {
-    max-width: 144px;
+    max-width: 158.4px;
   }
 }
 .video-replay-btn {
