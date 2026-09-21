@@ -55,7 +55,7 @@ body {
   --radius-sm: 8px;
   --radius-lg: 12px;
 
-  --max: 780px;
+  --max: 1014px;
 }
 
 /* Case-study accent themes. Apply as a class on <body> (or a top-level
@@ -80,6 +80,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: var(--color-bg);
 }
 .logo {
   font-size: 13px;
@@ -317,68 +321,18 @@ section.phase { padding-top: 4.5rem; }
 }
 
 /* --------------------------------------------------------------------------
-   Fixed "Back to Home" button — the only instance of this CTA (it is not
-   duplicated in the sidebar below). Sits near where the top nav/logo
-   normally is; hidden at the very top of the page, fades/slides in once
-   the real header scrolls out of view (tracked via IntersectionObserver),
-   and stays fixed in place so it's reachable without scrolling back up.
-   Positioned to line up with the logo on narrow viewports (nav is
-   full-width with 2rem padding, not centered, so a flat 2rem inset
-   matches it) and with the .phase-nav sidebar's own left edge once that
-   sidebar appears at 900px+, so the two read as one continuous vertical
-   line while scrolling. Pill proportions match the footer's .fbtn
-   buttons. Needs its own background/shadow since it overlays scrolling
-   page content rather than sitting in an empty margin.
-   -------------------------------------------------------------------------- */
-.back-home-btn {
-  position: fixed;
-  top: 1.5rem;
-  left: 2rem;
-  z-index: 200;
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 10px 20px;
-  border-radius: 100px;
-  border: 0.5px solid var(--gray-300);
-  color: var(--gray-700);
-  background: var(--color-bg);
-  text-decoration: none;
-  opacity: 0;
-  transform: translateY(-8px);
-  transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.15s, color 0.15s;
-  pointer-events: none;
-}
-.back-home-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
-.back-home-btn.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-/* --------------------------------------------------------------------------
    Phase nav — sticky desktop-only sidebar linking to each phase section.
    Does NOT restructure .phase or main's layout in any way; positioned via
    `fixed` at a viewport-relative offset that lines up with main's own
-   780px centered column (390px half-width + 48px gap + 160px nav width
-   = 598px), so main and every other page's layout are completely
-   untouched. Plain text only — no borders, boxes, or icons. Below 900px
-   it's hidden entirely; there is no mobile equivalent for this pass.
+   1014px centered column (507px half-width + 33.6px gap [30% less than the
+   original 48px] + 160px nav width = 700.6px), so main and every other
+   page's layout are completely untouched. Plain text only — no borders,
+   boxes, or icons. Below 900px it's hidden entirely; there is no mobile
+   equivalent for this pass.
    -------------------------------------------------------------------------- */
 .phase-nav { display: none; }
 
 @media (min-width: 900px) {
-  /* .phase-nav's own class rule (left: calc(50% - 598px), see below) never
-     redeclares padding — but <nav class="phase-nav"> is still a <nav>
-     element, so it also inherits the base `nav { padding: 2rem 2rem 0; }`
-     tag rule, which includes a 32px left padding. .phase-nav-link itself
-     has zero padding/margin, so the ACTUAL rendered text start position is
-     .phase-nav's left edge + that inherited 32px: calc(50% - 598px + 32px)
-     = calc(50% - 566px). Matching that here, not the bare left value.
-     Sized naturally (no forced width), same as the footer's .fbtn buttons. */
-  .back-home-btn { left: calc(50% - 566px); }
-
   .phase-nav {
     display: flex;
     flex-direction: column;
@@ -386,7 +340,7 @@ section.phase { padding-top: 4.5rem; }
     gap: 1.5rem;
     position: fixed;
     top: 8rem;
-    left: calc(50% - 598px);
+    left: calc(50% - 700.6px);
     width: 160px;
   }
   .phase-nav-link {

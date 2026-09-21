@@ -31,8 +31,6 @@
   <a href="mailto:peterstamenoff@gmail.com" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </div>
 
-<a href="index.html" class="back-home-btn" id="backHomeBtn" aria-label="Back to Home">Back to Home</a>
-
 <main>
 
   <div class="hero">
@@ -346,18 +344,6 @@
     });
   }
 
-  // Fixed "Back to Home" button: hidden at the top of the page, fades in
-  // once the real header (top nav/logo) scrolls out of view.
-  const topNav = document.querySelector('body > nav');
-  const backHomeBtn = document.getElementById('backHomeBtn');
-  if (topNav && backHomeBtn) {
-    const headerObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        backHomeBtn.classList.toggle('visible', !entry.isIntersecting);
-      });
-    }, { threshold: 0 });
-    headerObserver.observe(topNav);
-  }
 </script>
 
 </body>
