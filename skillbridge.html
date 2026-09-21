@@ -344,6 +344,12 @@
     });
   }
 
+  const siteNav = document.querySelector('body > nav');
+  if (siteNav) {
+    window.addEventListener('scroll', () => {
+      siteNav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
 </script>
 
 </body>

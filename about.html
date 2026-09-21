@@ -13,7 +13,8 @@
     html{scroll-behavior:smooth}
     body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased}
 
-    nav{max-width:var(--max);margin:0 auto;padding:2rem 2rem 0;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:500;background:var(--white)}
+    nav{max-width:var(--max);margin:0 auto;padding:2rem 2rem 0.6rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:500;background:var(--white);transition:box-shadow 0.2s ease}
+    nav.scrolled{box-shadow:0 4px 6px -6px rgba(0,0,0,0.15)}
     .logo{font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:8px}
     .logo img{height:24px;width:auto;vertical-align:middle}
     .nav-links{display:flex;gap:2rem;align-items:center}
@@ -39,22 +40,22 @@
       .hamburger{display:flex}
     }
 
-    main{max-width:var(--max);margin:0 auto;padding:0 2rem 6rem}
+    main{max-width:var(--max);margin:0 auto;padding:0 2rem 2.4rem}
 
-    .hero{padding:5rem 0 3rem;border-bottom:0.5px solid var(--border)}
+    .hero{padding:5rem 0 1.2rem}
     .hero-kicker{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
-    .hero-kicker::before{content:'';display:inline-block;width:20px;height:1.5px;background:var(--accent);flex-shrink:0}
-    .hero-h{font-family:'DM Serif Display',serif;font-size:52px;line-height:1.08;font-weight:400;margin-bottom:1.5rem}
-    .hero-h em{font-style:italic;color:var(--accent)}
-    .hero-p{font-size:16px;line-height:1.8;color:var(--gray-700);max-width:560px}
+    .about-hero-grid{display:grid;grid-template-columns:0.65fr 2.35fr;gap:3rem;align-items:start}
+    .hero-h{font-family:'Inter',sans-serif;font-size:52px;line-height:1.08;font-weight:400;margin-bottom:1.5rem}
+    .hero-h em{font-style:italic;color:var(--black)}
+    .hero-p{font-size:16px;line-height:1.8;color:var(--gray-700);margin-bottom:0.7rem}
 
     section{padding:4rem 0;border-bottom:0.5px solid var(--border)}
     section:last-of-type{border-bottom:none}
 
     .two-col{display:grid;grid-template-columns:1.2fr 1fr;gap:3.5rem;align-items:start}
     .section-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-500);margin-bottom:1.25rem}
-    .section-title{font-family:'DM Serif Display',serif;font-size:36px;font-weight:400;margin-bottom:1.25rem;line-height:1.15}
-    .section-title em{font-style:italic;color:var(--accent)}
+    .section-title{font-family:'Inter',sans-serif;font-size:36px;font-weight:400;margin-bottom:1.25rem;line-height:1.15}
+    .section-title em{font-style:italic;color:var(--black)}
     p.body{font-size:15px;line-height:1.85;color:var(--gray-700);margin-bottom:1.25rem}
 
     .skills-wrap{display:flex;flex-wrap:wrap;gap:7px;margin-top:1.5rem}
@@ -69,7 +70,7 @@
     .exp-yr{font-size:11px;color:var(--gray-500)}
 
     .cta-block{background:var(--black);border-radius:var(--radius);padding:3rem;display:flex;justify-content:space-between;align-items:center;margin-top:3rem}
-    .cta-block p{font-size:20px;font-family:'DM Serif Display',serif;color:var(--white);font-weight:400}
+    .cta-block p{font-size:20px;font-family:'Inter',sans-serif;color:var(--white);font-weight:400}
     .cta-block em{font-style:italic;color:rgba(255,255,255,0.5)}
     .cta-btns{display:flex;gap:10px;flex-shrink:0}
     .cta-btn{font-size:13px;font-weight:500;padding:10px 20px;border-radius:100px;cursor:pointer;text-decoration:none;transition:all 0.15s}
@@ -81,7 +82,7 @@
     footer{max-width:var(--max);margin:0 auto;padding:2rem 2rem 3rem;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center}
     .footer-note{font-size:14px;font-weight:500}
     .footer-sub{font-size:12px;color:var(--gray-500);margin-top:4px}
-    .footer-btns{display:flex;gap:10px;align-items:center}
+    .footer-btns{display:flex;gap:2rem;align-items:center}
     .fbtn{font-size:12px;font-weight:500;padding:10px 20px;border-radius:100px;cursor:pointer;border:0.5px solid var(--gray-300);background:transparent;color:var(--gray-700);text-decoration:none;transition:all 0.15s}
     .fbtn:hover{border-color:var(--black);color:var(--black)}
     .fbtn.primary{background:var(--black);color:var(--white);border-color:var(--black)}
@@ -89,6 +90,7 @@
 
     @media(max-width:640px){
       .hero-h{font-size:36px}
+      .about-hero-grid{grid-template-columns:1fr;gap:1.5rem}
       .two-col{grid-template-columns:1fr;gap:2rem}
       .cta-block{flex-direction:column;gap:1.5rem;text-align:center}
       footer{flex-direction:column;gap:1.5rem;text-align:center}
@@ -122,83 +124,13 @@
 
   <div class="hero">
     <p class="hero-kicker">About me</p>
-    <h1 class="hero-h">Visual craft meets<br><em>UX thinking.</em></h1>
-    <p class="hero-p">Senior graphic and digital designer with 10+ years of experience, now bringing a research-driven UX/UI approach to every project I work on.</p>
-  </div>
-
-  <section>
-    <div class="two-col">
+    <div class="about-hero-grid">
+      <img src="assets/images/about-portrait.webp" alt="Peter Stamenoff" style="width:100%;border-radius:0;object-fit:cover;display:block;">
       <div>
-        <p class="section-label">My story</p>
-        <h2 class="section-title">Where I'm <em>coming from.</em></h2>
-        <p class="body">I spent 10+ years designing for Sam's Club, Men's Wearhouse, and Havas — building campaigns, systems, and digital experiences for millions of people. Now I'm bringing that visual foundation into UX/UI product design.</p>
-        <p class="body">I care about the details: the hierarchy that guides a user, the copy that calms them, the flow that removes friction. Design that's not just beautiful — but clear.</p>
-        <div class="skills-wrap">
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">User Research</span>
-          <span class="skill-tag">Prototyping</span>
-          <span class="skill-tag">Design Systems</span>
-          <span class="skill-tag">Usability Testing</span>
-          <span class="skill-tag">Adobe CC</span>
-        </div>
+        <p class="hero-p">I started my creative career in Fine Art and Photography, then moved into print, fashion, and visual design. Along the way, I became increasingly interested in more than how things look. I wanted to understand how people think, interact, and experience products. That curiosity led me to product design.</p>
+        <p class="hero-p" style="margin-top:1.25rem;">Today, I combine strong visual craft with UX thinking to create digital experiences that are clear, engaging, and purposeful.</p>
+        <p class="hero-p" style="margin-top:1.25rem;">Interested in seeing where it all started? Explore some of my earlier graphic design work at <a href="https://peterstamenoff.com" target="_blank" style="color:var(--black);text-decoration:underline;">peterstamenoff.com</a>.</p>
       </div>
-      <div>
-        <p class="exp-label">Experience</p>
-        <ul class="exp-list">
-          <li class="exp-item">
-            <div>
-              <div class="exp-co">Sam's Club / Walmart</div>
-              <div class="exp-role">Senior Designer</div>
-            </div>
-            <span class="exp-yr">2020–2025</span>
-          </li>
-          <li class="exp-item">
-            <div>
-              <div class="exp-co">Men's Wearhouse</div>
-              <div class="exp-role">Designer</div>
-            </div>
-            <span class="exp-yr">Prior</span>
-          </li>
-          <li class="exp-item">
-            <div>
-              <div class="exp-co">Havas Worldwide</div>
-              <div class="exp-role">Designer</div>
-            </div>
-            <span class="exp-yr">Prior</span>
-          </li>
-          <li class="exp-item">
-            <div>
-              <div class="exp-co">StringCan Agency</div>
-              <div class="exp-role">Designer</div>
-            </div>
-            <span class="exp-yr">Prior</span>
-          </li>
-          <li class="exp-item">
-            <div>
-              <div class="exp-co">UX/UI Bootcamp</div>
-              <div class="exp-role">Graduate</div>
-            </div>
-            <span class="exp-yr">2025</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <p class="section-label">What I bring</p>
-    <h2 class="section-title">Design that's <em>research-driven.</em></h2>
-    <div class="two-col">
-      <p class="body">Through my UX/UI bootcamp I've built hands-on experience in user research, personas, user flows, wireframes, prototyping, usability testing, and case study development. I combine that with 10+ years of professional visual design to create experiences that are not just beautiful — but grounded in how real people think and behave.</p>
-      <p class="body">My background in digital marketing, email, web, and brand design means I understand how design decisions connect to business goals. I'm comfortable working across teams with developers, product managers, marketers, and stakeholders — translating complexity into clarity at every step.</p>
-    </div>
-  </section>
-
-  <div class="cta-block">
-    <p>Let's work together on something <em>great.</em></p>
-    <div class="cta-btns">
-      <a href="#" class="cta-btn outline">View resume</a>
-      <a href="mailto:peterstamenoff@gmail.com" class="cta-btn filled">Say hello</a>
     </div>
   </div>
 
@@ -230,6 +162,12 @@
     hamburger.classList.toggle('open');
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
+  const siteNav = document.querySelector('body > nav');
+  if (siteNav) {
+    window.addEventListener('scroll', () => {
+      siteNav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
 </script>
 
 </body>

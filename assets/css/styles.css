@@ -76,7 +76,7 @@ body {
 nav {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 0.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +84,9 @@ nav {
   top: 0;
   z-index: 500;
   background: var(--color-bg);
+  transition: box-shadow 0.2s ease;
 }
+nav.scrolled { box-shadow: 0 4px 6px -6px rgba(0,0,0,0.15); }
 .logo {
   font-size: 13px;
   font-weight: 500;
@@ -163,7 +165,7 @@ footer {
 }
 .footer-note { font-size: 14px; font-weight: 500; color: var(--color-primary); }
 .footer-sub { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
-.footer-btns { display: flex; gap: 10px; align-items: center; }
+.footer-btns { display: flex; gap: 2rem; align-items: center; }
 .fbtn {
   font-size: 12px;
   font-weight: 500;
